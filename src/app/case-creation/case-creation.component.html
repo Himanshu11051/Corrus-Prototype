@@ -1,0 +1,142 @@
+<div class = "row">
+  <div class="col-sm-12 col-md-12 col-lg-12 caseCreationStepsWizard">
+    <div class = "processRow">
+      <div class = "connectingRow"></div>
+      <ul>
+        <li class = "wizardSteps" [ngClass]="{'active': currentStep == 1}">
+          <span class = "wizardStepDot" (click)="switchWizardStep(1)">
+            1
+          </span>
+          <p>Select Template</p>
+        </li>
+        <li class = "wizardSteps" [ngClass]="{'active': currentStep == 2}">
+            <span class = "wizardStepDot" (click)="switchWizardStep(2)">
+              2
+            </span>
+            <p>Provide Details</p>
+          </li>
+          <li class = "wizardSteps" [ngClass]="{'active': currentStep == 3}">
+              <span class = "wizardStepDot" (click)="switchWizardStep(3)">
+                3
+              </span>
+              <p>Assemble Team</p>
+            </li>
+            <li class = "wizardSteps" [ngClass]="{'active': currentStep == 4}">
+                <span class = "wizardStepDot" (click)="switchWizardStep(4)"> 
+                  4
+                </span>
+                <p>Initiate Case</p>
+              </li>
+      </ul>
+    </div>
+    <div class = "exitCaseCreationControl">
+        <ul>
+            <li>
+              <span><i class="material-icons">close</i></span>
+            </li>
+            <li>
+              Exit
+            </li>
+          </ul>
+    </div>
+  </div>
+</div>
+<div class = "row caseCreationBody">
+  <div class = "col-sm-12 col-md-12 col-lg-12 caseCreationStep1Container" *ngIf="currentStep==1" >
+    <div class = "col-sm-12 col-md-12 col-lg-12">
+      <h6>Select a Template Type</h6>
+    </div>
+    <div class = "col-sm-12 col-md-12 col-lg-12">
+      <p>You can select a pre-formatted template for your<br>
+      industry or you can create a custom template:</p>
+    </div>
+    <div class = "col-sm-12 col-md-12 col-lg-12">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Medical
+        </button>   
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button">
+            <span>Human Resources</span>
+            </button>
+          <button class="dropdown-item" type="button"><span>Grievance</span></button>
+          <button class="dropdown-item" type="button"><span>Finance</span></button>
+          <button class="dropdown-item" type="button"><span>Legal</span></button>
+          <button class="dropdown-item" type="button"><span>BID</span></button>
+          <button class="dropdown-item" type="button"><span>High Value Proposal</span></button>
+          <button class="dropdown-item" type="button"><span>My Custom Template</span></button>
+        </div>
+      </div>
+    </div>
+    <div class = "col-sm-12 col-md-12 col-lg-12">
+      <div class = "templateIcon">
+          <span><i class="material-icons">add</i></span>
+          <div class = "col-sm-12 col-md-12 col-lg-12 templateDescription">
+            <h6>Medical</h6>
+            <p>Provide short template description here</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "col-sm-12 col-md-12 col-lg-12 caseCreationStep2Container" *ngIf="currentStep==2" >
+      <div class = "col-sm-12 col-md-12 col-lg-12">
+        <h6>Provide Details</h6>
+        <button class = "saveDraftBtn">Save Draft</button>
+      </div>
+      <div class = "col-sm-12 col-md-12 col-lg-12 formContainer">
+          <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">Case Name</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">Case Due Date</label>
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon" id="basic-addon2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                  </span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label class="col-form-label">Describe Case Goals</label>
+                  <textarea class="form-control" rows="3" placeholder = "What do you want to acomplish?"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-12">
+                      <label class="col-form-label">Case Tags - Press Enter to Add </label>
+                     <i id = "helpIcon"> <object class="helpIcon" data="/assets/img/icons/help_icon.svg" type="image/svg+xml">
+                      </object>
+                      <div class = "hoverHelpBox">
+                          Use tags to identify and categorize your cases. Search queries utilize tags for relevance.
+                          <i class="material-icons carret">arrow_drop_down</i>
+                        </div>
+                    </i>
+                      <input type="text" class="form-control">
+                      <span class = "tagChip">Example Tag
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>x_delete_icon@1x</title><g id="art"><path d="M19.8656,14.99916l8.12642-8.126A3.4402,3.4402,0,0,0,23.12684,2.008L15,10.134,6.87316,2.008A3.4402,3.4402,0,0,0,2.008,6.87316l8.12642,8.126L2.008,23.12684A3.4402,3.4402,0,1,0,6.87316,27.992L15,19.866l8.12684,8.126A3.4402,3.4402,0,0,0,27.992,23.12684Z"/></g></svg>
+                      </span>
+                  </div>
+                </div>
+            </form>
+      </div>
+  </div>
+
+</div>
+
+
+<div class = "row">
+  <div class = "col-sm-12 col-md-12 col-lg-12 caseCreationNavigationFooter nextNavigationControl">
+      <ul>
+          <li>
+            <span><i class="material-icons">keyboard_arrow_right</i></span>
+          </li>
+          <li>
+            Next
+          </li>
+        </ul>
+  </div>
+</div>

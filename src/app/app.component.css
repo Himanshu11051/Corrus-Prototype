@@ -1,0 +1,210 @@
+/* Author: Himanshu Kumar */
+/* You can add global styles to this file, and also import other style files */
+/* Color Pallet */
+@font-face {
+  font-family: 'workSans-medium';
+  src: url("/assets/fonts/WorkSans-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'workSans-bold';
+  src: url("/assets/fonts/WorkSans-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'workSans-regular';
+  src: url("/assets/fonts/WorkSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'futura-medium';
+  src: url("/assets/fonts/Futura-Medium.ttf") format("truetype");
+}
+
+.themeButton, header .headerItemsContainer ul li .createCaseBtn {
+  background: #8170ff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: workSans-medium !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.userDefaultAvatar {
+  display: inline-block;
+  font-size: 13px;
+  background: rgba(25, 204, 199, 0.3);
+  color: #19ccc7;
+  text-align: center;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+}
+
+.nextNavigationControl {
+  text-align: center;
+}
+
+.nextNavigationControl ul {
+  cursor: pointer;
+}
+
+.nextNavigationControl ul li {
+  display: inline-block;
+}
+
+.nextNavigationControl ul li span {
+  text-align: center;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  background: #558bff;
+  color: #fff;
+  display: inline-block;
+  top: -2px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.nextNavigationControl ul li span i {
+  font-size: 16px;
+}
+
+.nextNavigationControl ul li:last-child {
+  color: #558bff;
+}
+
+header {
+  height: 80px;
+  position: static;
+  width: 100%;
+  padding: 0 12px;
+  line-height: 80px;
+}
+
+header img {
+  height: 30px;
+  width: 75px;
+  cursor: pointer !important;
+}
+
+header .headerItemsContainer {
+  float: right;
+  width: 495px;
+  font-family: "futura-medium";
+}
+
+header .headerItemsContainer ul li {
+  display: table-cell;
+  margin-right: 25px;
+  float: left;
+}
+
+header .headerItemsContainer ul li i {
+  vertical-align: middle;
+}
+
+header .headerItemsContainer ul li svg {
+  height: 30px;
+  vertical-align: middle;
+  fill: #558bff;
+}
+
+header .headerItemsContainer ul li .workspaceSelector {
+  font-size: 14px;
+  margin-left: -2px;
+  color: #bac8d6;
+}
+
+header .headerItemsContainer ul li .notificationBell {
+  font-size: 30px;
+  color: #558bff;
+}
+
+header .headerItemsContainer ul li span {
+  vertical-align: middle;
+}
+
+header .headerItemsContainer ul li .verticlePipe {
+  display: inline-block;
+  height: 32px;
+  width: 1px;
+  border: 1px solid #dce7f2;
+}
+
+header .headerItemsContainer ul li .workSpaceName {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #bac8d6;
+}
+
+header .headerItemsContainer ul li .createCaseBtn {
+  width: 115px;
+}
+
+header .headerItemsContainer ul li:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.appNavbar {
+  background: linear-gradient(to right, #558bff, #8170ff);
+  width: 100%;
+  padding: 10px 12px;
+}
+
+.appNavbar .navbar-brand {
+  color: #fff !important;
+  font-size: 16px;
+  font-family: "workSans-regular";
+}
+
+.appNavbar .form-inline .input-group-addon {
+  border: none;
+  background: #9491ff;
+  color: #fff;
+  padding-left: 3px;
+}
+
+.appNavbar .form-inline .input-group-addon i {
+  font-size: 16px;
+}
+
+.appNavbar input {
+  height: 25px;
+  width: 316px;
+  background: #9491ff;
+  padding: 10px;
+  border-left: none;
+  border-color: #9491ff;
+  color: #fff;
+}
+ 
+
+ /*# sourceMappingURL= app.component.css.map */

@@ -1,0 +1,102 @@
+/* Author: Himanshu Kumar */
+@import '../styles.scss';
+header{
+    height: 80px;
+    position: static;
+    width:100%;
+    padding: 0 12px;
+    line-height: 80px;
+    img{
+        height: 30px;
+        width: 75px;
+        cursor: pointer !important;
+    }
+    .headerItemsContainer{
+        float:right;
+        width: 495px;
+        font-family: $font-futura-medium;
+        ul{
+            li{
+                display: table-cell;
+                margin-right: 25px;
+                float: left;                
+                i{
+                    vertical-align: middle;
+                }
+                svg{
+                    height: 30px;
+                    vertical-align: middle;
+                    fill: $blue;
+                }
+                .workspaceSelector{
+                    font-size: 14px;
+                    margin-left: -2px;
+                    color: $grey3;
+                }
+                .notificationBell{
+                    font-size: 30px;
+                    color: $blue;
+                }
+                span{
+                    vertical-align: middle;
+                }
+                .verticlePipe{
+                    display: inline-block;
+                    height: 32px;
+                    width:1px;
+                    border: 1px solid $grey2;
+                }
+                .workSpaceName{
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    color: $grey3;                        
+                }
+                .createCaseBtn{
+                    @extend .themeButton;
+                    width: 115px;
+
+                }
+            }
+            li:last-child{
+                float: right;
+                margin-right: 0;
+            }
+        }
+    }
+}
+.appNavbar{
+    background: linear-gradient(to right, $blue, $purple);
+    width: 100%;
+    padding: 10px 12px;
+    .navbar-brand{
+        color: #fff !important;
+        font-size:16px;
+        font-family: $font-workSans-regular;
+    }
+    .form-inline{
+        .input-group-addon{
+            border: none;
+            background: $headerSearchBackgroundColor;
+            color: #fff;
+            padding-left: 3px;
+            i{
+                font-size: 16px;
+            }
+        }
+    }
+    input{
+        height: 25px;
+        width: 316px;
+        background: $headerSearchBackgroundColor;
+        padding: 10px;
+        border-left: none;
+        border-color: $headerSearchBackgroundColor;
+        color: #fff;
+    
+    }
+}
+
+
+
