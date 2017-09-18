@@ -88,6 +88,7 @@ ul{
     background: rgba(25, 204, 199, 0.3);
     color: #19ccc7;
     @include circularElement(30px);
+    cursor: pointer;
 }
 .nextNavigationControl{
     text-align: center;
@@ -128,6 +129,7 @@ ul{
     height: 14px;
     width: 14px;
     bottom: 3px;
+    cursor: pointer;
 }
 #helpIcon:hover{
     .hoverHelpBox{
@@ -181,3 +183,27 @@ ul{
     }
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: $darkGrey;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+   background: transparent;
+}

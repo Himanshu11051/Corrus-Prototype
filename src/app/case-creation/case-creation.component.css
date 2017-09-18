@@ -164,6 +164,30 @@ ul {
   cursor: pointer;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #6b7a84;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: transparent;
+}
+
 .caseCreationStepsWizard {
   background: #ecf3fa;
   height: 130px;
@@ -313,7 +337,20 @@ ul {
   margin-top: 35px;
   text-align: left;
   padding: 0 10px;
+  position: relative;
   cursor: pointer;
+}
+
+.caseCreationBody .caseCreationStep1Container div .dropdown .btn-secondary .dropdownArrows {
+  position: absolute;
+  right: 5px;
+}
+
+.caseCreationBody .caseCreationStep1Container div .dropdown .btn-secondary .dropdownArrows i {
+  display: block;
+  line-height: 0.5;
+  font-size: 20px;
+  color: #bac8d6;
 }
 
 .caseCreationBody .caseCreationStep1Container div .dropdown .btn-secondary:focus {

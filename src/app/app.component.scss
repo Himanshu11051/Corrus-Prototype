@@ -32,10 +32,12 @@ header{
                     font-size: 14px;
                     margin-left: -2px;
                     color: $grey3;
+                    cursor: pointer;
                 }
                 .notificationBell{
                     font-size: 30px;
                     color: $blue;
+                    cursor: pointer;
                 }
                 span{
                     vertical-align: middle;
@@ -62,6 +64,39 @@ header{
             li:last-child{
                 float: right;
                 margin-right: 0;
+            }
+        }
+    }
+}
+.userProfileDropdown{
+    position: absolute;
+    height: auto;
+    width:auto;
+    border: 1px solid $blue;
+    z-index: 4;
+    background: #fff;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    ul{
+        li{
+            display: block !important;
+            float: none !important;
+            cursor: pointer;
+            a{
+                color: $grey4;
+                padding-left: 10px;
+                padding-right: 20px;
+                cursor: pointer;
+                font-family: $font-workSans-medium;
+            }
+        }
+        li:hover{
+            a{
+                color: $blue;
+                text-decoration: none;
             }
         }
     }

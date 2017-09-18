@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-case-creation',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CaseCreationComponent implements OnInit {
   
-  constructor() { 
+  constructor(private router: Router,) { 
   }
 
   ngOnInit() {
@@ -17,4 +18,13 @@ export class CaseCreationComponent implements OnInit {
   switchWizardStep(currentStep){
     this.currentStep = currentStep;
   }
+  proceedNext(){
+    if(this.currentStep != 4){
+      this.currentStep = this.currentStep + 1;
+      this.switchWizardStep(this.currentStep);
+    }
+  }
+  gotoDashboard(){
+    this.router.navigateByUrl('/');
+  };
 }

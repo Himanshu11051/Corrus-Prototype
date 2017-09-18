@@ -10,10 +10,13 @@ export class AppComponent {
   constructor(
     private router: Router,
   ) { }
-  title = 'app';
+  showUserProfileDropdownFlag = false;
 
   gotoDashboard(){
     this.router.navigateByUrl('/');
   };
+  gotoCaseCreation(){
+    this.router.navigateByUrl('/createcase');
+  }
   sampleChildData : string;
 }
