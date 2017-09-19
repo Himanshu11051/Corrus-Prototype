@@ -110,6 +110,7 @@ ul {
   height: 14px;
   width: 14px;
   bottom: 3px;
+  cursor: pointer;
 }
 
 #helpIcon:hover .hoverHelpBox {
@@ -192,10 +193,12 @@ ul {
 
 header {
   height: 80px;
-  position: static;
+  position: fixed;
   width: 100%;
   padding: 0 12px;
   line-height: 80px;
+  top: 0;
+  left: 0;
 }
 
 header img {
@@ -207,7 +210,7 @@ header img {
 header .headerItemsContainer {
   float: right;
   width: 495px;
-  font-family: "futura-medium";
+  font-family: "workSans-medium";
 }
 
 header .headerItemsContainer ul li {
@@ -304,6 +307,8 @@ header .headerItemsContainer ul li:last-child {
   background: linear-gradient(to right, #558bff, #8170ff);
   width: 100%;
   padding: 10px 12px;
+  position: fixed;
+  top: 80px;
 }
 
 .appNavbar .navbar-brand {
@@ -331,6 +336,12 @@ header .headerItemsContainer ul li:last-child {
   border-left: none;
   border-color: #9491ff;
   color: #fff;
+}
+
+.appContainer {
+  position: relative;
+  top: 125px;
+  overflow: auto;
 }
  
 

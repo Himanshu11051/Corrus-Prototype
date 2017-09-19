@@ -12,6 +12,8 @@ export class CaseCreationComponent implements OnInit {
   }
 
   ngOnInit() {
+    var windowHeight = window.innerHeight;
+    
   }
 
   currentStep = 1;
