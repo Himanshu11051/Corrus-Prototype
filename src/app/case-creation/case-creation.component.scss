@@ -10,7 +10,7 @@
         top: 16px;
         position: relative;
         height: 100px;
-        
+        z-index: 1;
         .connectingRow{
             border: 1px solid #9fb1bd;
             position: relative;
@@ -293,11 +293,35 @@
                     resize: none;
                     font-size: 14px;
                 }
-                // .form-row{
-                //     div{
-                //         padding-right: 15px;
-                //     }
-                // }
+                .form-row{
+                    .teamMemberNameInputDiv{
+                        width: 360px;
+                        margin-right: 25px;
+                    }
+                    .teamMemberEmailInputDiv{
+                        width: 325px;
+                        margin-right: 10px;
+                    }
+                    .addTeamMemberControl{
+                        height: 30px;
+                        width: 30px;
+                        float: right;
+                        top: 24px;
+                        position: relative;
+                        border-radius: 4px;
+                        line-height: 43px;
+                        button{
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 4px;
+                            outline: none;
+                            border: 1px solid $blue;
+                            color: #fff;
+                            background: $blue;
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
         }
         .caseMembersContainer{
@@ -308,7 +332,6 @@
                 display: inline-block;
                 width: 760px;
                 text-align: initial;
-                padding: 0 6px;
                 label{
                     font-family: $font-workSans-medium;
                     font-size: 14px;
@@ -340,6 +363,94 @@
         }
     }
 
+    .caseCreationStep4Container{
+        div{
+            text-align: center;
+        }
+        .caseSummaryContainer{
+            margin-top: 35px;
+            .caseSummaryBody{
+                width:760px;
+                display: inline-block;
+                float: none;
+                .row{
+                    border-bottom: 1px solid $grey2;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+                .row1{
+                    padding-top: 0;
+                    ul{
+                        li{
+                            width: 252px;
+                            float: left;
+                            text-align: left;
+                            p{
+                                margin-top: 0;
+                                width: 210px;
+                                font-family: $font-workSans-regular;
+                                font-size: 16px;
+                            }
+                        }
+                        li:nth-child(1){
+                            width:316px;
+                        }
+                        li:nth-child(2){
+                            width:290px;
+                        }
+                        li:nth-child(3){
+                            width:146px;
+                        }
+                    }
+                }
+                .row2{
+                    p{
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+                .row3{
+                    ul.caseMembersListColumn{
+                        width: 100%;
+                        text-align: left;                       
+                        li{
+                            float: left;
+                            width:190px;
+                            div{
+                                text-align: left;
+                            }
+                        }   
+                    }
+                }
+                .row4{
+                    ul{
+                        width: 100%;
+                        li{
+                            float: left;
+                        }
+                    }
+                }
+                .row5{
+                    margin-top: 29px;
+                    margin-bottom: 80px;
+                    display: inline-block;
+                    border-bottom: none;
+                    .initiateCaseBtn{
+                        @include appButton($blue,#fff);
+                        width: 112px;
+                    }
+                }
+            }
+            label{
+                color: $grey4;
+            }
+            p{
+                margin-top: 0;
+                font-family: $font-workSans-regular;
+                font-size: 16px;
+            }
+        }
+    }
 
 
 }
