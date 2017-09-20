@@ -260,6 +260,88 @@
             }
         }
     }
+
+    .caseCreationStep3Container{
+        div{
+            text-align: center;
+            float: left;
+        }
+        .formContainer{
+            margin-top: 35px;
+            form{
+                display: inline-block;
+                width:760px;
+                font-family: $font-workSans-medium;
+                font-size: 14px;
+                div{
+                    text-align: left;
+                    float: none;
+                }
+                label{
+                    font-family: $font-workSans-medium;
+                    font-size: 14px;
+                    color: $grey4;
+                }
+                input{
+                    padding: 6px;
+                    font-size: 14px;
+                    height: 35px;
+                }
+                textarea{
+                    height: 75px;
+                    padding: 6px;
+                    resize: none;
+                    font-size: 14px;
+                }
+                // .form-row{
+                //     div{
+                //         padding-right: 15px;
+                //     }
+                // }
+            }
+        }
+        .caseMembersContainer{
+            font-family: $font-workSans-medium;
+            margin-top: 27px;
+            .caseMembersBody{
+                float: none;
+                display: inline-block;
+                width: 760px;
+                text-align: initial;
+                padding: 0 6px;
+                label{
+                    font-family: $font-workSans-medium;
+                    font-size: 14px;
+                    color: $grey4;
+                }
+                .caseMembersRow{
+                    border-bottom: 1px solid rgba(159, 177, 189, 0.5);
+                    height: 56px;
+                    line-height: 56px;
+                    vertical-align: middle;
+                    text-align: initial;
+                    font-size: 14px;
+                    ul{
+                        li{
+                            width: 302px;
+                            float: left;
+                            color: $blue
+                        }
+                        li:last-child{
+                            width: 140px !important;
+                            color: $grey4 !important;
+                        }
+                    }
+                }
+                .caseMembersRow.borderTop{
+                    border-top: 1px solid rgba(159, 177, 189, 0.5);                   
+                }
+            }
+        }
+    }
+
+
+
 }
 .caseCreationNavigationFooter{
     margin-top: 185px;

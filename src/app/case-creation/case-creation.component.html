@@ -42,6 +42,7 @@
   </div>
 </div>
 <div class = "row caseCreationBody">
+  <!-- Step 1 Starts -->
   <div class = "col-sm-12 col-md-12 col-lg-12 caseCreationStep1Container" *ngIf="currentStep==1" >
     <div class = "col-sm-12 col-md-12 col-lg-12">
       <h6>Select a Template Type</h6>
@@ -83,7 +84,9 @@
       </div>
     </div>
   </div>
+<!-- Step 1 Ends -->
 
+<!-- Step 2 Starts-->
   <div class = "col-sm-12 col-md-12 col-lg-12 caseCreationStep2Container" *ngIf="currentStep==2" >
       <div class = "col-sm-12 col-md-12 col-lg-12">
         <h6>Provide Details</h6>
@@ -129,7 +132,65 @@
             </form>
       </div>
   </div>
+<!-- Step 2 Ends -->
 
+<!-- Step3 Starts -->
+  <div class = "col-sm-12 col-md-12 col-lg-12 caseCreationStep3Container" *ngIf="currentStep==3" >
+      <div class = "col-sm-12 col-md-12 col-lg-12">
+        <h6>Assemble Team</h6>
+        <button class = "saveDraftBtn">Save Draft</button>
+      </div>
+      <div class = "col-sm-12 col-md-12 col-lg-12 formContainer">
+          <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">Team Member Name</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="col-form-label">Email Address</label>
+                  <input type="email" class="form-control">
+                </div>
+              </div>
+            </form>
+      </div>
+
+      <div class = "col-sm-12 col-md-12 col-lg-12 caseMembersContainer">
+        
+        <div class = "col-sm-12 col-md-12 col-lg-12 caseMembersBody">
+          <label>Case Members</label>
+          <div class = "col-sm-12 col-md-12 col-lg-12 caseMembersRow borderTop">
+            <ul>
+              <li>Himanshu Kumar</li>
+              <li>himanshu.kumar@newgen.co.in</li>
+              <li>Added to Team</li>
+            </ul>
+          </div>
+          <div class = "col-sm-12 col-md-12 col-lg-12 caseMembersRow"> 
+            <ul>
+              <li>Shweta Bajad</li>
+              <li>shweta.b@newgen.co.in</li>
+              <li>Added to Team</li>
+            </ul>
+          </div>
+          <div class = "col-sm-12 col-md-12 col-lg-12 caseMembersRow">
+            <ul>
+              <li>Pavneet Bhutani</li>
+              <li>pavneet.bhutani@newgen.co.in</li>
+              <li>Added to Team</li>
+            </ul>
+          </div>
+          <div class = "col-sm-12 col-md-12 col-lg-12 caseMembersRow">
+              <ul>
+                <li>Nancy Goyal</li>
+                <li>nancy.goyal@newgen.co.in</li>
+                <li>Invitation Sent</li>
+              </ul>
+            </div>          
+        </div>
+      </div>
+  </div>
+<!-- Step3 Ends -->
 </div>
 
 

@@ -40,6 +40,7 @@
 
 body {
   font-family: workSans-medium !important;
+  overflow-y: hidden;
 }
 
 ul {
@@ -511,6 +512,89 @@ ul {
   /* Firefox 18- */
   font-size: 14px;
   color: #bac8d6;
+}
+
+.caseCreationBody .caseCreationStep3Container div {
+  text-align: center;
+  float: left;
+}
+
+.caseCreationBody .caseCreationStep3Container .formContainer {
+  margin-top: 35px;
+}
+
+.caseCreationBody .caseCreationStep3Container .formContainer form {
+  display: inline-block;
+  width: 760px;
+  font-family: "workSans-medium";
+  font-size: 14px;
+}
+
+.caseCreationBody .caseCreationStep3Container .formContainer form div {
+  text-align: left;
+  float: none;
+}
+
+.caseCreationBody .caseCreationStep3Container .formContainer form label {
+  font-family: "workSans-medium";
+  font-size: 14px;
+  color: #9fb1bd;
+}
+
+.caseCreationBody .caseCreationStep3Container .formContainer form input {
+  padding: 6px;
+  font-size: 14px;
+  height: 35px;
+}
+
+.caseCreationBody .caseCreationStep3Container .formContainer form textarea {
+  height: 75px;
+  padding: 6px;
+  resize: none;
+  font-size: 14px;
+}
+
+.caseCreationBody .caseCreationStep3Container .caseMembersContainer {
+  font-family: "workSans-medium";
+  margin-top: 27px;
+}
+
+.caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody {
+  float: none;
+  display: inline-block;
+  width: 760px;
+  text-align: initial;
+  padding: 0 6px;
+}
+
+.caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody label {
+  font-family: "workSans-medium";
+  font-size: 14px;
+  color: #9fb1bd;
+}
+
+.caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody .caseMembersRow {
+  border-bottom: 1px solid rgba(159, 177, 189, 0.5);
+  height: 56px;
+  line-height: 56px;
+  vertical-align: middle;
+  text-align: initial;
+  font-size: 14px;
+}
+
+.caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody .caseMembersRow ul li {
+  width: 302px;
+  float: left;
+  color: #558bff;
+}
+
+.caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody .caseMembersRow ul li:last-child {
+  width: 140px !important;
+  color: #9fb1bd !important;
+}
+
+.caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody .caseMembersRow.borderTop {
+  border-top: 1px solid rgba(159, 177, 189, 0.5);
 }
 
 .caseCreationNavigationFooter {
