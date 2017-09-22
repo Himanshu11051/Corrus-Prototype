@@ -22,7 +22,7 @@
         .wizardSteps{
             display: inline-block;
             width: 196px;
-            font-family: $font-workSans-medium;
+            font-family: $font-workSans-regular;
             font-size: 14px;
             color: $grey3;
             .wizardStepDot{
@@ -32,10 +32,10 @@
                 z-index: 2;
                 background: $grey4;
                 vertical-align: super;
-                color: #fff;
+                color: $grey1;
                 font-size: 15px;
                 cursor:pointer;
-                font-family: $font-workSans-bold;
+                font-family: $font-workSans-medium;
                 @include circularElement(36px);
             }
         }
@@ -62,8 +62,7 @@
                     border-radius: 50%;
                     height: 16px;
                     width: 16px;
-                    line-height: 18px;
-                    background: $grey4;
+                    line-height: 18px;                    
                     color: #fff;
                     display: inline-block;
                     top: -2px;
@@ -71,6 +70,9 @@
                     vertical-align: middle;
                     i{
                         font-size: 12px;
+                        svg{
+                            fill:$grey4;
+                        }
                     }
                 }
             }
@@ -82,7 +84,7 @@
 }
 .caseCreationBody{
     h6{
-        font-family: $font-workSans-medium;
+        font-family: $font-workSans-regular;
         font-size: 16px;
         color: $blue;
         display: inline-block;
@@ -137,7 +139,7 @@
                     text-align: left;  
                     width: 255px;
                     button{
-                        font-family: $font-workSans-medium;
+                        font-family: $font-workSans-regular;
                         padding: 0 10px;
                         font-size: 16px;
                         line-height: 25px;
@@ -201,14 +203,14 @@
             form{
                 display: inline-block;
                 width:760px;
-                font-family: $font-workSans-medium;
+                font-family: $font-workSans-regular;
                 font-size: 14px;
                 div{
                     text-align: left;
                     float: none;
                 }
                 label{
-                    font-family: $font-workSans-medium;
+                    font-family: $font-workSans-regular;
                     font-size: 14px;
                     color: $grey4;
                 }
@@ -271,14 +273,14 @@
             form{
                 display: inline-block;
                 width:760px;
-                font-family: $font-workSans-medium;
+                font-family: $font-workSans-regular;
                 font-size: 14px;
                 div{
                     text-align: left;
                     float: none;
                 }
                 label{
-                    font-family: $font-workSans-medium;
+                    font-family: $font-workSans-regular;
                     font-size: 14px;
                     color: $grey4;
                 }
@@ -325,7 +327,7 @@
             }
         }
         .caseMembersContainer{
-            font-family: $font-workSans-medium;
+            font-family: $font-workSans-regular;
             margin-top: 27px;
             .caseMembersBody{
                 float: none;
@@ -333,7 +335,7 @@
                 width: 760px;
                 text-align: initial;
                 label{
-                    font-family: $font-workSans-medium;
+                    font-family: $font-workSans-regular;
                     font-size: 14px;
                     color: $grey4;
                 }
@@ -353,6 +355,7 @@
                         li:last-child{
                             width: 140px !important;
                             color: $grey4 !important;
+                            text-align: right;
                         }
                     }
                 }
@@ -455,6 +458,14 @@
 
 }
 .caseCreationNavigationFooter{
-    margin-top: 185px;
+    margin-top: 50px;
     margin-bottom: 60px;
+    span{
+        background: #fff !important;
+    }
+    i{
+        svg{
+            fill:$blue;
+        }
+    }
 }

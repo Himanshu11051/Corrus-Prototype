@@ -3,6 +3,7 @@
         text-align: center;
         margin-top:100px;
         color: $themeColor;
+        font-family: $font-futura-book;
     }
     .cardContainer{
         text-align: center;
@@ -22,6 +23,7 @@
         }
     }
     .dashboardContainerFooter{
+        font-family: $font-futura-book;
         text-align: center;
         p{
             display: inline-block;

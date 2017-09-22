@@ -17,7 +17,7 @@ header{
     .headerItemsContainer{
         float:right;
         width: 495px;
-        font-family: $font-workSans-medium;
+        font-family: $font-workSans-regular;
         ul{
             li{
                 display: table-cell;
@@ -93,7 +93,7 @@ header{
                 padding-left: 10px;
                 padding-right: 20px;
                 cursor: pointer;
-                font-family: $font-workSans-medium;
+                font-family: $font-workSans-regular;
             }
         }
         li:hover{
@@ -122,7 +122,12 @@ header{
             color: #fff;
             padding-left: 3px;
             i{
-                font-size: 16px;
+                svg{
+                    height: 12px !important;
+                    width:12px;
+                    fill:#fff !important;
+                }
+                
             }
         }
     }
