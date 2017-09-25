@@ -4,6 +4,8 @@
     height: 130px;
     text-align: center;
     margin-bottom:35px;
+    z-index: 2;
+    position: fixed;
     .processRow{
         display: inline-block;
         width: 800px;
@@ -83,6 +85,8 @@
     }
 }
 .caseCreationBody{
+    margin-top: 163px;
+    position: relative;
     h6{
         font-family: $font-workSans-regular;
         font-size: 16px;

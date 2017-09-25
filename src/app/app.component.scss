@@ -121,14 +121,6 @@ header{
             background: $headerSearchBackgroundColor;
             color: #fff;
             padding-left: 3px;
-            i{
-                svg{
-                    height: 12px !important;
-                    width:12px;
-                    fill:#fff !important;
-                }
-                
-            }
         }
     }
     input{
@@ -140,6 +132,13 @@ header{
         border-color: $headerSearchBackgroundColor;
         color: #fff;
     
+    }
+    i.searchIcon{
+        svg{
+            height: 12px !important;
+            width:12px !important;
+            fill:#fff !important;
+        }                
     }
 }
 
