@@ -29,4 +29,7 @@ export class CaseCreationComponent implements OnInit {
   gotoDashboard(){
     this.router.navigateByUrl('/');
   };
+  gotoCaseFile(){
+    this.router.navigateByUrl('casefile');
+  };
 }

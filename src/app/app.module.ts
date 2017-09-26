@@ -5,12 +5,14 @@ import {RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { CaseCreationComponent } from './case-creation/case-creation.component';
+import { CaseFileComponent } from './case-file/case-file.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserDashboardComponent,
-    CaseCreationComponent
+    CaseCreationComponent,
+    CaseFileComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,11 @@ import { CaseCreationComponent } from './case-creation/case-creation.component';
       {
         path: 'createcase',
         component: CaseCreationComponent
-      }
+      },
+      {
+        path: 'casefile',
+        component: CaseFileComponent
+      },
     ])
   ],
   providers: [],

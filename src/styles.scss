@@ -47,6 +47,10 @@ $headerSearchBackgroundColor: #9491ff;
     src: url('/assets/fonts/WorkSans-Bold.otf') format("opentype");
 }
 @font-face {
+    font-family: 'workSans-semiBold';
+    src: url('/assets/fonts/WorkSans-SemiBold.otf') format("opentype");
+}
+@font-face {
     font-family: 'workSans-regular';
     src: url('/assets/fonts/WorkSans-Regular.otf') format("opentype");
 }
@@ -60,6 +64,7 @@ $headerSearchBackgroundColor: #9491ff;
 }
 $font-workSans-medium : 'workSans-medium';
 $font-workSans-bold : 'workSans-bold';
+$font-workSans-semiBold : 'workSans-semiBold';
 $font-workSans-regular : 'workSans-regular';
 $font-futura-medium : 'futura-medium';
 $font-futura-book : 'futura-book';
@@ -212,7 +217,13 @@ ul{
     }
 }
 
-
+.inlineListUl{
+    width: 100%;
+    float: left;
+    .inlineListLi{
+        float: left;
+    }
+}
 
 /* Scrollbar */
 
