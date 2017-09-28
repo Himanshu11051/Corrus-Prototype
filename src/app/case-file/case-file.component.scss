@@ -5,6 +5,7 @@
     // border-right: 1px solid $grey4;
     .casefileHeader{
         padding: 20px 28px;
+        padding-bottom: 0;
         .casefileHeader1{
             margin-bottom: 12px;
             h5{
@@ -38,7 +39,9 @@
             }
         }
     }
+    // Overview Tab Code Starts
     .overviewTabContainer{
+        margin-top: 20px;
         padding: 0 28px;
         .topBannar{
             height: 230px;
@@ -144,6 +147,7 @@
                 box-shadow: 3px 3px 5px 1px;
                 padding: 10px;
                 .heading{
+                    margin-bottom: 20px;
                     label{
                         font-size: 14px;
                         color: $grey4;
@@ -151,15 +155,298 @@
                 }
                 .taskReport{
                     float: left;
+                    text-align: center;
+                    img{
+                        width: 66%;
+                    }
                 }
                 .taskReportDetails{
                     float: left;
+                    li{
+                        font-family: $font-workSans-regular;
+                        color: $black;
+                        font-size: 14px;
+                        line-height: 24px;
+                        span{
+                            color: $blue;
+                            margin-right: 4px;
+                        }
+                    }
                 }
             }
             .reportsContainer:first-child{
                 margin-right: 40px;
             }
             
+        }
+    }
+    // Overview Tab Code Ends
+    .tasksTabContainer{
+        margin-top: -1px;
+        .taskComposerContainer{
+            background: $grey1;
+            min-height: 400px;
+            .composerControlHeader{
+                font-size: 14px;
+                padding: 30px 28px 30px 18px;
+                font-family: $font-workSans-medium;
+                p{
+                    display: inline-block;
+                    width: 85%;
+                    color: $darkGrey;
+                }
+                span{
+                    color: $grey4;
+                }
+                .composerToggleBtn{
+                    float: right;
+                    cursor: pointer;
+                }
+            }
+            .composerFormContainer{
+                font-family: $font-workSans-medium;
+                font-size: 14px;
+                padding-left: 18px;
+                padding-right: 28px;
+                margin-top: -7px;
+                form{
+                    .form-group{
+                        padding: 0;
+                        .col3layoutInput{
+                            width: 97%;
+                        }
+                    }
+                    .form-group.col-itm-2{
+                        left:5px;
+                    }
+                    .form-group.col-itm-3{
+                        left:10px;
+                    }
+                    label{
+                        font-family: $font-workSans-regular;
+                        font-size: 14px;
+                        color: $grey4;
+                    }
+                    input,select{
+                        padding: 6px;
+                        font-size: 14px;
+                        height: 35px;
+                        color: $darkGrey;
+                    }
+                    textarea{
+                        height: 75px;
+                        padding: 6px;
+                        resize: none;
+                        font-size: 14px;
+                        color: $darkGrey;
+                    }
+                    .form-row{
+                        margin-bottom: 18px;
+                        .input-group-addon{
+                            background: none;
+                            border: none;
+                            position: absolute;
+                            right: 12px;
+                            top: 24px;
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                                path{
+                                    fill: $grey3;
+                                }
+                            }
+                        }
+                    }
+                    .uploadReferenceBtn{
+                        right: 18px;
+                        bottom: 8px;
+                        position: absolute;
+                        width:64px;
+                        @include appButton($blue2,$blue);
+                        font-size: 12px;
+                    }
+                    .tagChip{
+                        margin-top: 2px;
+                        margin-left: -2px;
+                    }
+                }
+            }
+            .addTaskRow{
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 24px;
+                button{
+                    @include appButton($blue,#fff);
+                    width: 110px;
+                    
+                }
+            }
+        }
+        .tasksTableContainer{
+            margin-bottom: 50px;
+            .noTasksState{
+                text-align: center;
+                .illustration{
+                    width: 130px;
+                    height: 130px;
+                    background: $grey1;
+                    display: inline-block;
+                    padding: 5px;
+                    font-size: 14px;
+                    color: $grey4;
+                }
+                p{
+                    text-align: center;
+                    color: $purple;
+                    margin-top: 30px;
+                    font-size: 16px;
+                    font-family: $font-futura-medium;
+                    letter-spacing: 1px;
+                }
+            }
+            .tasksListContainer{
+                margin-top: 35px;
+                margin-bottom: 55px;
+                float: left;
+                padding: 0 10px;
+                .tasksListHeader{
+                    font-family: $font-workSans-medium;
+                    font-size: 14px;
+                    color: $darkGrey;                    
+                    float: left;
+                    ul{
+                        li{
+                            float: left;
+                            label{
+                                font-size: 13px;
+                                color: $grey4;
+                            }
+                        }
+                        li:nth-child(1){
+                            width: 23.17%;
+                        }
+                        li:nth-child(2){
+                            width: 21.24%;
+                        }
+                        li:nth-child(3){
+                            width: 20.28%;
+                        }
+                        li:nth-child(4){
+                            width: 21.72%;
+                        }
+                        li:nth-child(5){
+                            width: 11.59%;
+                        }
+                    }
+                }
+                .tasksListTableHeader{
+                    font-family: $font-workSans-medium;
+                    font-size: 13px;
+                    color: $grey3;
+                    border-top: 1px solid $grey2;
+                    border-bottom: 1px solid $grey2;
+                    float: left;
+                    margin-top: 25px;
+                    padding: 10px 0;
+                    ul{
+                        li{
+                            float: left;
+                        }
+                        li:nth-child(1){
+                            width: 23.63%;
+                        }
+                        li:nth-child(2){
+                            width: 12.8%;
+                        }
+                        li:nth-child(3){
+                            width: 11.82%;
+                        }
+                        li:nth-child(4){
+                            width: 17.2%;
+                        }
+                        li:nth-child(5){
+                            width: 27.07%;
+                        }
+                        li:nth-child(6){
+                            width: 7.4%;
+                            text-align: right;
+                        }
+                    }
+                }
+                .tasksListTableBody{
+                    float: left;
+                    height: 150px;
+                    max-height: 150px;
+                    overflow-y: auto;
+                    .taskListRow{
+                        float: left;
+                        width: 100%;
+                        font-family: $font-futura-medium;
+                        font-size: 13px;
+                        color: $darkGrey;
+                        border-bottom: 1px solid $grey2;
+                        ul{
+                            li{
+                                float: left;
+                                line-height: 45px;
+                                vertical-align: middle;
+                                text-align: left;
+                                .highPriority{
+                                    font-size: 18px;
+                                    vertical-align: sub;
+                                    margin-right: 3px;
+                                    margin-left: 3px;
+                                    color: $red;
+                                }
+                                .normalPriority{
+                                    font-size: 18px;
+                                    vertical-align: sub;
+                                    margin-right: 3px;
+                                    margin-left: 3px;
+                                    color: $lightGreen;
+                                }
+                            }
+                            li.taskNameColumn{
+                                width: 23.63%;
+                            }
+                            li.assignedToColumn{
+                                width: 12.8%;
+                                button{
+                                    width:64px;
+                                    @include appButton($blue2,$blue);
+                                    font-size: 12px;
+                                }
+                            }
+                            li.statusColumn{
+                                width: 11.82%;
+                            }
+                            li.dueDateColumn{
+                                width: 17.2%;
+                                span{
+                                    float: left;
+                                    svg{
+                                        top: 6px;
+                                        position: relative;
+                                    }
+                                }
+                            }
+                            li.associationsColumn{
+                                width: 27.07%
+                            }
+                            li.actionsColumn{
+                                width: 7.4%;
+                                text-align: center;
+                                i{
+                                    color: $blue;
+                                    vertical-align: middle;
+                                    left: 12px;
+                                    position: relative;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

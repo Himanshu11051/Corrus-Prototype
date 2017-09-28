@@ -210,6 +210,46 @@ ul {
   float: left;
 }
 
+.toggleSwitch {
+  border: 1px solid #9fb1bd;
+  width: 35px;
+  height: 20px;
+  float: left;
+  border-radius: 15px;
+  padding: 1px 2px;
+  margin-right: 5px;
+}
+
+.toggleSwitch .switchBall {
+  width: 15px;
+  height: 15px;
+  float: left;
+  border-radius: 50%;
+  background: #9fb1bd;
+  vertical-align: middle;
+}
+
+.calendarIcon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.calendarIcon svg path {
+  fill: #bac8d6;
+}
+
+.associationsTag {
+  font-size: 12px;
+  display: inline-block;
+  color: #ff7155;
+  background: #ffe3dd;
+  border-radius: 5px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 10px;
+  margin-right: 5px;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -241,6 +281,7 @@ ul {
 
 .casefileContainer .casefileHeader {
   padding: 20px 28px;
+  padding-bottom: 0;
 }
 
 .casefileContainer .casefileHeader .casefileHeader1 {
@@ -290,6 +331,7 @@ ul {
 }
 
 .casefileContainer .overviewTabContainer {
+  margin-top: 20px;
   padding: 0 28px;
 }
 
@@ -412,6 +454,10 @@ ul {
   padding: 10px;
 }
 
+.casefileContainer .overviewTabContainer .bottomRow .reportsContainer .heading {
+  margin-bottom: 20px;
+}
+
 .casefileContainer .overviewTabContainer .bottomRow .reportsContainer .heading label {
   font-size: 14px;
   color: #9fb1bd;
@@ -419,14 +465,378 @@ ul {
 
 .casefileContainer .overviewTabContainer .bottomRow .reportsContainer .taskReport {
   float: left;
+  text-align: center;
+}
+
+.casefileContainer .overviewTabContainer .bottomRow .reportsContainer .taskReport img {
+  width: 66%;
 }
 
 .casefileContainer .overviewTabContainer .bottomRow .reportsContainer .taskReportDetails {
   float: left;
 }
 
+.casefileContainer .overviewTabContainer .bottomRow .reportsContainer .taskReportDetails li {
+  font-family: "workSans-regular";
+  color: #000000;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.casefileContainer .overviewTabContainer .bottomRow .reportsContainer .taskReportDetails li span {
+  color: #558bff;
+  margin-right: 4px;
+}
+
 .casefileContainer .overviewTabContainer .bottomRow .reportsContainer:first-child {
   margin-right: 40px;
+}
+
+.casefileContainer .tasksTabContainer {
+  margin-top: -1px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer {
+  background: #ecf3fa;
+  min-height: 400px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerControlHeader {
+  font-size: 14px;
+  padding: 30px 28px 30px 18px;
+  font-family: "workSans-medium";
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerControlHeader p {
+  display: inline-block;
+  width: 85%;
+  color: #6b7a84;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerControlHeader span {
+  color: #9fb1bd;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerControlHeader .composerToggleBtn {
+  float: right;
+  cursor: pointer;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer {
+  font-family: "workSans-medium";
+  font-size: 14px;
+  padding-left: 18px;
+  padding-right: 28px;
+  margin-top: -7px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form .form-group {
+  padding: 0;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form .form-group .col3layoutInput {
+  width: 97%;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form .form-group.col-itm-2 {
+  left: 5px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form .form-group.col-itm-3 {
+  left: 10px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form label {
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #9fb1bd;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form input, .casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form select {
+  padding: 6px;
+  font-size: 14px;
+  height: 35px;
+  color: #6b7a84;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form textarea {
+  height: 75px;
+  padding: 6px;
+  resize: none;
+  font-size: 14px;
+  color: #6b7a84;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form .form-row {
+  margin-bottom: 18px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form .form-row .input-group-addon {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 12px;
+  top: 24px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form .form-row .input-group-addon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form .form-row .input-group-addon svg path {
+  fill: #bac8d6;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form .uploadReferenceBtn {
+  right: 18px;
+  bottom: 8px;
+  position: absolute;
+  width: 64px;
+  background: #d9e5ff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #558bff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .composerFormContainer form .tagChip {
+  margin-top: 2px;
+  margin-left: -2px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .addTaskRow {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.casefileContainer .tasksTabContainer .taskComposerContainer .addTaskRow button {
+  background: #558bff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  width: 110px;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer {
+  margin-bottom: 50px;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .noTasksState {
+  text-align: center;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .noTasksState .illustration {
+  width: 130px;
+  height: 130px;
+  background: #ecf3fa;
+  display: inline-block;
+  padding: 5px;
+  font-size: 14px;
+  color: #9fb1bd;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .noTasksState p {
+  text-align: center;
+  color: #8170ff;
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: "futura-medium";
+  letter-spacing: 1px;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer {
+  margin-top: 35px;
+  margin-bottom: 55px;
+  float: left;
+  padding: 0 10px;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListHeader {
+  font-family: "workSans-medium";
+  font-size: 14px;
+  color: #6b7a84;
+  float: left;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListHeader ul li {
+  float: left;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListHeader ul li label {
+  font-size: 13px;
+  color: #9fb1bd;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListHeader ul li:nth-child(1) {
+  width: 23.17%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListHeader ul li:nth-child(2) {
+  width: 21.24%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListHeader ul li:nth-child(3) {
+  width: 20.28%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListHeader ul li:nth-child(4) {
+  width: 21.72%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListHeader ul li:nth-child(5) {
+  width: 11.59%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableHeader {
+  font-family: "workSans-medium";
+  font-size: 13px;
+  color: #bac8d6;
+  border-top: 1px solid #dce7f2;
+  border-bottom: 1px solid #dce7f2;
+  float: left;
+  margin-top: 25px;
+  padding: 10px 0;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableHeader ul li {
+  float: left;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(1) {
+  width: 23.63%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(2) {
+  width: 12.8%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(3) {
+  width: 11.82%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(4) {
+  width: 17.2%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(5) {
+  width: 27.07%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(6) {
+  width: 7.4%;
+  text-align: right;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody {
+  float: left;
+  height: 150px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow {
+  float: left;
+  width: 100%;
+  font-family: "futura-medium";
+  font-size: 13px;
+  color: #6b7a84;
+  border-bottom: 1px solid #dce7f2;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li {
+  float: left;
+  line-height: 45px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li .highPriority {
+  font-size: 18px;
+  vertical-align: sub;
+  margin-right: 3px;
+  margin-left: 3px;
+  color: #f92a58;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li .normalPriority {
+  font-size: 18px;
+  vertical-align: sub;
+  margin-right: 3px;
+  margin-left: 3px;
+  color: #19ccc7;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.taskNameColumn {
+  width: 23.63%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.assignedToColumn {
+  width: 12.8%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.assignedToColumn button {
+  width: 64px;
+  background: #d9e5ff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #558bff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.statusColumn {
+  width: 11.82%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.dueDateColumn {
+  width: 17.2%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.dueDateColumn span {
+  float: left;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.dueDateColumn span svg {
+  top: 6px;
+  position: relative;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.associationsColumn {
+  width: 27.07%;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.actionsColumn {
+  width: 7.4%;
+  text-align: center;
+}
+
+.casefileContainer .tasksTabContainer .tasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.actionsColumn i {
+  color: #558bff;
+  vertical-align: middle;
+  left: 12px;
+  position: relative;
 }
 
 .appSidebar {

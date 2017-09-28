@@ -210,6 +210,46 @@ ul {
   float: left;
 }
 
+.toggleSwitch {
+  border: 1px solid #9fb1bd;
+  width: 35px;
+  height: 20px;
+  float: left;
+  border-radius: 15px;
+  padding: 1px 2px;
+  margin-right: 5px;
+}
+
+.toggleSwitch .switchBall {
+  width: 15px;
+  height: 15px;
+  float: left;
+  border-radius: 50%;
+  background: #9fb1bd;
+  vertical-align: middle;
+}
+
+.calendarIcon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.calendarIcon svg path {
+  fill: #bac8d6;
+}
+
+.associationsTag {
+  font-size: 12px;
+  display: inline-block;
+  color: #ff7155;
+  background: #ffe3dd;
+  border-radius: 5px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 10px;
+  margin-right: 5px;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

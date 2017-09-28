@@ -6,14 +6,14 @@
     </div>
     <div class = "col-sm-12 col-md-12 col-lg-12 casefileHeader2">
       <ul>
-        <li class = "active"> Overview</li>
-        <li> Tasks</li>
-        <li> Case Details</li>
+        <li [ngClass]="{'active': currentTab == 'OVERVIEW'}" (click)="switchTab('OVERVIEW')"> Overview</li>
+        <li [ngClass]="{'active': currentTab == 'TASKS'}" (click)="switchTab('TASKS')"> Tasks</li>
+        <li [ngClass]="{'active': currentTab == 'CASEDETAILS'}" (click)="switchTab('CASEDETAILS')"> Case Details</li>
       </ul>
     </div>
   </div>
   <div class="row tabsContainer">
-    <div class = "col-sm-12 col-md-12 col-lg-12 overviewTabContainer">
+    <div class = "col-sm-12 col-md-12 col-lg-12 overviewTabContainer" *ngIf="currentTab=='OVERVIEW'">
       <div class="col-sm-12 col-md-12 col-lg-12 topBannar">
         <div>
             <p>This is your Case Dashboard. Central command for all case activities and information.
@@ -86,11 +86,16 @@
             <label>Case Tasks</label>
           </div>
           <div class = "col-sm-7 col-md-7 col-lg-7 taskReport">
-              ok
+            <img src = "/assets/img/chart.png">
           </div>
            <div class = "col-sm-5 col-md-5 col-lg-5 taskReportDetails">
               <ul>
-                 <li> 00 Task Assigned</li>
+                 <li> <span>00</span>Task Assigned</li>
+                 <li> <span>00</span>Unassigned Task</li>
+                 <li> <span>00</span>In Progress Tasks</li>
+                 <li> <span>00</span>Drafts</li>
+                 <li> <span>00</span>Overdue</li>
+                 <li> <span>00</span>Completed</li>
               </ul>
           </div>
         </div>
@@ -101,9 +106,252 @@
         </div>
       </div>
     </div>
+    <div class = "col-sm-12 col-md-12 col-lg-12 tasksTabContainer" *ngIf="currentTab=='TASKS'">
+      <div class = "col-sm-12 col-md-12 col-lg-12 taskComposerContainer">
+        <div class = "col-sm-12 col-md-12 col-lg-12 composerControlHeader">
+          <p>Create your first task with the Task Composer below:  </p>
+          <span>Hide Composer</span>
+          <span class = "composerToggleBtn"><i class="material-icons">indeterminate_check_box</i></span>
+        </div>
+        <div class = "col-sm-12 col-md-12 col-lg-12 composerFormContainer">
+          <form>
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                  <label class="col-form-label">Task Name</label>
+                  <input type="text" class="form-control">
+                </div>                
+              </div>
+              <div class="form-row">
+                <div class="form-group col-lg-4 col-itm-1">
+                  <label class="col-form-label">Assigned To</label>
+                  <!-- <input type="text" class="form-control col3layoutInput"> -->
+                  <select class="form-control col3layoutInput">
+                    <option>None</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+                <div class="form-group col-lg-4 col-itm-2">
+                  <label class="col-form-label">Task Type</label>
+                  <!-- <input type="text" class="form-control col3layoutInput"> -->
+                  <select class="form-control col3layoutInput">
+                    <option>Normal</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+                <div class="form-group col-lg-4 col-itm-3" >
+                  <label class="col-form-label">Due On</label>
+                  <input type="text" class="form-control col3layoutInput">
+                  <span class="input-group-addon" id="basic-addon2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                </span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-lg-4 col-itm-1">
+                  <label class="col-form-label">Task Description</label>
+                  <textarea class="form-control col3layoutInput" rows="3"></textarea>
+                </div>
+                <div class="form-group col-lg-4 col-itm-2">
+                  <label class="col-form-label">Task Tags - Press Enter to Add</label>
+                  <textarea class="form-control col3layoutInput" rows="3"></textarea>
+                  <span class = "tagChip">Example Tag
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>x_delete_icon@1x</title><g id="art"><path d="M19.8656,14.99916l8.12642-8.126A3.4402,3.4402,0,0,0,23.12684,2.008L15,10.134,6.87316,2.008A3.4402,3.4402,0,0,0,2.008,6.87316l8.12642,8.126L2.008,23.12684A3.4402,3.4402,0,1,0,6.87316,27.992L15,19.866l8.12684,8.126A3.4402,3.4402,0,0,0,27.992,23.12684Z"/></g></svg>
+                  </span>
+                </div>
+                <div class="form-group col-lg-4 col-itm-3">
+                  <label class="col-form-label">Task References</label>
+                  <textarea class="form-control col3layoutInput" rows="3"></textarea>
+                  <button class = "uploadReferenceBtn">Upload</button>
+                </div>
+              </div>
+            </form>
+      </div>
+      <div class = "col-sm-12 col-md-12 col-lg-12 addTaskRow">
+        <button> Add Task</button>
+      </div>
+
+      </div>
+      <div class = "col-sm-12 col-md-12 col-lg-12 tasksTableContainer">
+        <div class = "col-sm-12 col-md-12 col-lg-12 noTasksState">
+          <div class = "illustration">
+            (fun illustration)
+          </div>
+          <p>You haven't created any tasks yet. <br> Use the composer above to<br> creat a new task!</p>
+        </div>
+        <div class = "col-sm-12 col-md-12 col-lg-12 tasksListContainer">
+          <div class = "col-sm-12 col-md-12 col-lg-12 tasksListHeader">
+            <ul>
+              <li>
+                Task List
+              </li>
+              <li>
+                  <label>Show </label> All Members
+              </li>
+              <li> 
+                 <label>Filter By </label> All Tasks
+              </li>
+              <li>Recently Modified</li>
+              <li>
+                <span class = "toggleSwitch">
+                  <span class = "switchBall"></span>
+                </span>
+                <label>My Tasks</label>
+              </li>
+            </ul>
+          </div>
+          <div class = "col-sm-12 col-md-12 col-lg-12 tasksListTableHeader">
+            <ul>
+              <li>Task Name</li>
+              <li>Assigned To</li>
+              <li>Status</li>
+              <li>Due Date</li>
+              <li>Associations</li>
+              <li>Actions</li>
+            </ul>
+          </div>
+          <div class = "col-sm-12 col-md-12 col-lg-12 tasksListTableBody">
+            <div class = "taskListRow">
+              <ul>
+                <li class = "taskNameColumn">
+                  <ul>
+                      <li><span>1</span></li>
+                      <li><i class="material-icons highPriority">star_border</i></li>
+                      <li><p>Land Survey Doc</p></li>
+                  </ul>
+                </li>
+                <li class = "assignedToColumn">
+                    <span class = "userDefaultAvatar">Hk</span>
+                </li>
+                <li class = "statusColumn">
+                  <span>Ready</span>
+                </li>
+                <li class = "dueDateColumn">
+                    <span class="calendarIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                    </span>
+                  <span>September 15, 2017</span>
+                </li>
+                <li class = "associationsColumn">
+                  <span class = "associationsTag">3 Subtasks</span>
+                  <span class = "associationsTag">8 Tags</span>
+                </li>
+                <li class = "actionsColumn">
+                    <i class="material-icons">settings</i>
+                </li>
+              </ul>
+            </div>
+
+            <div class = "taskListRow">
+                <ul>
+                  <li class = "taskNameColumn">
+                    <ul>
+                        <li><span>2</span></li>
+                        <li><i class="material-icons normalPriority">panorama_fish_eye</i></li>
+                        <li><p>Preliminary Concept Dev</p></li>
+                    </ul>
+                  </li>
+                  <li class = "assignedToColumn">
+                      <span class = "userDefaultAvatar">Ng</span>
+                  </li>
+                  <li class = "statusColumn">
+                    <span>Ready</span>
+                  </li>
+                  <li class = "dueDateColumn">
+                      <span class="calendarIcon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                      </span>
+                    <span>September 22, 2017</span>
+                  </li>
+                  <li class = "associationsColumn">
+                    <span class = "associationsTag">1 Subtasks</span>
+                  </li>
+                  <li class = "actionsColumn">
+                      <i class="material-icons">settings</i>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class = "taskListRow">
+                  <ul>
+                    <li class = "taskNameColumn">
+                      <ul>
+                          <li><span>3</span></li>
+                          <li><i class="material-icons normalPriority">panorama_fish_eye</i></li>
+                          <li><p>Contractor Outreach</p></li>
+                      </ul>
+                    </li>
+                    <li class = "assignedToColumn">
+                        <button class = "assignUserBtn">Assign</button>
+                    </li>
+                    <li class = "statusColumn">
+                      <span>Unassigned</span>
+                    </li>
+                    <li class = "dueDateColumn">
+                        <span class="calendarIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                        </span>
+                      <span>October 20, 2017</span>
+                    </li>
+                    <li class = "associationsColumn">
+                      <span class = "associationsTag">2 Subtasks</span>
+                      <span class = "associationsTag">6 Tags</span>
+                      <span class = "associationsTag">1 Dependency</span>
+                    </li>
+                    <li class = "actionsColumn">
+                        <i class="material-icons">settings</i>
+                    </li>
+                  </ul>
+                </div> 
+
+
+                <div class = "taskListRow">
+                    <ul>
+                      <li class = "taskNameColumn">
+                        <ul>
+                            <li><span>4</span></li>
+                            <li><i class="material-icons highPriority">star_border</i></li>
+                            <li><p>Land Survey Doc</p></li>
+                        </ul>
+                      </li>
+                      <li class = "assignedToColumn">
+                          <span class = "userDefaultAvatar">Hk</span>
+                      </li>
+                      <li class = "statusColumn">
+                        <span>Ready</span>
+                      </li>
+                      <li class = "dueDateColumn">
+                          <span class="calendarIcon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                          </span>
+                        <span>September 15, 2017</span>
+                      </li>
+                      <li class = "associationsColumn">
+                        <span class = "associationsTag">3 Subtasks</span>
+                        <span class = "associationsTag">8 Tags</span>
+                        <span class = "associationsTag">1 Dependency</span>
+                      </li>
+                      <li class = "actionsColumn">
+                          <i class="material-icons">settings</i>
+                      </li>
+                    </ul>
+                  </div> 
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class = "col-sm-12 col-md-12 col-lg-12 caseDetailsTabContainer" *ngIf="currentTab=='CASEDETAILS'">
+      Case Details Coming Soon
+    </div>
   </div>
 </section>
     
 <aside class = "appSidebar">
-      Sidebar
+      Sidebar Coming Soon
 </aside>

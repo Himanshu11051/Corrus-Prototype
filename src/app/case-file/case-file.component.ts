@@ -11,5 +11,8 @@ export class CaseFileComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  currentTab = 'OVERVIEW';
+  switchTab(currentTab){
+    this.currentTab = currentTab;
+  }
 }
