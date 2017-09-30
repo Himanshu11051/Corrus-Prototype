@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { CaseCreationComponent } from './case-creation/case-creation.component';
 import { CaseFileComponent } from './case-file/case-file.component';
+import { ActivityStreamComponent } from './activity-stream/activity-stream.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserDashboardComponent,
     CaseCreationComponent,
-    CaseFileComponent
+    CaseFileComponent,
+    ActivityStreamComponent
   ],
   imports: [
     BrowserModule,

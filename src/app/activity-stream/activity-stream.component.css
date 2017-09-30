@@ -334,4 +334,162 @@ ul {
   font-size: 14px;
   color: #bac8d6; }
 
-/*# sourceMappingURL=styles.css.map */
+/* line 3, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+.activityStreamContainer .tabHeader {
+  height: 48px;
+  position: fixed;
+  right: 0;
+  width: 355px; }
+  /* line 9, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .tabHeader ul li {
+    float: left;
+    text-align: center;
+    background: #ecf3fa;
+    height: 48px;
+    color: #9fb1bd;
+    line-height: 48px;
+    font-size: 14px;
+    font-family: "workSans-regular";
+    cursor: pointer; }
+    /* line 19, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    .activityStreamContainer .tabHeader ul li span {
+      display: inline-block; }
+    /* line 22, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    .activityStreamContainer .tabHeader ul li svg {
+      fill: #9fb1bd;
+      height: 14px;
+      width: 14px;
+      vertical-align: sub; }
+    /* line 28, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    .activityStreamContainer .tabHeader ul li .expand {
+      border: none;
+      outline: none;
+      text-align: center;
+      cursor: pointer;
+      background: #9fb1bd;
+      height: 15px;
+      width: 15px;
+      line-height: 15px;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      /* line 40, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+      .activityStreamContainer .tabHeader ul li .expand i {
+        font-size: 11px;
+        color: #fff; }
+  /* line 46, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .tabHeader ul li.active {
+    color: #558bff;
+    background: #fff; }
+  /* line 50, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .tabHeader ul li:first-child {
+    width: 165px; }
+  /* line 53, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .tabHeader ul li:last-child {
+    width: 190px; }
+
+/* line 58, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+.activityStreamContainer .activityStreamFooter {
+  background: #d9e5ff;
+  height: 108px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 355px;
+  padding: 15px; }
+  /* line 67, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .activityStreamFooter .postCommentInput input {
+    height: 35px;
+    padding: 6px;
+    font-family: "workSans-regular";
+    font-size: 14px; }
+  /* line 73, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .activityStreamFooter .postCommentInput input:hover {
+    z-index: 0; }
+  /* line 76, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .activityStreamFooter .postCommentInput input:active {
+    border-right: none; }
+  /* line 79, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .activityStreamFooter .postCommentInput input:focus {
+    border-color: rgba(0, 0, 0, 0.15); }
+  /* line 82, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .activityStreamFooter .postCommentInput button {
+    height: 35px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    outline: none;
+    border-left: none;
+    padding-right: 6px;
+    line-height: 38px;
+    cursor: pointer; }
+    /* line 91, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    .activityStreamContainer .activityStreamFooter .postCommentInput button svg {
+      height: 15px;
+      width: 15px;
+      fill: #558bff;
+      transform: rotate(45deg);
+      cursor: pointer; }
+  /* line 99, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .activityStreamFooter .postCommentInput button:focus, .activityStreamContainer .activityStreamFooter .postCommentInput button:active, .activityStreamContainer .activityStreamFooter .postCommentInput button:hover {
+    box-shadow: none;
+    outline: none; }
+  /* line 104, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .activityStreamFooter .postCommentDropdown {
+    height: 25px;
+    margin-top: 13px;
+    width: 254px;
+    font-size: 12px;
+    font-family: "workSans-regular";
+    display: inline-block; }
+  /* line 112, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .activityStreamFooter .postBtn {
+    background: #558bff;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: "workSans-regular";
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    display: inline-block;
+    width: 65px; }
+
+/* line 118, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+.activityStreamContainer .activityStreamBody {
+  padding: 22px;
+  position: relative;
+  top: 48px; }
+  /* line 122, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  .activityStreamContainer .activityStreamBody .feedBlock {
+    border-bottom: 1px solid #bac8d6;
+    float: left;
+    padding-bottom: 15px; }
+    /* line 127, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    .activityStreamContainer .activityStreamBody .feedBlock ul li {
+      float: left; }
+    /* line 130, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    .activityStreamContainer .activityStreamBody .feedBlock ul .leftPart {
+      margin-right: 5px; }
+    /* line 133, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart {
+      margin-top: 5px; }
+      /* line 135, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+      .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .userName {
+        font-size: 12px;
+        font-family: "workSans-medium";
+        color: #9fb1bd; }
+      /* line 140, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+      .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .timeStampRow {
+        font-family: "workSans-semiBold";
+        font-size: 14px; }
+      /* line 144, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+      .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .caseNameRow {
+        color: #558bff;
+        font-family: "workSans-regular";
+        font-size: 14px;
+        line-height: 14px; }
+
+/*# sourceMappingURL=activity-stream.component.css.map */
