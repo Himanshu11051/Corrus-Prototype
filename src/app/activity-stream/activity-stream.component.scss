@@ -1,9 +1,19 @@
 @import '../../styles.scss';
 .activityStreamContainer{
+    .taskStreamHeader{
+        height: 48px;
+        position: fixed;
+        width: 342px;
+        background: #ecf3fa;
+        color: $darkGrey;
+        line-height: 48px;
+        padding-left: 12px;
+        left: 12px;
+    }
     .tabHeader{
         height: 48px;
         position: fixed;
-        right: 0;
+//        right: 0;
         width: 355px;
         ul{
             li{
@@ -59,7 +69,7 @@
         background: $activityStreamFooterBgColor;
         height: 108px;
         position: fixed;
-        right: 0;
+//        right: 0;
         bottom: 0;
         width: 355px;
         padding: 15px;
@@ -120,7 +130,7 @@
         position: relative;
         top: 48px;
         .feedBlock{
-            border-bottom: 1px solid $grey3;
+            border-bottom: 1px solid $grey2;
             float: left;
             padding-bottom: 15px;
             ul{

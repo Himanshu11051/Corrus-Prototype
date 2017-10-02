@@ -1,0 +1,170 @@
+<script>
+
+alert(1);
+$('.taskSlider').bxSlider(); 
+
+</script>
+<section class = "taskWindow">
+    <div class="row taskWindowHeader">
+        <div class="col-sm-12 col-md-12 col-lg-12 taskWindowHeader1">
+            <i class = "material-icons normalPriority priorityIcon">panorama_fish_eye</i>
+            <h5>Contractor Outreach</h5>
+            <span class = "followingTag">Following</span>
+            <button class = "markCompleteBtn themeButton">
+                Mark Completed
+            </button>
+            <button class = "taskActionsBtn"> Task Actions
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>single_carrot_icon@1x</title><g id="art"><path d="M15,24a1.99388,1.99388,0,0,1-1.41431-.58578l-12-12A2.00007,2.00007,0,0,1,4.41431,8.58578L15,19.17157,25.58569,8.58578a2.00007,2.00007,0,0,1,2.82861,2.82843l-12,12A1.99388,1.99388,0,0,1,15,24Z"/></g></svg>
+            </button>
+        </div>
+        <div class = "col-sm-12 col-md-12 col-lg-12 taskWindowHeader2">
+            <ul>
+                <li [ngClass]="{'active': currentTab == 'TASKDETAILS'}" (click)="switchTab('TASKDETAILS')"> Task Details</li>
+                <li [ngClass]="{'active': currentTab == 'SUBTASKS'}" (click)="switchTab('SUBTASKS')"> SubTasks</li>
+            </ul>
+        </div>
+    </div>
+    <div class = "taskContainer">
+        <div class="row tabsContainer">
+            <div class = "col-sm-12 col-md-12 col-lg-12 overviewTabContainer" *ngIf="currentTab=='TASKDETAILS'">
+                <div class="col-sm-12 col-md-12 col-lg-12 topBannar">
+                    <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-3 box box1">
+                        <ul class = "inlineListUl">
+                            <li class = "inlineListLi">
+                                <span class = "circularElement statusCircle"></span>
+                            </li>
+                            <li class = "inlineListLi">
+                                <ul>
+                                    <li><label>Status</label></li>
+                                    <li>Task is Ready</li>
+                                </ul>
+                            </li>            
+                        </ul>
+                    </div>
+                    <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-3 box box2">
+                        <ul class = "inlineListUl">
+                            <li class = "inlineListLi">
+                                <span class = "circularElement dueDateCircle">10</span>
+                            </li>
+                            <li class = "inlineListLi">
+
+                                <ul>
+                                    <li><label>Task Due Date</label></li>
+                                    <li>September 10,2017</li>
+                                </ul>                
+                            </li>            
+                        </ul>
+                    </div>
+                    <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-3 box box3">
+                        <ul class = "inlineListUl">
+                            <li class = "inlineListLi">
+                                <span class = "circularElement taskAssigneeCircle">
+                                    <img src = "/assets/img/captain.png" draggable="false">
+                                </span>
+                            </li>
+                            <li class = "inlineListLi">
+
+                                <ul>
+                                    <li><label>Assigned To</label></li>
+                                    <li>Himanshu Kumar</li>
+                                </ul>      
+                            </li>            
+                        </ul>
+                    </div>
+                    <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-3 box box4">
+                        <ul class = "inlineListUl">
+                            <li class = "inlineListLi">
+                                <span class = "circularElement dependenciesCircle"></span>
+                            </li>
+                            <li class = "inlineListLi">
+                                <ul>
+                                    <li><label>Dependencies</label></li>
+                                    <li>None</li>
+                                </ul>     
+                            </li>            
+                        </ul>
+                    </div>
+                </div>
+                <div class = "col-sm-12 col-md-12 col-lg-12 taskDetailsContainer">
+                    <div class = "col-sm-12 col-md-12 col-lg-12 taskDetailsHeader">
+                        <h6>Task Details</h6>
+                        <button class = "saveBtn">Save</button>
+                        <button class = "cancelBtn">Cancel</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 taskCarouselContainer">
+                    <ul class="taskSlider">
+                        <li>
+                            <div class = "col-sm-12 col-md-12 col-lg-12 sliderArea descriptionSlider">
+                                <div class="header">
+                                    Description / Instruction
+                                </div>
+                                <div class = "body">Lorem ipsum dolor sit amet, verear copiosae vim et. Vix nobis comprehensam at, sea autem aliquam incorrupte ne. Eos ad probo brute, prima congue diceret et mea. Quo nibh ullum libris te. </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class = "col-sm-12 col-md-12 col-lg-12 sliderArea referencesSlider">
+                                <div class="header">
+                                    References
+                                </div>
+                                <div class = "body">
+                                    <ul class = "referenceList">
+                                        <li><a href = ""> Task Reference 01</a></li>   
+                                        <li><a href = ""> Task Reference 02</a></li>    
+                                        <li><a href = ""> Task Reference 03</a></li>    
+                                        <li><a href = ""> Task Reference 04</a></li>    
+                                        <li><a href = ""> Task Reference 05</a></li>    
+                                        <li><a href = ""> Task Reference 06</a></li>    
+                                    </ul>
+                                    <button class = "downloadAllReferencesBtn">Download All</button>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class = "col-sm-12 col-md-12 col-lg-12 sliderArea dependenciesSlider">
+                                <div class="header">
+                                    Dependencies
+                                </div>
+                                <div class = "body">
+                                    The task can start when <span class = "dependencyTag">Contractor Survey</span> is complete
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class = "col-sm-12 col-md-12 col-lg-12 sliderArea meetingDetailsSlider">
+                                <div class="header">
+                                    Meeting Details
+                                </div>
+                                <div class = "body">
+                                    <div class = "meetingParticipants">
+                                        <ul class = "participantsList">
+                                            <li><span class = "userDefaultAvatar">
+                                                <img src = "/assets/img/captain.png">
+                                                </span></li>
+                                            <li><span class = "userDefaultAvatar userAvatarColor1">Ng</span></li>
+                                            <li><span class = "userDefaultAvatar userAvatarColor4">Sb</span></li>
+                                            <li><span class = "userDefaultAvatar userAvatarColor2">Pb</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class = "meetingInfo">
+                                        <span class="location">Main Conference Room</span>
+                                        <span class="dateTime">September 23, 2017 - 7:30pm to 8:30pm</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside class = "appSidebar">
+        <app-activity-stream></app-activity-stream>
+    </aside>
+
+</section>
+

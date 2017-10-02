@@ -39,6 +39,16 @@ $activityStreamFooterBgColor : #d9e5ff;
     line-height: 25px;
     cursor:pointer;
 }
+@mixin customTag($background,$color){
+    font-size: 12px;
+    display: inline-block;
+    color: $color;
+    background: $background;
+    border-radius: 5px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 10px;
+}
 @font-face {
     font-family: 'workSans-medium';
     src: url('/assets/fonts/WorkSans-Medium.otf') format("opentype");
@@ -101,6 +111,18 @@ ul{
     color: #19ccc7;
     @include circularElement(30px);
     cursor: pointer;
+}
+.userAvatarColor1{
+    color: $orange;
+    background: rgba(255, 113, 85, 0.3);
+}
+.userAvatarColor2{
+    color: $yellow;
+    background: rgba(255, 199, 86, 0.3);
+}
+.userAvatarColor3{
+    color: $red;
+    background:rgba(249, 42, 88, 0.3);
 }
 .nextNavigationControl{
     text-align: center;
@@ -291,6 +313,30 @@ ul{
 .cancelBtn{
     @include appButton(#fff,$blue);
     width: 64px;
+}
+.bx-wrapper{
+    background: #eef4fa !important;
+    border: 5px solid #eef4fa !important;
+    height: 109px;
+    .bx-viewport{
+        height: 109px;
+    }
+    .bx-pager.bx-default-pager a{
+        background: $grey2;
+        height: 9px;
+        width: 9px;
+    }
+    .bx-pager.bx-default-pager a.active{
+        background: $blue;
+    }
+    .bx-prev {
+        left: 10px;
+        background: url(/assets/img/previous.svg) left center no-repeat !important;
+    }
+    .bx-next {
+        right: 10px;
+        background: url(/assets/img/next.svg) right center no-repeat !important;
+    }
 }
 /* Scrollbar */
 

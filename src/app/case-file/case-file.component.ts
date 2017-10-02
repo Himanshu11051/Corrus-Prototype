@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-case-file',
@@ -7,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CaseFileComponent implements OnInit {
 
-  constructor() { }
+constructor(private router: Router) { }
 
   ngOnInit() {
   }
+  /*
   currentTab = 'OVERVIEW';
   switchTab(currentTab){
     this.currentTab = currentTab;
@@ -30,4 +32,8 @@ export class CaseFileComponent implements OnInit {
       this.composerToggleBtnIcon = 'add';
     }
   };
+  openTask(){
+  this.router.navigateByUrl('/casefile/task');
+  }
+  */
 }

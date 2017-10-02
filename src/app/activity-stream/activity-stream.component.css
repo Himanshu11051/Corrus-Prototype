@@ -24,7 +24,7 @@
   font-family: 'futura-book';
   src: url("/assets/fonts/Futura-Book-Regular.otf") format("opentype"); }
 
-/* line 72, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 82, B:/Co/Corrus-Prototype/src/styles.scss */
 .themeButton {
   background: #8170ff;
   border: none;
@@ -37,21 +37,21 @@
   line-height: 25px;
   cursor: pointer; }
 
-/* line 85, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 95, B:/Co/Corrus-Prototype/src/styles.scss */
 * {
   padding: 0;
   margin: 0; }
 
-/* line 90, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 100, B:/Co/Corrus-Prototype/src/styles.scss */
 body {
   font-family: workSans-medium !important;
   overflow-y: hidden; }
 
-/* line 94, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 104, B:/Co/Corrus-Prototype/src/styles.scss */
 ul {
   list-style: none; }
 
-/* line 97, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 107, B:/Co/Corrus-Prototype/src/styles.scss */
 .userDefaultAvatar {
   display: inline-block;
   font-size: 13px;
@@ -64,16 +64,31 @@ ul {
   line-height: 30px;
   cursor: pointer; }
 
-/* line 105, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 115, B:/Co/Corrus-Prototype/src/styles.scss */
+.userAvatarColor1 {
+  color: #ff7155;
+  background: rgba(255, 113, 85, 0.3); }
+
+/* line 119, B:/Co/Corrus-Prototype/src/styles.scss */
+.userAvatarColor2 {
+  color: #ffc756;
+  background: rgba(255, 199, 86, 0.3); }
+
+/* line 123, B:/Co/Corrus-Prototype/src/styles.scss */
+.userAvatarColor3 {
+  color: #f92a58;
+  background: rgba(249, 42, 88, 0.3); }
+
+/* line 127, B:/Co/Corrus-Prototype/src/styles.scss */
 .nextNavigationControl {
   text-align: center; }
-  /* line 107, B:/Co/Corrus-Prototype/src/styles.scss */
+  /* line 129, B:/Co/Corrus-Prototype/src/styles.scss */
   .nextNavigationControl ul {
     cursor: pointer; }
-    /* line 109, B:/Co/Corrus-Prototype/src/styles.scss */
+    /* line 131, B:/Co/Corrus-Prototype/src/styles.scss */
     .nextNavigationControl ul li {
       display: inline-block; }
-      /* line 111, B:/Co/Corrus-Prototype/src/styles.scss */
+      /* line 133, B:/Co/Corrus-Prototype/src/styles.scss */
       .nextNavigationControl ul li span {
         text-align: center;
         border-radius: 50%;
@@ -91,20 +106,20 @@ ul {
         top: -2px;
         position: relative;
         vertical-align: middle; }
-        /* line 124, B:/Co/Corrus-Prototype/src/styles.scss */
+        /* line 146, B:/Co/Corrus-Prototype/src/styles.scss */
         .nextNavigationControl ul li span i {
           font-size: 16px; }
-    /* line 129, B:/Co/Corrus-Prototype/src/styles.scss */
+    /* line 151, B:/Co/Corrus-Prototype/src/styles.scss */
     .nextNavigationControl ul li:last-child {
       color: #558bff; }
 
-/* line 134, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 156, B:/Co/Corrus-Prototype/src/styles.scss */
 .helpIcon {
   height: 14px;
   width: 14px;
   position: relative; }
 
-/* line 139, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 161, B:/Co/Corrus-Prototype/src/styles.scss */
 #helpIcon {
   position: relative;
   height: 14px;
@@ -112,11 +127,11 @@ ul {
   bottom: 3px;
   cursor: pointer; }
 
-/* line 147, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 169, B:/Co/Corrus-Prototype/src/styles.scss */
 #helpIcon:hover .hoverHelpBox {
   display: block; }
 
-/* line 151, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 173, B:/Co/Corrus-Prototype/src/styles.scss */
 .hoverHelpBox {
   position: absolute;
   width: 250px;
@@ -133,7 +148,7 @@ ul {
   border: 1px solid #ff7155;
   box-shadow: 3px 3px 8px #e0e0e0;
   display: none; }
-  /* line 167, B:/Co/Corrus-Prototype/src/styles.scss */
+  /* line 189, B:/Co/Corrus-Prototype/src/styles.scss */
   .hoverHelpBox .carret {
     position: absolute;
     bottom: -18px;
@@ -141,7 +156,7 @@ ul {
     font-size: 30px;
     color: #ff7155; }
 
-/* line 175, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 197, B:/Co/Corrus-Prototype/src/styles.scss */
 .tagChip {
   position: absolute;
   top: 26px;
@@ -155,7 +170,7 @@ ul {
   padding: 0px 6px;
   left: 10px;
   font-family: "workSans-regular"; }
-  /* line 188, B:/Co/Corrus-Prototype/src/styles.scss */
+  /* line 210, B:/Co/Corrus-Prototype/src/styles.scss */
   .tagChip svg {
     fill: #fff;
     height: 10px;
@@ -164,7 +179,7 @@ ul {
     text-align: left;
     cursor: pointer; }
 
-/* line 198, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 220, B:/Co/Corrus-Prototype/src/styles.scss */
 .tagChip2 {
   display: inline-block;
   background: #23a9db;
@@ -178,7 +193,7 @@ ul {
   font-family: "workSans-regular";
   margin-top: 4px;
   margin-right: 8px; }
-  /* line 211, B:/Co/Corrus-Prototype/src/styles.scss */
+  /* line 233, B:/Co/Corrus-Prototype/src/styles.scss */
   .tagChip2 svg {
     fill: #fff;
     height: 10px;
@@ -187,7 +202,7 @@ ul {
     text-align: left;
     cursor: pointer; }
 
-/* line 220, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 242, B:/Co/Corrus-Prototype/src/styles.scss */
 .caseMembersChips {
   display: inline-block;
   background: #8170ff;
@@ -201,7 +216,7 @@ ul {
   font-family: "workSans-regular";
   margin-top: 4px;
   margin-right: 8px; }
-  /* line 233, B:/Co/Corrus-Prototype/src/styles.scss */
+  /* line 255, B:/Co/Corrus-Prototype/src/styles.scss */
   .caseMembersChips svg {
     fill: #fff;
     height: 10px;
@@ -210,15 +225,15 @@ ul {
     text-align: left;
     cursor: pointer; }
 
-/* line 242, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 264, B:/Co/Corrus-Prototype/src/styles.scss */
 .inlineListUl {
   width: 100%;
   float: left; }
-  /* line 245, B:/Co/Corrus-Prototype/src/styles.scss */
+  /* line 267, B:/Co/Corrus-Prototype/src/styles.scss */
   .inlineListUl .inlineListLi {
     float: left; }
 
-/* line 250, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 272, B:/Co/Corrus-Prototype/src/styles.scss */
 .toggleSwitch {
   border: 1px solid #9fb1bd;
   width: 35px;
@@ -227,7 +242,7 @@ ul {
   border-radius: 15px;
   padding: 1px 2px;
   margin-right: 5px; }
-  /* line 258, B:/Co/Corrus-Prototype/src/styles.scss */
+  /* line 280, B:/Co/Corrus-Prototype/src/styles.scss */
   .toggleSwitch .switchBall {
     width: 15px;
     height: 15px;
@@ -236,15 +251,15 @@ ul {
     background: #9fb1bd;
     vertical-align: middle; }
 
-/* line 268, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 290, B:/Co/Corrus-Prototype/src/styles.scss */
 .calendarIcon svg {
   width: 30px;
   height: 30px; }
-  /* line 271, B:/Co/Corrus-Prototype/src/styles.scss */
+  /* line 293, B:/Co/Corrus-Prototype/src/styles.scss */
   .calendarIcon svg path {
     fill: #bac8d6; }
 
-/* line 276, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 298, B:/Co/Corrus-Prototype/src/styles.scss */
 .associationsTag {
   font-size: 12px;
   display: inline-block;
@@ -256,7 +271,7 @@ ul {
   padding: 0 10px;
   margin-right: 5px; }
 
-/* line 287, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 309, B:/Co/Corrus-Prototype/src/styles.scss */
 .saveBtn {
   background: #558bff;
   border: none;
@@ -271,7 +286,7 @@ ul {
   cursor: pointer;
   width: 64px; }
 
-/* line 291, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 313, B:/Co/Corrus-Prototype/src/styles.scss */
 .cancelBtn {
   background: #fff;
   border: none;
@@ -286,61 +301,96 @@ ul {
   cursor: pointer;
   width: 64px; }
 
+/* line 317, B:/Co/Corrus-Prototype/src/styles.scss */
+.bx-wrapper {
+  background: #eef4fa !important;
+  border: 5px solid #eef4fa !important;
+  height: 109px; }
+  /* line 321, B:/Co/Corrus-Prototype/src/styles.scss */
+  .bx-wrapper .bx-viewport {
+    height: 109px; }
+  /* line 324, B:/Co/Corrus-Prototype/src/styles.scss */
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    background: #dce7f2;
+    height: 9px;
+    width: 9px; }
+  /* line 329, B:/Co/Corrus-Prototype/src/styles.scss */
+  .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #558bff; }
+  /* line 332, B:/Co/Corrus-Prototype/src/styles.scss */
+  .bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(/assets/img/previous.svg) left center no-repeat !important; }
+  /* line 336, B:/Co/Corrus-Prototype/src/styles.scss */
+  .bx-wrapper .bx-next {
+    right: 10px;
+    background: url(/assets/img/next.svg) right center no-repeat !important; }
+
 /* Scrollbar */
-/* line 297, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 343, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar {
   width: 8px; }
 
 /* Track */
-/* line 302, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 348, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 10px;
   border-radius: 10px; }
 
 /* Handle */
-/* line 309, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 355, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #bac8d6;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 
-/* line 316, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 362, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar-thumb:window-inactive {
   background: transparent; }
 
-/* line 319, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 365, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-size: 14px;
   color: #bac8d6; }
 
-/* line 323, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 369, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-size: 14px;
   color: #bac8d6; }
 
-/* line 327, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 373, B:/Co/Corrus-Prototype/src/styles.scss */
 :-ms-input-placeholder {
   /* IE 10+ */
   font-size: 14px;
   color: #bac8d6; }
 
-/* line 331, B:/Co/Corrus-Prototype/src/styles.scss */
+/* line 377, B:/Co/Corrus-Prototype/src/styles.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   font-size: 14px;
   color: #bac8d6; }
 
 /* line 3, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+.activityStreamContainer .taskStreamHeader {
+  height: 48px;
+  position: fixed;
+  width: 342px;
+  background: #ecf3fa;
+  color: #6b7a84;
+  line-height: 48px;
+  padding-left: 12px;
+  left: 12px; }
+
+/* line 13, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
 .activityStreamContainer .tabHeader {
   height: 48px;
   position: fixed;
-  right: 0;
   width: 355px; }
-  /* line 9, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 19, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .tabHeader ul li {
     float: left;
     text-align: center;
@@ -351,16 +401,16 @@ ul {
     font-size: 14px;
     font-family: "workSans-regular";
     cursor: pointer; }
-    /* line 19, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    /* line 29, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
     .activityStreamContainer .tabHeader ul li span {
       display: inline-block; }
-    /* line 22, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    /* line 32, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
     .activityStreamContainer .tabHeader ul li svg {
       fill: #9fb1bd;
       height: 14px;
       width: 14px;
       vertical-align: sub; }
-    /* line 28, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    /* line 38, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
     .activityStreamContainer .tabHeader ul li .expand {
       border: none;
       outline: none;
@@ -373,46 +423,45 @@ ul {
       position: absolute;
       top: 0;
       right: 0; }
-      /* line 40, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+      /* line 50, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
       .activityStreamContainer .tabHeader ul li .expand i {
         font-size: 11px;
         color: #fff; }
-  /* line 46, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 56, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .tabHeader ul li.active {
     color: #558bff;
     background: #fff; }
-  /* line 50, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 60, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .tabHeader ul li:first-child {
     width: 165px; }
-  /* line 53, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 63, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .tabHeader ul li:last-child {
     width: 190px; }
 
-/* line 58, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+/* line 68, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
 .activityStreamContainer .activityStreamFooter {
   background: #d9e5ff;
   height: 108px;
   position: fixed;
-  right: 0;
   bottom: 0;
   width: 355px;
   padding: 15px; }
-  /* line 67, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 77, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .activityStreamFooter .postCommentInput input {
     height: 35px;
     padding: 6px;
     font-family: "workSans-regular";
     font-size: 14px; }
-  /* line 73, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 83, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .activityStreamFooter .postCommentInput input:hover {
     z-index: 0; }
-  /* line 76, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 86, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .activityStreamFooter .postCommentInput input:active {
     border-right: none; }
-  /* line 79, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 89, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .activityStreamFooter .postCommentInput input:focus {
     border-color: rgba(0, 0, 0, 0.15); }
-  /* line 82, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 92, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .activityStreamFooter .postCommentInput button {
     height: 35px;
     background: #fff;
@@ -422,18 +471,18 @@ ul {
     padding-right: 6px;
     line-height: 38px;
     cursor: pointer; }
-    /* line 91, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    /* line 101, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
     .activityStreamContainer .activityStreamFooter .postCommentInput button svg {
       height: 15px;
       width: 15px;
       fill: #558bff;
       transform: rotate(45deg);
       cursor: pointer; }
-  /* line 99, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 109, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .activityStreamFooter .postCommentInput button:focus, .activityStreamContainer .activityStreamFooter .postCommentInput button:active, .activityStreamContainer .activityStreamFooter .postCommentInput button:hover {
     box-shadow: none;
     outline: none; }
-  /* line 104, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 114, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .activityStreamFooter .postCommentDropdown {
     height: 25px;
     margin-top: 13px;
@@ -441,7 +490,7 @@ ul {
     font-size: 12px;
     font-family: "workSans-regular";
     display: inline-block; }
-  /* line 112, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 122, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .activityStreamFooter .postBtn {
     background: #558bff;
     border: none;
@@ -457,35 +506,35 @@ ul {
     display: inline-block;
     width: 65px; }
 
-/* line 118, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+/* line 128, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
 .activityStreamContainer .activityStreamBody {
   padding: 22px;
   position: relative;
   top: 48px; }
-  /* line 122, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+  /* line 132, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
   .activityStreamContainer .activityStreamBody .feedBlock {
-    border-bottom: 1px solid #bac8d6;
+    border-bottom: 1px solid #dce7f2;
     float: left;
     padding-bottom: 15px; }
-    /* line 127, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    /* line 137, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
     .activityStreamContainer .activityStreamBody .feedBlock ul li {
       float: left; }
-    /* line 130, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    /* line 140, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
     .activityStreamContainer .activityStreamBody .feedBlock ul .leftPart {
       margin-right: 5px; }
-    /* line 133, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+    /* line 143, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
     .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart {
       margin-top: 5px; }
-      /* line 135, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+      /* line 145, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
       .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .userName {
         font-size: 12px;
         font-family: "workSans-medium";
         color: #9fb1bd; }
-      /* line 140, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+      /* line 150, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
       .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .timeStampRow {
         font-family: "workSans-semiBold";
         font-size: 14px; }
-      /* line 144, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+      /* line 154, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
       .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .caseNameRow {
         color: #558bff;
         font-family: "workSans-regular";

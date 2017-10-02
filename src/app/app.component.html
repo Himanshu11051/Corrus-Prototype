@@ -41,7 +41,10 @@
   </div>
 </header>
 <nav class="navbar appNavbar justify-content-between">
-  <a class="navbar-brand" >Welcome to your Dashboard - All your cases will be displayed here</a>
+  
+  <a class="navbar-brand" >
+    <i class="material-icons" (click) = "backToCaseFileDashboard()" *ngIf = "currentURL == '/casefile/task'">arrow_back</i>
+    Welcome to your Dashboard - All your cases will be displayed here</a>
   <form class="form-inline">
     <!-- <input class="form-control mr-sm-2" type="text" aria-label="Search"> -->
     <div class="input-group">

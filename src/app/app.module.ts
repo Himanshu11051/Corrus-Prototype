@@ -7,6 +7,8 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { CaseCreationComponent } from './case-creation/case-creation.component';
 import { CaseFileComponent } from './case-file/case-file.component';
 import { ActivityStreamComponent } from './activity-stream/activity-stream.component';
+import { TaskComponent } from './task/task.component';
+import { CaseFileDashboardComponent } from './case-file-dashboard/case-file-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ActivityStreamComponent } from './activity-stream/activity-stream.compo
     UserDashboardComponent,
     CaseCreationComponent,
     CaseFileComponent,
-    ActivityStreamComponent
+    ActivityStreamComponent,
+    TaskComponent,
+    CaseFileDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,17 @@ import { ActivityStreamComponent } from './activity-stream/activity-stream.compo
       },
       {
         path: 'casefile',
-        component: CaseFileComponent
+        component: CaseFileComponent,
+        children:[
+          {
+            path: '',
+            pathMatch: 'full',
+            component: CaseFileDashboardComponent
+          },
+          { path: 'task',
+            component: TaskComponent
+          }
+        ]
       },
     ])
   ],
