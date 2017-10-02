@@ -5,6 +5,7 @@ $(document).ready(function(){
     var appContainerHeight = windowHeight - (appHeaderHeight + appNavBarHeight);
     $('.appContainer').css('height',appContainerHeight);
     $('.appContainer').css('max-height',appContainerHeight);
+    initializeSlider();
 });
 
 // $(window).load(function() {
@@ -24,3 +25,7 @@ $(window).resize(function() {
     $('.appContainer').css('height',appContainerHeight);
     $('.appContainer').css('max-height',appContainerHeight);
 });
+
+function initializeSlider(){
+ $('.taskSlider').bxSlider();
+}
