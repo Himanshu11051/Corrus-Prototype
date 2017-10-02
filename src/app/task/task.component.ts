@@ -14,6 +14,9 @@ constructor() {
   this.initializeBx();
   } 
   currentTab = 'TASKDETAILS';
+  switchTab(currentTab){
+    this.currentTab = currentTab;
+  };
   initializeBx(){
   new initializeSlider();
   }
