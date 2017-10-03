@@ -125,6 +125,70 @@
             width: 65px;
         }
     }
+    .taskActivityStreamFooter{
+        background: $activityStreamFooterBgColor;
+        // height: 108px;
+        position: fixed;
+//        right: 0;
+        bottom: 0;
+        width: 355px;
+        padding: 15px;
+        .postCommentInput{
+            width: 250px;
+            float: left;
+            margin-right: 10px;
+            input{
+                height: 35px;
+                padding: 6px;
+                font-family: $font-workSans-regular;
+                font-size: 14px;
+            }
+            input:hover{
+                z-index: 0;
+            }
+            input:active{
+                border-right: none;
+            }
+            input:focus{
+                border-color: rgba(0, 0, 0, 0.15);                
+            }
+            button{
+                height: 35px;
+                background: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.25);
+                outline: none;
+                border-left: none;
+                padding-right: 6px;
+                line-height: 38px;
+                cursor: pointer;
+                svg{
+                    height: 15px;
+                    width: 15px;
+                    fill: $blue;
+                    transform: rotate(45deg);
+                    cursor: pointer;
+                }
+            }
+            button:focus,button:active,button:hover{
+                box-shadow: none;
+                outline:none;
+            }
+        }
+        .postCommentDropdown{
+            height: 25px;
+            margin-top: 13px;
+            width: 254px;
+            font-size: 12px;
+            font-family: $font-workSans-regular;
+            display: inline-block;
+        }
+        .postBtn{
+            @include appButton($blue,#fff);
+            display: inline-block;
+            width: 65px;
+            margin-top: 5px;
+        }
+    }
     .activityStreamBody{
         padding: 22px;
         position: relative;

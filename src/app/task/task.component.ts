@@ -11,13 +11,14 @@ constructor() {
   ngOnInit() {
   }
   ngAfterViewInit(){
-  this.initializeBx();
+    this.initializeBx();
   } 
   currentTab = 'TASKDETAILS';
   switchTab(currentTab){
     this.currentTab = currentTab;
+    this.initializeBx();
   };
   initializeBx(){
-  new initializeSlider();
+    new initializeSlider();
   }
 }
