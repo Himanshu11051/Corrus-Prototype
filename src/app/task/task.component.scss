@@ -134,7 +134,7 @@
                             background: rgba(249, 42, 88, 0.3);
                         }
                         .inlineListLi:last-child{
-                            width: 74%;
+                            // width: 74%;
                             li:last-child{
                                 max-height: 40px;
                                 text-overflow: ellipsis;
@@ -306,7 +306,7 @@
                     }
                     .taskDeliverables{
                         float: left;
-                        width: 35%;
+                        width: 34.5%;
                         .header{
                             font-size: 14px;
                             color: $grey4;
