@@ -35,7 +35,7 @@
                     margin-right: 68px;
                     color: $grey3;
                     font-size: 14px;
-                    font-family: $font-workSans-medium;
+                    font-family: $font-workSans-regular;
                     cursor: pointer;
                 }
                 li.active{
@@ -77,7 +77,7 @@
             .box{
                 float: left;
                 font-size: 14px;
-                font-family: $font-workSans-medium;
+                font-family: $font-workSans-regular;
                 .circularElement{
                     @include circularElement(55px);                    
                     display: block;
@@ -188,7 +188,7 @@
     }
     // Overview Tab Code Ends
     .tasksTabContainer{
-        margin-top: -1px;
+        margin-top: -2px;
         .taskComposerContainer{
             background: $grey1;
             min-height: 70px;
@@ -196,7 +196,7 @@
             .composerControlHeader{
                 font-size: 14px;
                 padding: 30px 28px 30px 18px;
-                font-family: $font-workSans-medium;
+                font-family: $font-workSans-regular;
                 p{
                     display: inline-block;
                     width: 87%;
@@ -248,7 +248,7 @@
                 }
             }
             .composerFormContainer{
-                font-family: $font-workSans-medium;
+                font-family: $font-workSans-regular;
                 font-size: 14px;
                 padding-left: 18px;
                 padding-right: 28px;
@@ -356,7 +356,7 @@
                 float: left;
                 padding: 0 10px;
                 .tasksListHeader{
-                    font-family: $font-workSans-medium;
+                    font-family: $font-workSans-regular;
                     font-size: 14px;
                     color: $darkGrey;                    
                     float: left;
@@ -386,7 +386,7 @@
                     }
                 }
                 .tasksListTableHeader{
-                    font-family: $font-workSans-medium;
+                    font-family: $font-workSans-regular;
                     font-size: 13px;
                     color: $grey3;
                     border-top: 1px solid $grey2;
@@ -512,7 +512,7 @@
             }
         }
         .caseDetailsFormContainer, .caseDataFormContainer{
-            font-family: $font-workSans-medium;
+            font-family: $font-workSans-regular;
             font-size: 14px;
             margin-top: 20px;
             margin-bottom: 30px;

@@ -2,29 +2,34 @@
 /* Color Pallet */
 @font-face {
   font-family: 'workSans-medium';
-  src: url("/assets/fonts/WorkSans-Medium.otf") format("opentype"); }
+  src: url("/assets/fonts/WorkSans-Medium.otf") format("opentype");
+}
 
 @font-face {
   font-family: 'workSans-bold';
-  src: url("/assets/fonts/WorkSans-Bold.otf") format("opentype"); }
+  src: url("/assets/fonts/WorkSans-Bold.otf") format("opentype");
+}
 
 @font-face {
   font-family: 'workSans-semiBold';
-  src: url("/assets/fonts/WorkSans-SemiBold.otf") format("opentype"); }
+  src: url("/assets/fonts/WorkSans-SemiBold.otf") format("opentype");
+}
 
 @font-face {
   font-family: 'workSans-regular';
-  src: url("/assets/fonts/WorkSans-Regular.otf") format("opentype"); }
+  src: url("/assets/fonts/WorkSans-Regular.otf") format("opentype");
+}
 
 @font-face {
   font-family: 'futura-medium';
-  src: url("/assets/fonts/Futura-Medium.otf") format("opentype"); }
+  src: url("/assets/fonts/Futura-Medium.otf") format("opentype");
+}
 
 @font-face {
   font-family: 'futura-book';
-  src: url("/assets/fonts/Futura-Book-Regular.otf") format("opentype"); }
+  src: url("/assets/fonts/Futura-Book-Regular.otf") format("opentype");
+}
 
-/* line 82, B:/Co/Corrus-Prototype/src/styles.scss */
 .themeButton {
   background: #8170ff;
   border: none;
@@ -35,23 +40,23 @@
   border-radius: 4px;
   height: 25px;
   line-height: 25px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-/* line 95, B:/Co/Corrus-Prototype/src/styles.scss */
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
-/* line 100, B:/Co/Corrus-Prototype/src/styles.scss */
 body {
   font-family: workSans-medium !important;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+}
 
-/* line 104, B:/Co/Corrus-Prototype/src/styles.scss */
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
-/* line 107, B:/Co/Corrus-Prototype/src/styles.scss */
 .userDefaultAvatar {
   display: inline-block;
   font-size: 13px;
@@ -62,76 +67,81 @@ ul {
   height: 30px;
   width: 30px;
   line-height: 30px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-/* line 115, B:/Co/Corrus-Prototype/src/styles.scss */
 .userAvatarColor1 {
   color: #ff7155;
-  background: rgba(255, 113, 85, 0.3); }
+  background: rgba(255, 113, 85, 0.3);
+}
 
-/* line 119, B:/Co/Corrus-Prototype/src/styles.scss */
 .userAvatarColor2 {
   color: #ffc756;
-  background: rgba(255, 199, 86, 0.3); }
+  background: rgba(255, 199, 86, 0.3);
+}
 
-/* line 123, B:/Co/Corrus-Prototype/src/styles.scss */
 .userAvatarColor3 {
   color: #f92a58;
-  background: rgba(249, 42, 88, 0.3); }
+  background: rgba(249, 42, 88, 0.3);
+}
 
-/* line 127, B:/Co/Corrus-Prototype/src/styles.scss */
 .nextNavigationControl {
-  text-align: center; }
-  /* line 129, B:/Co/Corrus-Prototype/src/styles.scss */
-  .nextNavigationControl ul {
-    cursor: pointer; }
-    /* line 131, B:/Co/Corrus-Prototype/src/styles.scss */
-    .nextNavigationControl ul li {
-      display: inline-block; }
-      /* line 133, B:/Co/Corrus-Prototype/src/styles.scss */
-      .nextNavigationControl ul li span {
-        text-align: center;
-        border-radius: 50%;
-        height: 16px;
-        width: 16px;
-        line-height: 16px;
-        text-align: center;
-        border-radius: 50%;
-        height: 16px;
-        width: 16px;
-        line-height: 16px;
-        background: #558bff;
-        color: #fff;
-        display: inline-block;
-        top: -2px;
-        position: relative;
-        vertical-align: middle; }
-        /* line 146, B:/Co/Corrus-Prototype/src/styles.scss */
-        .nextNavigationControl ul li span i {
-          font-size: 16px; }
-    /* line 151, B:/Co/Corrus-Prototype/src/styles.scss */
-    .nextNavigationControl ul li:last-child {
-      color: #558bff; }
+  text-align: center;
+}
 
-/* line 156, B:/Co/Corrus-Prototype/src/styles.scss */
+.nextNavigationControl ul {
+  cursor: pointer;
+}
+
+.nextNavigationControl ul li {
+  display: inline-block;
+}
+
+.nextNavigationControl ul li span {
+  text-align: center;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  background: #558bff;
+  color: #fff;
+  display: inline-block;
+  top: -2px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.nextNavigationControl ul li span i {
+  font-size: 16px;
+}
+
+.nextNavigationControl ul li:last-child {
+  color: #558bff;
+}
+
 .helpIcon {
   height: 14px;
   width: 14px;
-  position: relative; }
+  position: relative;
+}
 
-/* line 161, B:/Co/Corrus-Prototype/src/styles.scss */
 #helpIcon {
   position: relative;
   height: 14px;
   width: 14px;
   bottom: 3px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-/* line 169, B:/Co/Corrus-Prototype/src/styles.scss */
 #helpIcon:hover .hoverHelpBox {
-  display: block; }
+  display: block;
+}
 
-/* line 173, B:/Co/Corrus-Prototype/src/styles.scss */
 .hoverHelpBox {
   position: absolute;
   width: 250px;
@@ -147,16 +157,17 @@ ul {
   border-radius: 4px;
   border: 1px solid #ff7155;
   box-shadow: 3px 3px 8px #e0e0e0;
-  display: none; }
-  /* line 189, B:/Co/Corrus-Prototype/src/styles.scss */
-  .hoverHelpBox .carret {
-    position: absolute;
-    bottom: -18px;
-    left: 91px;
-    font-size: 30px;
-    color: #ff7155; }
+  display: none;
+}
 
-/* line 197, B:/Co/Corrus-Prototype/src/styles.scss */
+.hoverHelpBox .carret {
+  position: absolute;
+  bottom: -18px;
+  left: 91px;
+  font-size: 30px;
+  color: #ff7155;
+}
+
 .tagChip {
   position: absolute;
   top: 26px;
@@ -169,17 +180,18 @@ ul {
   font-size: 13px;
   padding: 0px 6px;
   left: 10px;
-  font-family: "workSans-regular"; }
-  /* line 210, B:/Co/Corrus-Prototype/src/styles.scss */
-  .tagChip svg {
-    fill: #fff;
-    height: 10px;
-    width: 10px;
-    margin-left: 6px;
-    text-align: left;
-    cursor: pointer; }
+  font-family: "workSans-regular";
+}
 
-/* line 220, B:/Co/Corrus-Prototype/src/styles.scss */
+.tagChip svg {
+  fill: #fff;
+  height: 10px;
+  width: 10px;
+  margin-left: 6px;
+  text-align: left;
+  cursor: pointer;
+}
+
 .tagChip2 {
   display: inline-block;
   background: #23a9db;
@@ -192,17 +204,18 @@ ul {
   left: 10px;
   font-family: "workSans-regular";
   margin-top: 4px;
-  margin-right: 8px; }
-  /* line 233, B:/Co/Corrus-Prototype/src/styles.scss */
-  .tagChip2 svg {
-    fill: #fff;
-    height: 10px;
-    width: 10px;
-    margin-left: 6px;
-    text-align: left;
-    cursor: pointer; }
+  margin-right: 8px;
+}
 
-/* line 242, B:/Co/Corrus-Prototype/src/styles.scss */
+.tagChip2 svg {
+  fill: #fff;
+  height: 10px;
+  width: 10px;
+  margin-left: 6px;
+  text-align: left;
+  cursor: pointer;
+}
+
 .caseMembersChips {
   display: inline-block;
   background: #8170ff;
@@ -215,25 +228,27 @@ ul {
   left: 10px;
   font-family: "workSans-regular";
   margin-top: 4px;
-  margin-right: 8px; }
-  /* line 255, B:/Co/Corrus-Prototype/src/styles.scss */
-  .caseMembersChips svg {
-    fill: #fff;
-    height: 10px;
-    width: 10px;
-    margin-left: 6px;
-    text-align: left;
-    cursor: pointer; }
+  margin-right: 8px;
+}
 
-/* line 264, B:/Co/Corrus-Prototype/src/styles.scss */
+.caseMembersChips svg {
+  fill: #fff;
+  height: 10px;
+  width: 10px;
+  margin-left: 6px;
+  text-align: left;
+  cursor: pointer;
+}
+
 .inlineListUl {
   width: 100%;
-  float: left; }
-  /* line 267, B:/Co/Corrus-Prototype/src/styles.scss */
-  .inlineListUl .inlineListLi {
-    float: left; }
+  float: left;
+}
 
-/* line 272, B:/Co/Corrus-Prototype/src/styles.scss */
+.inlineListUl .inlineListLi {
+  float: left;
+}
+
 .toggleSwitch {
   border: 1px solid #9fb1bd;
   width: 35px;
@@ -241,25 +256,27 @@ ul {
   float: left;
   border-radius: 15px;
   padding: 1px 2px;
-  margin-right: 5px; }
-  /* line 280, B:/Co/Corrus-Prototype/src/styles.scss */
-  .toggleSwitch .switchBall {
-    width: 15px;
-    height: 15px;
-    float: left;
-    border-radius: 50%;
-    background: #9fb1bd;
-    vertical-align: middle; }
+  margin-right: 5px;
+}
 
-/* line 290, B:/Co/Corrus-Prototype/src/styles.scss */
+.toggleSwitch .switchBall {
+  width: 15px;
+  height: 15px;
+  float: left;
+  border-radius: 50%;
+  background: #9fb1bd;
+  vertical-align: middle;
+}
+
 .calendarIcon svg {
   width: 30px;
-  height: 30px; }
-  /* line 293, B:/Co/Corrus-Prototype/src/styles.scss */
-  .calendarIcon svg path {
-    fill: #bac8d6; }
+  height: 30px;
+}
 
-/* line 298, B:/Co/Corrus-Prototype/src/styles.scss */
+.calendarIcon svg path {
+  fill: #bac8d6;
+}
+
 .associationsTag {
   font-size: 12px;
   display: inline-block;
@@ -269,9 +286,9 @@ ul {
   height: 18px;
   line-height: 18px;
   padding: 0 10px;
-  margin-right: 5px; }
+  margin-right: 5px;
+}
 
-/* line 309, B:/Co/Corrus-Prototype/src/styles.scss */
 .saveBtn {
   background: #558bff;
   border: none;
@@ -284,9 +301,9 @@ ul {
   height: 25px;
   line-height: 25px;
   cursor: pointer;
-  width: 64px; }
+  width: 64px;
+}
 
-/* line 313, B:/Co/Corrus-Prototype/src/styles.scss */
 .cancelBtn {
   background: #fff;
   border: none;
@@ -299,82 +316,91 @@ ul {
   height: 25px;
   line-height: 25px;
   cursor: pointer;
-  width: 64px; }
+  width: 64px;
+}
 
-/* line 317, B:/Co/Corrus-Prototype/src/styles.scss */
 .bx-wrapper {
   background: #eef4fa !important;
   border: 5px solid #eef4fa !important;
-  height: 109px; }
-  /* line 321, B:/Co/Corrus-Prototype/src/styles.scss */
-  .bx-wrapper .bx-viewport {
-    height: 109px; }
-  /* line 324, B:/Co/Corrus-Prototype/src/styles.scss */
-  .bx-wrapper .bx-pager.bx-default-pager a {
-    background: #dce7f2;
-    height: 9px;
-    width: 9px; }
-  /* line 329, B:/Co/Corrus-Prototype/src/styles.scss */
-  .bx-wrapper .bx-pager.bx-default-pager a.active {
-    background: #558bff; }
-  /* line 332, B:/Co/Corrus-Prototype/src/styles.scss */
-  .bx-wrapper .bx-prev {
-    left: 10px;
-    background: url(/assets/img/previous.svg) left center no-repeat !important; }
-  /* line 336, B:/Co/Corrus-Prototype/src/styles.scss */
-  .bx-wrapper .bx-next {
-    right: 10px;
-    background: url(/assets/img/next.svg) right center no-repeat !important; }
+  height: 109px;
+}
+
+.bx-wrapper .bx-viewport {
+  height: 109px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #dce7f2;
+  height: 9px;
+  width: 9px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #558bff;
+}
+
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url(/assets/img/previous.svg) left center no-repeat !important;
+}
+
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url(/assets/img/next.svg) right center no-repeat !important;
+}
 
 /* Scrollbar */
-/* line 343, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar {
-  width: 8px; }
+  width: 8px;
+}
 
 /* Track */
-/* line 348, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 10px;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 /* Handle */
-/* line 355, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #bac8d6;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
 
-/* line 362, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: transparent; }
+  background: transparent;
+}
 
-/* line 365, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-size: 14px;
-  color: #bac8d6; }
+  font-family: "workSans-regular";
+  color: #bac8d6;
+}
 
-/* line 369, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-size: 14px;
-  color: #bac8d6; }
+  font-family: "workSans-regular";
+  color: #bac8d6;
+}
 
-/* line 373, B:/Co/Corrus-Prototype/src/styles.scss */
 :-ms-input-placeholder {
   /* IE 10+ */
   font-size: 14px;
-  color: #bac8d6; }
+  font-family: "workSans-regular";
+  color: #bac8d6;
+}
 
-/* line 377, B:/Co/Corrus-Prototype/src/styles.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   font-size: 14px;
-  color: #bac8d6; }
+  font-family: "workSans-regular";
+  color: #bac8d6;
+}
 
-/* line 3, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
 .activityStreamContainer .taskStreamHeader {
   height: 48px;
   position: fixed;
@@ -383,162 +409,271 @@ ul {
   color: #6b7a84;
   line-height: 48px;
   padding-left: 12px;
-  left: 12px; }
+  left: 12px;
+}
 
-/* line 13, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
 .activityStreamContainer .tabHeader {
   height: 48px;
   position: fixed;
-  width: 355px; }
-  /* line 19, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .tabHeader ul li {
-    float: left;
-    text-align: center;
-    background: #ecf3fa;
-    height: 48px;
-    color: #9fb1bd;
-    line-height: 48px;
-    font-size: 14px;
-    font-family: "workSans-regular";
-    cursor: pointer; }
-    /* line 29, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-    .activityStreamContainer .tabHeader ul li span {
-      display: inline-block; }
-    /* line 32, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-    .activityStreamContainer .tabHeader ul li svg {
-      fill: #9fb1bd;
-      height: 14px;
-      width: 14px;
-      vertical-align: sub; }
-    /* line 38, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-    .activityStreamContainer .tabHeader ul li .expand {
-      border: none;
-      outline: none;
-      text-align: center;
-      cursor: pointer;
-      background: #9fb1bd;
-      height: 15px;
-      width: 15px;
-      line-height: 15px;
-      position: absolute;
-      top: 0;
-      right: 0; }
-      /* line 50, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-      .activityStreamContainer .tabHeader ul li .expand i {
-        font-size: 11px;
-        color: #fff; }
-  /* line 56, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .tabHeader ul li.active {
-    color: #558bff;
-    background: #fff; }
-  /* line 60, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .tabHeader ul li:first-child {
-    width: 165px; }
-  /* line 63, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .tabHeader ul li:last-child {
-    width: 190px; }
+  width: 355px;
+}
 
-/* line 68, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+.activityStreamContainer .tabHeader ul li {
+  float: left;
+  text-align: center;
+  background: #ecf3fa;
+  height: 48px;
+  color: #9fb1bd;
+  line-height: 48px;
+  font-size: 14px;
+  font-family: "workSans-regular";
+  cursor: pointer;
+}
+
+.activityStreamContainer .tabHeader ul li span {
+  display: inline-block;
+}
+
+.activityStreamContainer .tabHeader ul li svg {
+  fill: #9fb1bd;
+  height: 14px;
+  width: 14px;
+  vertical-align: sub;
+}
+
+.activityStreamContainer .tabHeader ul li .expand {
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  background: #9fb1bd;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.activityStreamContainer .tabHeader ul li .expand i {
+  font-size: 11px;
+  color: #fff;
+}
+
+.activityStreamContainer .tabHeader ul li.active {
+  color: #558bff;
+  background: #fff;
+}
+
+.activityStreamContainer .tabHeader ul li:first-child {
+  width: 165px;
+}
+
+.activityStreamContainer .tabHeader ul li:last-child {
+  width: 190px;
+}
+
 .activityStreamContainer .activityStreamFooter {
   background: #d9e5ff;
   height: 108px;
   position: fixed;
   bottom: 0;
   width: 355px;
-  padding: 15px; }
-  /* line 77, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .activityStreamFooter .postCommentInput input {
-    height: 35px;
-    padding: 6px;
-    font-family: "workSans-regular";
-    font-size: 14px; }
-  /* line 83, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .activityStreamFooter .postCommentInput input:hover {
-    z-index: 0; }
-  /* line 86, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .activityStreamFooter .postCommentInput input:active {
-    border-right: none; }
-  /* line 89, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .activityStreamFooter .postCommentInput input:focus {
-    border-color: rgba(0, 0, 0, 0.15); }
-  /* line 92, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .activityStreamFooter .postCommentInput button {
-    height: 35px;
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    outline: none;
-    border-left: none;
-    padding-right: 6px;
-    line-height: 38px;
-    cursor: pointer; }
-    /* line 101, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-    .activityStreamContainer .activityStreamFooter .postCommentInput button svg {
-      height: 15px;
-      width: 15px;
-      fill: #558bff;
-      transform: rotate(45deg);
-      cursor: pointer; }
-  /* line 109, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .activityStreamFooter .postCommentInput button:focus, .activityStreamContainer .activityStreamFooter .postCommentInput button:active, .activityStreamContainer .activityStreamFooter .postCommentInput button:hover {
-    box-shadow: none;
-    outline: none; }
-  /* line 114, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .activityStreamFooter .postCommentDropdown {
-    height: 25px;
-    margin-top: 13px;
-    width: 254px;
-    font-size: 12px;
-    font-family: "workSans-regular";
-    display: inline-block; }
-  /* line 122, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .activityStreamFooter .postBtn {
-    background: #558bff;
-    border: none;
-    outline: none;
-    text-align: center;
-    font-family: "workSans-regular";
-    font-size: 14px;
-    color: #fff;
-    border-radius: 4px;
-    height: 25px;
-    line-height: 25px;
-    cursor: pointer;
-    display: inline-block;
-    width: 65px; }
+  padding: 15px;
+}
 
-/* line 128, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
+.activityStreamContainer .activityStreamFooter .postCommentInput input {
+  height: 35px;
+  padding: 6px;
+  font-family: "workSans-regular";
+  font-size: 14px;
+}
+
+.activityStreamContainer .activityStreamFooter .postCommentInput input:hover {
+  z-index: 0;
+}
+
+.activityStreamContainer .activityStreamFooter .postCommentInput input:active {
+  border-right: none;
+}
+
+.activityStreamContainer .activityStreamFooter .postCommentInput input:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.activityStreamContainer .activityStreamFooter .postCommentInput button {
+  height: 35px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  outline: none;
+  border-left: none;
+  padding-right: 6px;
+  line-height: 38px;
+  cursor: pointer;
+}
+
+.activityStreamContainer .activityStreamFooter .postCommentInput button svg {
+  height: 15px;
+  width: 15px;
+  fill: #558bff;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.activityStreamContainer .activityStreamFooter .postCommentInput button:focus, .activityStreamContainer .activityStreamFooter .postCommentInput button:active, .activityStreamContainer .activityStreamFooter .postCommentInput button:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+.activityStreamContainer .activityStreamFooter .postCommentDropdown {
+  height: 25px;
+  margin-top: 13px;
+  width: 254px;
+  font-size: 12px;
+  font-family: "workSans-regular";
+  display: inline-block;
+}
+
+.activityStreamContainer .activityStreamFooter .postBtn {
+  background: #558bff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  display: inline-block;
+  width: 65px;
+}
+
+.activityStreamContainer .taskActivityStreamFooter {
+  background: #d9e5ff;
+  position: fixed;
+  bottom: 0;
+  width: 355px;
+  padding: 15px;
+}
+
+.activityStreamContainer .taskActivityStreamFooter .postCommentInput {
+  width: 250px;
+  float: left;
+  margin-right: 10px;
+}
+
+.activityStreamContainer .taskActivityStreamFooter .postCommentInput input {
+  height: 35px;
+  padding: 6px;
+  font-family: "workSans-regular";
+  font-size: 14px;
+}
+
+.activityStreamContainer .taskActivityStreamFooter .postCommentInput input:hover {
+  z-index: 0;
+}
+
+.activityStreamContainer .taskActivityStreamFooter .postCommentInput input:active {
+  border-right: none;
+}
+
+.activityStreamContainer .taskActivityStreamFooter .postCommentInput input:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.activityStreamContainer .taskActivityStreamFooter .postCommentInput button {
+  height: 35px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  outline: none;
+  border-left: none;
+  padding-right: 6px;
+  line-height: 38px;
+  cursor: pointer;
+}
+
+.activityStreamContainer .taskActivityStreamFooter .postCommentInput button svg {
+  height: 15px;
+  width: 15px;
+  fill: #558bff;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.activityStreamContainer .taskActivityStreamFooter .postCommentInput button:focus, .activityStreamContainer .taskActivityStreamFooter .postCommentInput button:active, .activityStreamContainer .taskActivityStreamFooter .postCommentInput button:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+.activityStreamContainer .taskActivityStreamFooter .postCommentDropdown {
+  height: 25px;
+  margin-top: 13px;
+  width: 254px;
+  font-size: 12px;
+  font-family: "workSans-regular";
+  display: inline-block;
+}
+
+.activityStreamContainer .taskActivityStreamFooter .postBtn {
+  background: #558bff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  display: inline-block;
+  width: 65px;
+  margin-top: 5px;
+}
+
 .activityStreamContainer .activityStreamBody {
   padding: 22px;
   position: relative;
-  top: 48px; }
-  /* line 132, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-  .activityStreamContainer .activityStreamBody .feedBlock {
-    border-bottom: 1px solid #dce7f2;
-    float: left;
-    padding-bottom: 15px; }
-    /* line 137, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-    .activityStreamContainer .activityStreamBody .feedBlock ul li {
-      float: left; }
-    /* line 140, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-    .activityStreamContainer .activityStreamBody .feedBlock ul .leftPart {
-      margin-right: 5px; }
-    /* line 143, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-    .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart {
-      margin-top: 5px; }
-      /* line 145, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-      .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .userName {
-        font-size: 12px;
-        font-family: "workSans-medium";
-        color: #9fb1bd; }
-      /* line 150, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-      .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .timeStampRow {
-        font-family: "workSans-semiBold";
-        font-size: 14px; }
-      /* line 154, B:/Co/Corrus-Prototype/src/app/activity-stream/activity-stream.component.scss */
-      .activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .caseNameRow {
-        color: #558bff;
-        font-family: "workSans-regular";
-        font-size: 14px;
-        line-height: 14px; }
+  top: 48px;
+}
 
-/*# sourceMappingURL=activity-stream.component.css.map */
+.activityStreamContainer .activityStreamBody .feedBlock {
+  border-bottom: 1px solid #dce7f2;
+  float: left;
+  padding-bottom: 15px;
+}
+
+.activityStreamContainer .activityStreamBody .feedBlock ul li {
+  float: left;
+}
+
+.activityStreamContainer .activityStreamBody .feedBlock ul .leftPart {
+  margin-right: 5px;
+}
+
+.activityStreamContainer .activityStreamBody .feedBlock ul .rightPart {
+  margin-top: 5px;
+}
+
+.activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .userName {
+  font-size: 12px;
+  font-family: "workSans-regular";
+  color: #9fb1bd;
+}
+
+.activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .timeStampRow {
+  font-family: "workSans-semiBold";
+  font-size: 14px;
+}
+
+.activityStreamContainer .activityStreamBody .feedBlock ul .rightPart .caseNameRow {
+  color: #558bff;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  line-height: 14px;
+}
+ 
+
+ /*# sourceMappingURL= activity-stream.component.css.map */

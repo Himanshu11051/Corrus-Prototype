@@ -2,29 +2,34 @@
 /* Color Pallet */
 @font-face {
   font-family: 'workSans-medium';
-  src: url("/assets/fonts/WorkSans-Medium.otf") format("opentype"); }
+  src: url("/assets/fonts/WorkSans-Medium.otf") format("opentype");
+}
 
 @font-face {
   font-family: 'workSans-bold';
-  src: url("/assets/fonts/WorkSans-Bold.otf") format("opentype"); }
+  src: url("/assets/fonts/WorkSans-Bold.otf") format("opentype");
+}
 
 @font-face {
   font-family: 'workSans-semiBold';
-  src: url("/assets/fonts/WorkSans-SemiBold.otf") format("opentype"); }
+  src: url("/assets/fonts/WorkSans-SemiBold.otf") format("opentype");
+}
 
 @font-face {
   font-family: 'workSans-regular';
-  src: url("/assets/fonts/WorkSans-Regular.otf") format("opentype"); }
+  src: url("/assets/fonts/WorkSans-Regular.otf") format("opentype");
+}
 
 @font-face {
   font-family: 'futura-medium';
-  src: url("/assets/fonts/Futura-Medium.otf") format("opentype"); }
+  src: url("/assets/fonts/Futura-Medium.otf") format("opentype");
+}
 
 @font-face {
   font-family: 'futura-book';
-  src: url("/assets/fonts/Futura-Book-Regular.otf") format("opentype"); }
+  src: url("/assets/fonts/Futura-Book-Regular.otf") format("opentype");
+}
 
-/* line 82, B:/Co/Corrus-Prototype/src/styles.scss */
 .themeButton {
   background: #8170ff;
   border: none;
@@ -35,23 +40,23 @@
   border-radius: 4px;
   height: 25px;
   line-height: 25px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-/* line 95, B:/Co/Corrus-Prototype/src/styles.scss */
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
-/* line 100, B:/Co/Corrus-Prototype/src/styles.scss */
 body {
   font-family: workSans-medium !important;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+}
 
-/* line 104, B:/Co/Corrus-Prototype/src/styles.scss */
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
-/* line 107, B:/Co/Corrus-Prototype/src/styles.scss */
 .userDefaultAvatar {
   display: inline-block;
   font-size: 13px;
@@ -62,76 +67,81 @@ ul {
   height: 30px;
   width: 30px;
   line-height: 30px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-/* line 115, B:/Co/Corrus-Prototype/src/styles.scss */
 .userAvatarColor1 {
   color: #ff7155;
-  background: rgba(255, 113, 85, 0.3); }
+  background: rgba(255, 113, 85, 0.3);
+}
 
-/* line 119, B:/Co/Corrus-Prototype/src/styles.scss */
 .userAvatarColor2 {
   color: #ffc756;
-  background: rgba(255, 199, 86, 0.3); }
+  background: rgba(255, 199, 86, 0.3);
+}
 
-/* line 123, B:/Co/Corrus-Prototype/src/styles.scss */
 .userAvatarColor3 {
   color: #f92a58;
-  background: rgba(249, 42, 88, 0.3); }
+  background: rgba(249, 42, 88, 0.3);
+}
 
-/* line 127, B:/Co/Corrus-Prototype/src/styles.scss */
 .nextNavigationControl {
-  text-align: center; }
-  /* line 129, B:/Co/Corrus-Prototype/src/styles.scss */
-  .nextNavigationControl ul {
-    cursor: pointer; }
-    /* line 131, B:/Co/Corrus-Prototype/src/styles.scss */
-    .nextNavigationControl ul li {
-      display: inline-block; }
-      /* line 133, B:/Co/Corrus-Prototype/src/styles.scss */
-      .nextNavigationControl ul li span {
-        text-align: center;
-        border-radius: 50%;
-        height: 16px;
-        width: 16px;
-        line-height: 16px;
-        text-align: center;
-        border-radius: 50%;
-        height: 16px;
-        width: 16px;
-        line-height: 16px;
-        background: #558bff;
-        color: #fff;
-        display: inline-block;
-        top: -2px;
-        position: relative;
-        vertical-align: middle; }
-        /* line 146, B:/Co/Corrus-Prototype/src/styles.scss */
-        .nextNavigationControl ul li span i {
-          font-size: 16px; }
-    /* line 151, B:/Co/Corrus-Prototype/src/styles.scss */
-    .nextNavigationControl ul li:last-child {
-      color: #558bff; }
+  text-align: center;
+}
 
-/* line 156, B:/Co/Corrus-Prototype/src/styles.scss */
+.nextNavigationControl ul {
+  cursor: pointer;
+}
+
+.nextNavigationControl ul li {
+  display: inline-block;
+}
+
+.nextNavigationControl ul li span {
+  text-align: center;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  background: #558bff;
+  color: #fff;
+  display: inline-block;
+  top: -2px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.nextNavigationControl ul li span i {
+  font-size: 16px;
+}
+
+.nextNavigationControl ul li:last-child {
+  color: #558bff;
+}
+
 .helpIcon {
   height: 14px;
   width: 14px;
-  position: relative; }
+  position: relative;
+}
 
-/* line 161, B:/Co/Corrus-Prototype/src/styles.scss */
 #helpIcon {
   position: relative;
   height: 14px;
   width: 14px;
   bottom: 3px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-/* line 169, B:/Co/Corrus-Prototype/src/styles.scss */
 #helpIcon:hover .hoverHelpBox {
-  display: block; }
+  display: block;
+}
 
-/* line 173, B:/Co/Corrus-Prototype/src/styles.scss */
 .hoverHelpBox {
   position: absolute;
   width: 250px;
@@ -147,16 +157,17 @@ ul {
   border-radius: 4px;
   border: 1px solid #ff7155;
   box-shadow: 3px 3px 8px #e0e0e0;
-  display: none; }
-  /* line 189, B:/Co/Corrus-Prototype/src/styles.scss */
-  .hoverHelpBox .carret {
-    position: absolute;
-    bottom: -18px;
-    left: 91px;
-    font-size: 30px;
-    color: #ff7155; }
+  display: none;
+}
 
-/* line 197, B:/Co/Corrus-Prototype/src/styles.scss */
+.hoverHelpBox .carret {
+  position: absolute;
+  bottom: -18px;
+  left: 91px;
+  font-size: 30px;
+  color: #ff7155;
+}
+
 .tagChip {
   position: absolute;
   top: 26px;
@@ -169,17 +180,18 @@ ul {
   font-size: 13px;
   padding: 0px 6px;
   left: 10px;
-  font-family: "workSans-regular"; }
-  /* line 210, B:/Co/Corrus-Prototype/src/styles.scss */
-  .tagChip svg {
-    fill: #fff;
-    height: 10px;
-    width: 10px;
-    margin-left: 6px;
-    text-align: left;
-    cursor: pointer; }
+  font-family: "workSans-regular";
+}
 
-/* line 220, B:/Co/Corrus-Prototype/src/styles.scss */
+.tagChip svg {
+  fill: #fff;
+  height: 10px;
+  width: 10px;
+  margin-left: 6px;
+  text-align: left;
+  cursor: pointer;
+}
+
 .tagChip2 {
   display: inline-block;
   background: #23a9db;
@@ -192,17 +204,18 @@ ul {
   left: 10px;
   font-family: "workSans-regular";
   margin-top: 4px;
-  margin-right: 8px; }
-  /* line 233, B:/Co/Corrus-Prototype/src/styles.scss */
-  .tagChip2 svg {
-    fill: #fff;
-    height: 10px;
-    width: 10px;
-    margin-left: 6px;
-    text-align: left;
-    cursor: pointer; }
+  margin-right: 8px;
+}
 
-/* line 242, B:/Co/Corrus-Prototype/src/styles.scss */
+.tagChip2 svg {
+  fill: #fff;
+  height: 10px;
+  width: 10px;
+  margin-left: 6px;
+  text-align: left;
+  cursor: pointer;
+}
+
 .caseMembersChips {
   display: inline-block;
   background: #8170ff;
@@ -215,25 +228,27 @@ ul {
   left: 10px;
   font-family: "workSans-regular";
   margin-top: 4px;
-  margin-right: 8px; }
-  /* line 255, B:/Co/Corrus-Prototype/src/styles.scss */
-  .caseMembersChips svg {
-    fill: #fff;
-    height: 10px;
-    width: 10px;
-    margin-left: 6px;
-    text-align: left;
-    cursor: pointer; }
+  margin-right: 8px;
+}
 
-/* line 264, B:/Co/Corrus-Prototype/src/styles.scss */
+.caseMembersChips svg {
+  fill: #fff;
+  height: 10px;
+  width: 10px;
+  margin-left: 6px;
+  text-align: left;
+  cursor: pointer;
+}
+
 .inlineListUl {
   width: 100%;
-  float: left; }
-  /* line 267, B:/Co/Corrus-Prototype/src/styles.scss */
-  .inlineListUl .inlineListLi {
-    float: left; }
+  float: left;
+}
 
-/* line 272, B:/Co/Corrus-Prototype/src/styles.scss */
+.inlineListUl .inlineListLi {
+  float: left;
+}
+
 .toggleSwitch {
   border: 1px solid #9fb1bd;
   width: 35px;
@@ -241,25 +256,27 @@ ul {
   float: left;
   border-radius: 15px;
   padding: 1px 2px;
-  margin-right: 5px; }
-  /* line 280, B:/Co/Corrus-Prototype/src/styles.scss */
-  .toggleSwitch .switchBall {
-    width: 15px;
-    height: 15px;
-    float: left;
-    border-radius: 50%;
-    background: #9fb1bd;
-    vertical-align: middle; }
+  margin-right: 5px;
+}
 
-/* line 290, B:/Co/Corrus-Prototype/src/styles.scss */
+.toggleSwitch .switchBall {
+  width: 15px;
+  height: 15px;
+  float: left;
+  border-radius: 50%;
+  background: #9fb1bd;
+  vertical-align: middle;
+}
+
 .calendarIcon svg {
   width: 30px;
-  height: 30px; }
-  /* line 293, B:/Co/Corrus-Prototype/src/styles.scss */
-  .calendarIcon svg path {
-    fill: #bac8d6; }
+  height: 30px;
+}
 
-/* line 298, B:/Co/Corrus-Prototype/src/styles.scss */
+.calendarIcon svg path {
+  fill: #bac8d6;
+}
+
 .associationsTag {
   font-size: 12px;
   display: inline-block;
@@ -269,9 +286,9 @@ ul {
   height: 18px;
   line-height: 18px;
   padding: 0 10px;
-  margin-right: 5px; }
+  margin-right: 5px;
+}
 
-/* line 309, B:/Co/Corrus-Prototype/src/styles.scss */
 .saveBtn {
   background: #558bff;
   border: none;
@@ -284,9 +301,9 @@ ul {
   height: 25px;
   line-height: 25px;
   cursor: pointer;
-  width: 64px; }
+  width: 64px;
+}
 
-/* line 313, B:/Co/Corrus-Prototype/src/styles.scss */
 .cancelBtn {
   background: #fff;
   border: none;
@@ -299,338 +316,965 @@ ul {
   height: 25px;
   line-height: 25px;
   cursor: pointer;
-  width: 64px; }
+  width: 64px;
+}
 
-/* line 317, B:/Co/Corrus-Prototype/src/styles.scss */
 .bx-wrapper {
   background: #eef4fa !important;
   border: 5px solid #eef4fa !important;
-  height: 109px; }
-  /* line 321, B:/Co/Corrus-Prototype/src/styles.scss */
-  .bx-wrapper .bx-viewport {
-    height: 109px; }
-  /* line 324, B:/Co/Corrus-Prototype/src/styles.scss */
-  .bx-wrapper .bx-pager.bx-default-pager a {
-    background: #dce7f2;
-    height: 9px;
-    width: 9px; }
-  /* line 329, B:/Co/Corrus-Prototype/src/styles.scss */
-  .bx-wrapper .bx-pager.bx-default-pager a.active {
-    background: #558bff; }
-  /* line 332, B:/Co/Corrus-Prototype/src/styles.scss */
-  .bx-wrapper .bx-prev {
-    left: 10px;
-    background: url(/assets/img/previous.svg) left center no-repeat !important; }
-  /* line 336, B:/Co/Corrus-Prototype/src/styles.scss */
-  .bx-wrapper .bx-next {
-    right: 10px;
-    background: url(/assets/img/next.svg) right center no-repeat !important; }
+  height: 109px;
+}
+
+.bx-wrapper .bx-viewport {
+  height: 109px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #dce7f2;
+  height: 9px;
+  width: 9px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #558bff;
+}
+
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url(/assets/img/previous.svg) left center no-repeat !important;
+}
+
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url(/assets/img/next.svg) right center no-repeat !important;
+}
 
 /* Scrollbar */
-/* line 343, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar {
-  width: 8px; }
+  width: 8px;
+}
 
 /* Track */
-/* line 348, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 10px;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 /* Handle */
-/* line 355, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #bac8d6;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
 
-/* line 362, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: transparent; }
+  background: transparent;
+}
 
-/* line 365, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-size: 14px;
-  color: #bac8d6; }
+  font-family: "workSans-regular";
+  color: #bac8d6;
+}
 
-/* line 369, B:/Co/Corrus-Prototype/src/styles.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-size: 14px;
-  color: #bac8d6; }
+  font-family: "workSans-regular";
+  color: #bac8d6;
+}
 
-/* line 373, B:/Co/Corrus-Prototype/src/styles.scss */
 :-ms-input-placeholder {
   /* IE 10+ */
   font-size: 14px;
-  color: #bac8d6; }
+  font-family: "workSans-regular";
+  color: #bac8d6;
+}
 
-/* line 377, B:/Co/Corrus-Prototype/src/styles.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   font-size: 14px;
-  color: #bac8d6; }
+  font-family: "workSans-regular";
+  color: #bac8d6;
+}
 
-/* line 3, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
 .taskWindow .taskWindowHeader {
   padding: 20px 12px;
-  padding-bottom: 0; }
-  /* line 6, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-  .taskWindow .taskWindowHeader .taskWindowHeader1 {
-    font-family: "workSans-regular";
-    margin-bottom: 12px; }
-    /* line 9, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskWindowHeader .taskWindowHeader1 .priorityIcon {
-      font-size: 14px;
-      float: left;
-      line-height: 24px;
-      margin-right: 10px; }
-    /* line 15, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskWindowHeader .taskWindowHeader1 .normalPriority {
-      color: #19ccc7; }
-    /* line 18, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskWindowHeader .taskWindowHeader1 .followingTag {
-      font-size: 12px;
-      display: inline-block;
-      color: #8170ff;
-      background: rgba(129, 112, 255, 0.3);
-      border-radius: 5px;
-      height: 18px;
-      line-height: 18px;
-      padding: 0 10px;
-      margin-left: 10px; }
-    /* line 22, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskWindowHeader .taskWindowHeader1 h5 {
-      float: left;
-      font-family: "workSans-regular";
-      font-size: 22px; }
-    /* line 27, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskWindowHeader .taskWindowHeader1 .taskActionsBtn {
-      background: #558bff;
-      border: none;
-      outline: none;
-      text-align: center;
-      font-family: "workSans-regular";
-      font-size: 14px;
-      color: #fff;
-      border-radius: 4px;
-      height: 25px;
-      line-height: 25px;
-      cursor: pointer;
-      width: 131px;
-      float: right;
-      margin-right: 17px; }
-      /* line 32, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskWindowHeader .taskWindowHeader1 .taskActionsBtn svg {
-        height: 12px;
-        width: 12px;
-        vertical-align: middle;
-        fill: #fff; }
-    /* line 39, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskWindowHeader .taskWindowHeader1 .markCompleteBtn {
-      float: right;
-      width: 131px; }
-  /* line 44, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-  .taskWindow .taskWindowHeader .taskWindowHeader2 {
-    line-height: 14px;
-    border-bottom: 2px solid #dce7f2;
-    padding-bottom: 10px; }
-    /* line 49, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskWindowHeader .taskWindowHeader2 ul li {
-      display: inline-block;
-      margin-right: 68px;
-      color: #bac8d6;
-      font-size: 14px;
-      font-family: "workSans-medium";
-      cursor: pointer; }
-    /* line 57, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskWindowHeader .taskWindowHeader2 ul li.active {
-      font-family: "workSans-semiBold";
-      color: #558bff; }
+  padding-bottom: 0;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+}
 
-/* line 64, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
+.taskWindow .taskWindowHeader .taskWindowHeader1 {
+  font-family: "workSans-regular";
+  margin-bottom: 12px;
+}
+
+.taskWindow .taskWindowHeader .taskWindowHeader1 .priorityIcon {
+  font-size: 14px;
+  float: left;
+  line-height: 24px;
+  margin-right: 10px;
+}
+
+.taskWindow .taskWindowHeader .taskWindowHeader1 .normalPriority {
+  color: #19ccc7;
+}
+
+.taskWindow .taskWindowHeader .taskWindowHeader1 .followingTag {
+  font-size: 12px;
+  display: inline-block;
+  color: #8170ff;
+  background: rgba(129, 112, 255, 0.3);
+  border-radius: 5px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+
+.taskWindow .taskWindowHeader .taskWindowHeader1 h5 {
+  float: left;
+  font-family: "workSans-regular";
+  font-size: 22px;
+}
+
+.taskWindow .taskWindowHeader .taskWindowHeader1 .taskActionsBtn {
+  background: #558bff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  width: 131px;
+  float: right;
+  margin-right: 17px;
+}
+
+.taskWindow .taskWindowHeader .taskWindowHeader1 .taskActionsBtn svg {
+  height: 12px;
+  width: 12px;
+  vertical-align: middle;
+  fill: #fff;
+}
+
+.taskWindow .taskWindowHeader .taskWindowHeader1 .markCompleteBtn {
+  float: right;
+  width: 131px;
+}
+
+.taskWindow .taskWindowHeader .taskWindowHeader2 {
+  line-height: 14px;
+  border-bottom: 2px solid #dce7f2;
+  padding-bottom: 10px;
+}
+
+.taskWindow .taskWindowHeader .taskWindowHeader2 ul li {
+  display: inline-block;
+  margin-right: 68px;
+  color: #bac8d6;
+  font-size: 14px;
+  font-family: "workSans-regular";
+  cursor: pointer;
+}
+
+.taskWindow .taskWindowHeader .taskWindowHeader2 ul li.active {
+  font-family: "workSans-semiBold";
+  color: #558bff;
+}
+
 .taskWindow .taskContainer {
   width: calc(100% - 348px);
-  float: right; }
-  /* line 68, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-  .taskWindow .taskContainer .tabsContainer .overviewTabContainer {
-    padding-left: 30px;
-    padding-right: 12px; }
-    /* line 71, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar {
-      margin-top: 50px;
-      border-bottom: 1px solid #dce7f2;
-      float: left;
-      padding-bottom: 28px; }
-      /* line 76, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box {
-        float: left;
-        font-size: 14px;
-        font-family: "workSans-medium"; }
-        /* line 80, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-        .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box .circularElement {
-          text-align: center;
-          border-radius: 50%;
-          height: 55px;
-          width: 55px;
-          line-height: 55px;
-          display: block;
-          margin-right: 8px;
-          font-family: "workSans-bold"; }
-      /* line 88, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box1 label {
-        color: #19ccc7; }
-      /* line 92, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box1 .circularElement {
-        border: 2px solid #19ccc7;
-        background: rgba(25, 204, 199, 0.3); }
-      /* line 98, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box2 label {
-        color: #ff7155; }
-      /* line 101, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box2 .circularElement {
-        border: 2px solid #ff7155;
-        color: #ff7155;
-        background: rgba(255, 113, 85, 0.3);
-        font-size: 26px;
-        font-weight: 800; }
-      /* line 110, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box3 label {
-        color: #ffc756; }
-      /* line 113, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box3 .circularElement {
-        border: 2px solid #ffc756;
-        background: rgba(107, 122, 132, 0.3); }
-        /* line 116, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-        .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box3 .circularElement img {
-          width: 85%; }
-      /* line 122, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box4 label {
-        color: #f92a58; }
-      /* line 125, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box4 .circularElement {
-        border: 2px solid #f92a58;
-        background: rgba(249, 42, 88, 0.3); }
-      /* line 129, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box4 .inlineListLi:last-child {
-        width: 74%; }
-        /* line 131, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-        .taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box4 .inlineListLi:last-child li:last-child {
-          max-height: 40px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          display: -webkit-box !important;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical; }
-    /* line 143, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsHeader {
-      display: inline-block;
-      padding-bottom: 26px;
-      padding-top: 20px; }
-      /* line 147, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsHeader h6 {
-        float: left;
-        font-size: 16px;
-        font-family: "workSans-medium"; }
-      /* line 152, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsHeader button {
-        float: right; }
-      /* line 155, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsHeader button.cancelBtn {
-        margin-right: 15px; }
-    /* line 161, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-    .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea {
-      padding: 10px 70px;
-      height: 109px;
-      float: left; }
-      /* line 165, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .header {
-        font-size: 14px;
-        color: #9fb1bd;
-        margin-bottom: 10px; }
-      /* line 170, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-      .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body {
-        color: #6b7a84;
-        font-family: "workSans-medium";
-        font-size: 15px; }
-        /* line 174, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-        .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body .dependencyTag {
-          display: inline-block;
-          background: #d9e5ff;
-          border: none;
-          outline: none;
-          text-align: center;
-          font-family: "workSans-regular";
-          font-size: 14px;
-          color: #558bff;
-          border-radius: 4px;
-          height: 25px;
-          line-height: 25px;
-          cursor: pointer;
-          font-size: 15px;
-          width: 164px;
-          height: 25px; }
-        /* line 182, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-        .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body .referenceList {
-          -webkit-column-count: 4;
-          -moz-column-count: 4;
-          column-count: 4;
-          width: 85%;
-          float: left; }
-          /* line 188, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-          .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body .referenceList li {
-            display: inline-block; }
-            /* line 190, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-            .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body .referenceList li a {
-              text-decoration: underline;
-              color: #558bff; }
-            /* line 194, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-            .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body .referenceList li a:hover {
-              color: #558bff; }
-        /* line 199, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-        .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body .downloadAllReferencesBtn {
-          display: inline-block;
-          background: #d9e5ff;
-          border: none;
-          outline: none;
-          text-align: center;
-          font-family: "workSans-regular";
-          font-size: 14px;
-          color: #558bff;
-          border-radius: 4px;
-          height: 25px;
-          line-height: 25px;
-          cursor: pointer;
-          font-size: 12px;
-          width: 100px;
-          height: 25px;
-          float: right; }
-        /* line 207, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-        .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body .meetingParticipants {
-          display: inline-block; }
-          /* line 210, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-          .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body .meetingParticipants .participantsList li {
-            float: left;
-            margin-right: 10px; }
-        /* line 216, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-        .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body .meetingInfo {
-          margin-left: 5px;
-          display: inline-block; }
-          /* line 219, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
-          .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskCarouselContainer .sliderArea .body .meetingInfo span {
-            display: block;
-            display: block; }
+  float: right;
+  margin-top: 83px;
+  z-index: 1;
+  margin-bottom: 50px;
+}
 
-/* line 233, B:/Co/Corrus-Prototype/src/app/task/task.component.scss */
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer {
+  padding-left: 30px;
+  padding-right: 12px;
+  /* .taskCarouselContainer{
+                    .sliderArea{
+                        padding: 10px 70px;
+                        height: 109px;
+                        float: left;
+                        .header{
+                            font-size: 14px;
+                            color: $grey4;
+                            margin-bottom: 10px;
+                        }
+                        .body{
+                            color: $darkGrey;
+                            font-family: $font-workSans-regular;
+                            font-size: 15px;
+                            .dependencyTag{
+                                display: inline-block;
+                                @include appButton($blue2,$blue);
+                                font-size: 15px;
+                                width: 164px;
+                                height: 25px;
+                            }
+                         
+                            .referenceList{
+                                -webkit-column-count: 4;
+                                -moz-column-count: 4;
+                                column-count: 4;
+                                width: 85%;
+                                float: left;
+                                li{
+                                    display: inline-block;
+                                    a{
+                                        text-decoration: underline;
+                                        color: $blue;
+                                    }
+                                    a:hover{
+                                        color: $blue;
+                                    }
+                                }                                
+                            }
+                            .downloadAllReferencesBtn{
+                                display: inline-block;
+                                @include appButton($blue2,$blue);
+                                font-size: 12px;
+                                width: 100px;
+                                height: 25px;
+                                float: right;
+                            }
+                            .meetingParticipants{
+                                display: inline-block;
+                                .participantsList{
+                                    li{
+                                        float: left;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                            .meetingInfo{
+                                margin-left: 5px;
+                                display: inline-block;
+                                span{
+                                    display: block;
+                                    display: block;
+                                }
+                            }
+
+                        }
+                    }
+
+                }*/
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar {
+  margin-top: 50px;
+  border-bottom: 1px solid #dce7f2;
+  float: left;
+  padding-bottom: 28px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box {
+  float: left;
+  font-size: 14px;
+  font-family: "workSans-regular";
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box .circularElement {
+  text-align: center;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  display: block;
+  margin-right: 8px;
+  font-family: "workSans-bold";
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box1 label {
+  color: #19ccc7;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box1 .circularElement {
+  border: 2px solid #19ccc7;
+  background: rgba(25, 204, 199, 0.3);
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box2 label {
+  color: #ff7155;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box2 .circularElement {
+  border: 2px solid #ff7155;
+  color: #ff7155;
+  background: rgba(255, 113, 85, 0.3);
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box3 label {
+  color: #ffc756;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box3 .circularElement {
+  border: 2px solid #ffc756;
+  background: rgba(107, 122, 132, 0.3);
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box3 .circularElement img {
+  width: 85%;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box4 label {
+  color: #f92a58;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box4 .circularElement {
+  border: 2px solid #f92a58;
+  background: rgba(249, 42, 88, 0.3);
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .topBannar .box4 .inlineListLi:last-child li:last-child {
+  max-height: 40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsHeader {
+  display: inline-block;
+  padding-bottom: 26px;
+  padding-top: 20px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsHeader h6 {
+  float: left;
+  font-size: 16px;
+  font-family: "workSans-regular";
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsHeader button {
+  float: right;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsHeader button.cancelBtn {
+  margin-right: 15px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsHeader ul li {
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsHeader ul li button {
+  background: #d9e5ff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #558bff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 10px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 18px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody {
+  font-family: "workSans-regular";
+  font-size: 14px;
+  padding-right: 15px;
+  margin-top: -7px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form .form-group {
+  padding: 0;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form .form-group .col3layoutInput {
+  width: 97%;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form .form-group.col-itm-2 {
+  left: 5px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form .form-group.col-itm-3 {
+  left: 10px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form label {
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #9fb1bd;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form input, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form select {
+  padding: 6px;
+  font-size: 14px;
+  height: 35px;
+  color: #6b7a84;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form textarea {
+  height: 75px;
+  padding: 6px;
+  resize: none;
+  font-size: 14px;
+  color: #6b7a84;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form .form-row {
+  margin-bottom: 18px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form .form-row .input-group-addon {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 12px;
+  top: 24px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form .form-row .input-group-addon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form .form-row .input-group-addon svg path {
+  fill: #bac8d6;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form .uploadReferenceBtn {
+  right: 18px;
+  bottom: 8px;
+  position: absolute;
+  width: 64px;
+  background: #d9e5ff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #558bff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskDetailsContainer .taskDetailsBody form .tagChip {
+  margin-top: 2px;
+  margin-left: -2px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer {
+  font-family: "workSans-regular";
+  float: left;
+  width: 100%;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm {
+  float: left;
+  width: 100%;
+  margin-right: 16px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .header {
+  font-size: 14px;
+  color: #9fb1bd;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body {
+  background: #ecf3fa;
+  float: left;
+  height: 260px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 18px 15px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body h6 {
+  font-size: 16px;
+  color: #558bff;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body .editIcon {
+  float: left;
+  font-size: 13px;
+  color: #558bff;
+  margin-left: 3px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body form .form-row {
+  display: block;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body form .form-group {
+  padding: 0;
+  width: 100%;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body form .form-group input {
+  height: 35px;
+  width: 97%;
+  margin-bottom: 18px;
+  margin-right: 5px;
+  padding: 6px;
+  font-size: 13px;
+  color: #6b7a84;
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body form .form-group span {
+  float: left;
+  line-height: 40px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body form .form-group span svg {
+  height: 14px;
+  width: 14px;
+  fill: #558bff;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body form .calendarIcon {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body form .addBtn {
+  position: absolute;
+  right: 6px;
+  bottom: 20px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .body form .addBtn svg {
+  height: 16px;
+  width: 16px;
+  fill: #558bff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .footer {
+  margin-top: 11px;
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .footer ul li {
+  margin-right: 18px;
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .footer ul li button {
+  background: #d9e5ff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #558bff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskForm .footer ul li:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer {
+  float: left;
+  width: 100%;
+  margin-top: 42px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .header, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .header {
+  font-size: 14px;
+  color: #9fb1bd;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .header span, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .header span {
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body {
+  position: relative;
+  background: #ecf3fa;
+  float: left;
+  height: 123px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 18px 15px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body h6, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body h6 {
+  font-size: 16px;
+  color: #558bff;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form .form-group, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form .form-group {
+  padding: 0;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form .form-group .col3layoutInput, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form .form-group .col3layoutInput {
+  width: 97%;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form .form-group.col-itm-2, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form .form-group.col-itm-2 {
+  left: 5px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form .form-group.col-itm-3, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form .form-group.col-itm-3 {
+  left: 10px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form label, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form label {
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #9fb1bd;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form input, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form select, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form input, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form select {
+  padding: 6px;
+  font-size: 14px;
+  height: 35px;
+  color: #6b7a84;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form textarea, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form textarea {
+  height: 75px;
+  padding: 6px;
+  resize: none;
+  font-size: 14px;
+  color: #6b7a84;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form .form-row, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form .form-row {
+  margin-bottom: 18px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form .form-row .input-group-addon, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form .form-row .input-group-addon {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 12px;
+  top: 27px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form .form-row .input-group-addon svg, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form .form-row .input-group-addon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskDependencyContainer .body form .form-row .input-group-addon svg path, .taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body form .form-row .input-group-addon svg path {
+  fill: #bac8d6;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .body {
+  height: 180px;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .attendeesInput {
+  width: 49.2%;
+  padding-right: 20px !important;
+}
+
+.taskWindow .taskContainer .tabsContainer .overviewTabContainer .taskFormContainer .taskMeetingContainer .locationInput {
+  width: 49.2%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer {
+  padding: 20px 36px;
+  padding-right: 12px;
+  font-family: "workSans-regular";
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .addSubtaskContainer {
+  margin-top: 10px;
+  background: #ecf3fa;
+  padding: 21px 13px;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .addSubtaskContainer input {
+  padding: 6px;
+  font-size: 14px;
+  height: 35px;
+  color: #6b7a84;
+  width: 58.8%;
+  display: inline-block;
+  font-family: "workSans-regular";
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .addSubtaskContainer .quickComposeTaskBtn {
+  background: #558bff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  float: none;
+  right: -6px;
+  top: 6px;
+  position: relative;
+  display: inline-grid;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .addSubtaskContainer ul {
+  float: right;
+  line-height: 46px;
+  right: 15px;
+  position: relative;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .addSubtaskContainer ul li {
+  cursor: pointer;
+  font-size: 14px;
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .addSubtaskContainer ul li label {
+  color: #9fb1bd;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .addSubtaskContainer ul li .composerToggleIcon {
+  float: right;
+  height: 14px;
+  width: 14px;
+  background: #9fb1bd;
+  color: #fff;
+  line-height: 14px;
+  left: 14px;
+  top: 18px;
+  text-align: center;
+  position: relative;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer {
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .noTasksState {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer {
+  margin-bottom: 55px;
+  float: left;
+  padding: 0 10px;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListHeader {
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #6b7a84;
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListHeader ul li {
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListHeader ul li label {
+  font-size: 13px;
+  color: #9fb1bd;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListHeader ul li:nth-child(1) {
+  width: 23.17%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListHeader ul li:nth-child(2) {
+  width: 21.24%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListHeader ul li:nth-child(3) {
+  width: 20.28%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListHeader ul li:nth-child(4) {
+  width: 21.72%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListHeader ul li:nth-child(5) {
+  width: 11.59%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableHeader {
+  font-family: "workSans-regular";
+  font-size: 13px;
+  color: #bac8d6;
+  border-bottom: 1px solid #dce7f2;
+  float: left;
+  padding: 10px 0;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableHeader ul li {
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(1) {
+  width: 23.63%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(2) {
+  width: 12.8%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(3) {
+  width: 11.82%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(4) {
+  width: 17.2%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(5) {
+  width: 27.07%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableHeader ul li:nth-child(6) {
+  width: 7.4%;
+  text-align: right;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody {
+  float: left;
+  height: 150px;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow {
+  float: left;
+  width: 100%;
+  font-family: "futura-medium";
+  font-size: 13px;
+  color: #6b7a84;
+  border-bottom: 1px solid #dce7f2;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li {
+  float: left;
+  line-height: 45px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li .highPriority {
+  font-size: 18px;
+  vertical-align: sub;
+  margin-right: 3px;
+  margin-left: 3px;
+  color: #f92a58;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li .normalPriority {
+  font-size: 18px;
+  vertical-align: sub;
+  margin-right: 3px;
+  margin-left: 3px;
+  color: #19ccc7;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.taskNameColumn {
+  width: 23.63%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.assignedToColumn {
+  width: 12.8%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.assignedToColumn button {
+  width: 64px;
+  background: #d9e5ff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #558bff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.statusColumn {
+  width: 11.82%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.dueDateColumn {
+  width: 17.2%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.dueDateColumn span {
+  float: left;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.dueDateColumn span svg {
+  top: 6px;
+  position: relative;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.associationsColumn {
+  width: 27.07%;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.actionsColumn {
+  width: 7.4%;
+  text-align: center;
+}
+
+.taskWindow .taskContainer .tabsContainer .subTaskTabContainer .subTasksTableContainer .tasksListContainer .tasksListTableBody .taskListRow ul li.actionsColumn i {
+  color: #558bff;
+  vertical-align: middle;
+  left: 12px;
+  position: relative;
+}
+
 .appSidebar {
   width: 356px;
   height: 100%;
   border-right: 2px solid #dce7f2;
   position: fixed;
   left: 0;
-  background: #fff; }
+  background: #fff;
+  margin-top: 83px;
+  z-index: 1;
+}
+ 
 
-/*# sourceMappingURL=task.component.css.map */
+ /*# sourceMappingURL= task.component.css.map */

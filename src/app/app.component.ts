@@ -19,6 +19,11 @@ currentURL='';
   });
 }
   showUserProfileDropdownFlag = false;
+  showWorkspaceDropdown = false;
+  hideAllDropdowns(){
+    this.showUserProfileDropdownFlag = false;
+    this.showWorkspaceDropdown = false;
+  }
   gotoDashboard(){
     this.router.navigateByUrl('/');
   };

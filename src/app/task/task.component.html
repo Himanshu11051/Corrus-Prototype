@@ -1,9 +1,3 @@
-<script>
-
-alert(1);
-$('.taskSlider').bxSlider(); 
-
-</script>
 <section class = "taskWindow">
     <div class="row taskWindowHeader">
         <div class="col-sm-12 col-md-12 col-lg-12 taskWindowHeader1">
@@ -20,7 +14,7 @@ $('.taskSlider').bxSlider();
         <div class = "col-sm-12 col-md-12 col-lg-12 taskWindowHeader2">
             <ul>
                 <li [ngClass]="{'active': currentTab == 'TASKDETAILS'}" (click)="switchTab('TASKDETAILS')"> Task Details</li>
-                <li [ngClass]="{'active': currentTab == 'SUBTASKS'}" > SubTasks</li>
+                <li [ngClass]="{'active': currentTab == 'SUBTASKS'}" (click)="switchTab('SUBTASKS')"> SubTasks</li>
             </ul>
         </div>
     </div>
@@ -88,11 +82,80 @@ $('.taskSlider').bxSlider();
                 <div class = "col-sm-12 col-md-12 col-lg-12 taskDetailsContainer">
                     <div class = "col-sm-12 col-md-12 col-lg-12 taskDetailsHeader">
                         <h6>Task Details</h6>
+                        <ul>
+                            <li><button>Add Form</button></li>
+                            <li><button>Add Dependency</button></li>
+                            <li><button>Add Meeting</button></li>
+                        </ul>
                         <button class = "saveBtn">Save</button>
                         <button class = "cancelBtn">Cancel</button>
                     </div>
+                    <div class = "col-sm-12 col-md-12 col-lg-12 taskDetailsBody">
+                        <form>
+                            <div class="form-row">
+                              <div class="form-group col-lg-4 col-itm-1">
+                                <label class="col-form-label">Task Name</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="form-group col-lg-4 col-itm-2">
+                                <label class="col-form-label">Task Status</label>
+                                <select class="form-control col3layoutInput">
+                                  <option>Ready</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                </select>
+                              </div>  
+                              <div class="form-group col-lg-4 col-itm-3" >
+                                <label class="col-form-label">Due On</label>
+                                <input type="text" class="form-control col3layoutInput">
+                                <span class="input-group-addon" id="basic-addon2">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                                </span>
+                              </div>              
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-lg-4 col-itm-1">
+                                <label class="col-form-label">Assigned To</label>
+                                <input type="text" class="form-control col3layoutInput" value = "Himanshu Kumar">
+                              </div>
+                              <div class="form-group col-lg-4 col-itm-2">
+                                <label class="col-form-label">Task Type</label>
+                                <!-- <input type="text" class="form-control col3layoutInput"> -->
+                                <select class="form-control col3layoutInput">
+                                  <option>Normal</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-lg-4 col-itm-3" >
+                                <label class="col-form-label">Task Outcomes - i.e. Completed</label>
+                                <input type="text" class="form-control col3layoutInput">
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-lg-4 col-itm-1">
+                                <label class="col-form-label">Task Description / Instructions</label>
+                                <textarea class="form-control col3layoutInput" rows="3"></textarea>
+                              </div>
+                              <div class="form-group col-lg-4 col-itm-2">
+                                <label class="col-form-label">Task Tags - Press Enter to Add</label>
+                                <textarea class="form-control col3layoutInput" rows="3"></textarea>
+                                <span class = "tagChip">Example Tag
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>x_delete_icon@1x</title><g id="art"><path d="M19.8656,14.99916l8.12642-8.126A3.4402,3.4402,0,0,0,23.12684,2.008L15,10.134,6.87316,2.008A3.4402,3.4402,0,0,0,2.008,6.87316l8.12642,8.126L2.008,23.12684A3.4402,3.4402,0,1,0,6.87316,27.992L15,19.866l8.12684,8.126A3.4402,3.4402,0,0,0,27.992,23.12684Z"/></g></svg>
+                                </span>
+                              </div>
+                              <div class="form-group col-lg-4 col-itm-3">
+                                <label class="col-form-label">Task References</label>
+                                <textarea class="form-control col3layoutInput" rows="3"></textarea>
+                                <button class = "uploadReferenceBtn">Upload</button>
+                              </div>
+                            </div>
+                          </form>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-12 taskCarouselContainer">
+                <!-- <div class="col-sm-12 col-md-12 col-lg-12 taskCarouselContainer">
                     <ul class="taskSlider">
                         <li>
                             <div class = "col-sm-12 col-md-12 col-lg-12 sliderArea descriptionSlider">
@@ -158,48 +221,293 @@ $('.taskSlider').bxSlider();
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <div class = "taskFormContainer">
                     <div class = "taskForm">
                         <div class = "header">
-                            Task Form - Please fill out this form and save once completed: 
+                            Task Form
                         </div>
                         <div class = "body">
-                            <h6>Last Email Sent to Client</h6>
+                            <h6>(Form Title)</h6>   <i class="material-icons editIcon">edit</i> 
                             <form>
                                 <div class="form-row">
-                                  <div class="form-group col-sm-12 col-md-12 col-lg-12">
-                                    <input type="text" class="form-control" placeholder = "Provide Subject of Email">
-                                  </div>     
-                                  <div class="form-group col-sm-12 col-md-12 col-lg-12">
-                                    <input type="text" class="form-control" placeholder = "Date Email was Sent">
-                                    <span class="calendarIcon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Insert Text Field Label">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>x_in_circle_icon@1x</title><g id="art"><path d="M24.8995,5.1005a13.99984,13.99984,0,1,0,0,19.79851A13.99826,13.99826,0,0,0,24.8995,5.1005ZM22.43659,18.3052a2.75008,2.75008,0,0,1-3.88919,3.88919l-3.4263-3.4263-3.42679,3.4263A2.7499,2.7499,0,1,1,7.8056,18.3052l3.4263-3.42679-3.4263-3.4263a2.74973,2.74973,0,1,1,3.88871-3.88871l3.42679,3.4263,3.42679-3.4263a2.74973,2.74973,0,0,1,3.88871,3.88871l-3.42679,3.4263Z"/></g></svg>
                                     </span>
-                                  </div>  
-                                  <div class="form-group col-sm-12 col-md-12 col-lg-12">
-                                    <input type="text" class="form-control" placeholder = "Upload All Email Attachments">
-                                    <span class="addBtn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>x_in_circle_icon@1x</title><g id="art"><path d="M24.8995,5.1005a13.99984,13.99984,0,1,0,0,19.79851A13.99826,13.99826,0,0,0,24.8995,5.1005ZM22.43659,18.3052a2.75008,2.75008,0,0,1-3.88919,3.88919l-3.4263-3.4263-3.42679,3.4263A2.7499,2.7499,0,1,1,7.8056,18.3052l3.4263-3.42679-3.4263-3.4263a2.74973,2.74973,0,1,1,3.88871-3.88871l3.42679,3.4263,3.42679-3.4263a2.74973,2.74973,0,0,1,3.88871,3.88871l-3.42679,3.4263Z"/></g></svg>                  
-                                    </span>
-                                </div>             
+                                  </div>
                                 </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" placeholder="Insert Date Field Label">
+                                      <span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>x_in_circle_icon@1x</title><g id="art"><path d="M24.8995,5.1005a13.99984,13.99984,0,1,0,0,19.79851A13.99826,13.99826,0,0,0,24.8995,5.1005ZM22.43659,18.3052a2.75008,2.75008,0,0,1-3.88919,3.88919l-3.4263-3.4263-3.42679,3.4263A2.7499,2.7499,0,1,1,7.8056,18.3052l3.4263-3.42679-3.4263-3.4263a2.74973,2.74973,0,1,1,3.88871-3.88871l3.42679,3.4263,3.42679-3.4263a2.74973,2.74973,0,0,1,3.88871,3.88871l-3.42679,3.4263Z"/></g></svg>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" placeholder="Insert Upload Field Label">
+                                      <span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>x_in_circle_icon@1x</title><g id="art"><path d="M24.8995,5.1005a13.99984,13.99984,0,1,0,0,19.79851A13.99826,13.99826,0,0,0,24.8995,5.1005ZM22.43659,18.3052a2.75008,2.75008,0,0,1-3.88919,3.88919l-3.4263-3.4263-3.42679,3.4263A2.7499,2.7499,0,1,1,7.8056,18.3052l3.4263-3.42679-3.4263-3.4263a2.74973,2.74973,0,1,1,3.88871-3.88871l3.42679,3.4263,3.42679-3.4263a2.74973,2.74973,0,0,1,3.88871,3.88871l-3.42679,3.4263Z"/></g></svg>
+                                      </span>
+                                    </div>
+                                  </div>
+                            </form> 
+                            <div class="col-sm-12 col-md-12 col-lg-12 footer">
+                                <ul>
+                                    <li><button>Add Text Field</button></li>    
+                                    <li><button>Add Data Field</button></li>    
+                                    <li><button>Add Upload Field</button></li>    
+                                    <li><button>Delete Form</button></li>    
+                                </ul>    
+                            </div>                       
+                        </div>
+                    </div>
+                    <div class = "taskDependencyContainer">
+                        <div class = "header">
+                            <span>Task Dependency </span> <span> <svg xmlns="http://www.w3.org/2000/svg" id = "helpIcon" viewBox="0 0 30 30" style="fill: #c3d4e3;"><title>help_icon@1x</title><g id="art"><path d="M14.93177.8a14,14,0,1,0,14,14A14.00007,14.00007,0,0,0,14.93177.8ZM15.08,26.28a3.3831,3.3831,0,0,1-3.12-3.32,3.16427,3.16427,0,0,1,6.32,0A3.45462,3.45462,0,0,1,15.08,26.28Zm4.3907-11.19012s-1.80471.99409-1.92478,2.19483L17.45641,19H12.97336l.0625-2.608c0-1.36218,1.26788-2.709,2.81881-3.4845s1.78023-1.64744,1.78023-2.13618c0-1.25136-.515-2.14191-2.75-2.14191-2.25452,0-3.92788,2.46187-3.92788,2.46187L8.353,7.2554l.43716-.38864a9.34414,9.34414,0,0,1,6.63418-2.70729c4.56893,0,7.15775,3.23,7.15775,6.02075A5.79127,5.79127,0,0,1,19.4707,15.08988Z"/></g></svg></span>
+                        </div>
+                        <div class = "body">                            
+                            <form>
+                                    <label class = "title">Creat dependencies for this task: </label>
+                                    <div class="form-row">
+                                      <div class="form-group col-lg-4 col-itm-1">
+                                        <label class="col-form-label">Case Tasks</label>
+                                        <select class="form-control col3layoutInput">
+                                                <option>Select Task</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group col-lg-4 col-itm-2">
+                                        <label class="col-form-label">Dependency Description</label>
+                                        <select class="form-control col3layoutInput">
+                                          <option>Done</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                        </select>
+                                      </div>  
+                                      <div class="form-group col-lg-4 col-itm-3" >
+                                        <label class="col-form-label">So This Task Can Start</label>
+                                        <select class="form-control col3layoutInput">
+                                                <option>Contractor Outreach</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                        </select>
+                                      </div>              
+                                    </div>
                             </form>
                         </div>
                     </div>
-                    <div class = "taskDeliverables">
-                        <div class = "header">
-                            Task Deliverables 
-                        </div>
-                        <div class = "body">
-                            <textarea class="form-control" rows="3" placeholder="Task deliverables will be listed here"></textarea>
-                            <button class = "uploadDeliverablesBtn">Upload</button>
-                        </div>
-                    </div>
+                    <div class = "taskMeetingContainer">
+                            <div class = "header">
+                                <span>Meeting Details</span> 
+                            </div>
+                            <div class = "body">                            
+                                <form>
+                                        <div class="form-row">
+                                          <div class="form-group attendeesInput col-md-6 col-lg-6">
+                                            <label class="col-form-label">Attendees</label>
+                                            <input type="text" class="form-control" placeholder="Insert Upload Field Label">
+                                          </div>
+                                          <div class="form-group locationInput col-md-6 col-lg-6">
+                                            <label class="col-form-label">Location</label>
+                                            <input type="text" class="form-control" placeholder="Insert Upload Field Label">
+                                          </div>              
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-4 col-itm-1">
+                                              <label class="col-form-label">Meeting Date</label>
+                                              <input type="text" class="form-control col3layoutInput" value = "September 20, 2017">
+                                              <span class="input-group-addon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                                              </span>
+                                            </div>
+                                            <div class="form-group col-lg-4 col-itm-2">
+                                              <label class="col-form-label">Start At</label>
+                                              <select class="form-control col3layoutInput">
+                                                <option>10:00 AM</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                              </select>
+                                            </div>  
+                                            <div class="form-group col-lg-4 col-itm-3" >
+                                              <label class="col-form-label">Ends At</label>
+                                              <select class="form-control col3layoutInput">
+                                                      <option>11:00 AM</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                      <option>4</option>
+                                              </select>
+                                            </div>              
+                                          </div>                                        
+                                </form>
+                            </div>
+                        </div>                    
                 </div>
             </div>
             <div class = "col-sm-12 col-md-12 col-lg-12 subTaskTabContainer" *ngIf="currentTab=='SUBTASKS'">
-                Subtask Coming Soon
+                <div class = "col-sm-12 col-md-12 col-lg-12 subTasksHeader">
+                    <h6>SubTask List</h6>
+                </div>
+                <div class = "col-sm-12 col-md-12 col-lg-12 addSubtaskContainer">
+                    <input type="text" class="form-control" placeholder = "Add a new subtask">
+                    <button class = "quickComposeTaskBtn"><i class="material-icons">add</i></button>
+                    <ul>
+                        <li><label>Show Composer</label> <span class = "composerToggleIcon"> +</span></li>
+                        
+                    </ul>
+                </div>
+                <div class = "col-sm-12 col-md-12 col-lg-12 subTasksTableContainer">
+                    <div class = "col-sm-12 col-md-12 col-lg-12 tasksListContainer">
+                      <div class = "col-sm-12 col-md-12 col-lg-12 tasksListTableHeader">
+                        <ul>
+                          <li>Task Name</li>
+                          <li>Assigned To</li>
+                          <li>Status</li>
+                          <li>Due Date</li>
+                          <li>Associations</li>
+                          <li>Actions</li>
+                        </ul>
+                      </div>
+                      <div class = "col-sm-12 col-md-12 col-lg-12 tasksListTableBody">
+                        <div class = "taskListRow">
+                          <ul>
+                            <li class = "taskNameColumn">
+                              <ul>
+                                <li><span>1</span></li>
+                                <li><i class="material-icons highPriority">star_border</i></li>
+                                <li><p>Land Survey Doc</p></li>
+                              </ul>
+                            </li>
+                            <li class = "assignedToColumn">
+                              <span class = "userDefaultAvatar">Hk</span>
+                            </li>
+                            <li class = "statusColumn">
+                              <span>Ready</span>
+                            </li>
+                            <li class = "dueDateColumn">
+                              <span class="calendarIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                              </span>
+                              <span>September 15, 2017</span>
+                            </li>
+                            <li class = "associationsColumn">
+                              <span class = "associationsTag">3 Subtasks</span>
+                              <span class = "associationsTag">8 Tags</span>
+                            </li>
+                            <li class = "actionsColumn">
+                              <i class="material-icons">settings</i>
+                            </li>
+                          </ul>
+                        </div>
+            
+                        <div class = "taskListRow">
+                          <ul>
+                            <li class = "taskNameColumn">
+                              <ul>
+                                <li><span>2</span></li>
+                                <li><i class="material-icons normalPriority">panorama_fish_eye</i></li>
+                                <li><p>Preliminary Concept Dev</p></li>
+                              </ul>
+                            </li>
+                            <li class = "assignedToColumn">
+                              <span class = "userDefaultAvatar">Ng</span>
+                            </li>
+                            <li class = "statusColumn">
+                              <span>Ready</span>
+                            </li>
+                            <li class = "dueDateColumn">
+                              <span class="calendarIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                              </span>
+                              <span>September 22, 2017</span>
+                            </li>
+                            <li class = "associationsColumn">
+                              <span class = "associationsTag">1 Subtasks</span>
+                            </li>
+                            <li class = "actionsColumn">
+                              <i class="material-icons">settings</i>
+                            </li>
+                          </ul>
+                        </div>
+            
+            
+                        <div class = "taskListRow">
+                          <ul>
+                            <li class = "taskNameColumn">
+                              <ul>
+                                <li><span>3</span></li>
+                                <li><i class="material-icons normalPriority">panorama_fish_eye</i></li>
+                                <li><p>Contractor Outreach</p></li>
+                              </ul>
+                            </li>
+                            <li class = "assignedToColumn">
+                              <button class = "assignUserBtn">Assign</button>
+                            </li>
+                            <li class = "statusColumn">
+                              <span>Unassigned</span>
+                            </li>
+                            <li class = "dueDateColumn">
+                              <span class="calendarIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                              </span>
+                              <span>October 20, 2017</span>
+                            </li>
+                            <li class = "associationsColumn">
+                              <span class = "associationsTag">2 Subtasks</span>
+                              <span class = "associationsTag">6 Tags</span>
+                              <span class = "associationsTag">1 Dependency</span>
+                            </li>
+                            <li class = "actionsColumn">
+                              <i class="material-icons">settings</i>
+                            </li>
+                          </ul>
+                        </div> 
+            
+            
+                        <div class = "taskListRow">
+                          <ul>
+                            <li class = "taskNameColumn">
+                              <ul>
+                                <li><span>4</span></li>
+                                <li><i class="material-icons highPriority">star_border</i></li>
+                                <li><p>Land Survey Doc</p></li>
+                              </ul>
+                            </li>
+                            <li class = "assignedToColumn">
+                              <span class = "userDefaultAvatar">Hk</span>
+                            </li>
+                            <li class = "statusColumn">
+                              <span>Ready</span>
+                            </li>
+                            <li class = "dueDateColumn">
+                              <span class="calendarIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>calendar_icon@1x</title><g id="art"><path d="M21,26H8a4.00455,4.00455,0,0,1-4-4V8A4.00455,4.00455,0,0,1,8,4H21a4.00455,4.00455,0,0,1,4,4V22A4.00455,4.00455,0,0,1,21,26ZM8,6A2.00228,2.00228,0,0,0,6,8V22a2.00228,2.00228,0,0,0,2,2H21a2.00228,2.00228,0,0,0,2-2V8a2.00228,2.00228,0,0,0-2-2Zm12,7H9a1,1,0,0,1-1-1V9A1,1,0,0,1,9,8H20a1,1,0,0,1,1,1v3A1,1,0,0,1,20,13ZM10,11h9V10H10Zm1,4H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3ZM11,19H8v2h3Zm5,0H13v2h3Zm5,0H18v2h3Z"/></g></svg>                     
+                              </span>
+                              <span>September 15, 2017</span>
+                            </li>
+                            <li class = "associationsColumn">
+                              <span class = "associationsTag">3 Subtasks</span>
+                              <span class = "associationsTag">8 Tags</span>
+                              <span class = "associationsTag">1 Dependency</span>
+                            </li>
+                            <li class = "actionsColumn">
+                              <i class="material-icons">settings</i>
+                            </li>
+                          </ul>
+                        </div> 
+            
+            
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>

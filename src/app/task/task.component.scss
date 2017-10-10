@@ -6,7 +6,7 @@
         position: fixed;
         width: 100%;
         background: #fff;
-        z-index: 2;
+        z-index: 1;
         .taskWindowHeader1{
             font-family: $font-workSans-regular;
             margin-bottom: 12px;
@@ -55,7 +55,7 @@
                     margin-right: 68px;
                     color: $grey3;
                     font-size: 14px;
-                    font-family: $font-workSans-medium;
+                    font-family: $font-workSans-regular;
                     cursor: pointer;
                 }
                 li.active{
@@ -83,7 +83,7 @@
                     .box{
                         float: left;
                         font-size: 14px;
-                        font-family: $font-workSans-medium;
+                        font-family: $font-workSans-regular;
                         .circularElement{
                             @include circularElement(55px);                    
                             display: block;
@@ -154,7 +154,7 @@
                         h6{
                             float: left;
                             font-size: 16px;
-                            font-family: $font-workSans-medium;
+                            font-family: $font-workSans-regular;
                         }
                         button{
                             float: right;
@@ -162,9 +162,89 @@
                         button.cancelBtn{
                             margin-right: 15px;
                         }
+                        ul{
+                            li{
+                                float: left;
+                                button{
+                                    @include appButton($blue2,$blue);
+                                    font-size: 12px;
+                                    padding: 0 10px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    margin-left: 18px;
+                                }
+                            }
+                        }
+                    }
+                    .taskDetailsBody{
+                        font-family: $font-workSans-regular;
+                        font-size: 14px;
+                        padding-right: 15px;
+                        margin-top: -7px;
+                        form{
+                            .form-group{
+                                padding: 0;
+                                .col3layoutInput{
+                                    width: 97%;
+                                }
+                            }
+                            .form-group.col-itm-2{
+                                left:5px;
+                            }
+                            .form-group.col-itm-3{
+                                left:10px;
+                            }
+                            label{
+                                font-family: $font-workSans-regular;
+                                font-size: 14px;
+                                color: $grey4;
+                            }
+                            input,select{
+                                padding: 6px;
+                                font-size: 14px;
+                                height: 35px;
+                                color: $darkGrey;
+                            }
+                            textarea{
+                                height: 75px;
+                                padding: 6px;
+                                resize: none;
+                                font-size: 14px;
+                                color: $darkGrey;
+                            }
+                            .form-row{
+                                margin-bottom: 18px;
+                                .input-group-addon{
+                                    background: none;
+                                    border: none;
+                                    position: absolute;
+                                    right: 12px;
+                                    top: 24px;
+                                    svg{
+                                        width: 30px;
+                                        height: 30px;
+                                        path{
+                                            fill: $grey3;
+                                        }
+                                    }
+                                }
+                            }
+                            .uploadReferenceBtn{
+                                right: 18px;
+                                bottom: 8px;
+                                position: absolute;
+                                width:64px;
+                                @include appButton($blue2,$blue);
+                                font-size: 12px;
+                            }
+                            .tagChip{
+                                margin-top: 2px;
+                                margin-left: -2px;
+                            }
+                        }
                     }
                 }
-                .taskCarouselContainer{
+               /* .taskCarouselContainer{
                     .sliderArea{
                         padding: 10px 70px;
                         height: 109px;
@@ -176,7 +256,7 @@
                         }
                         .body{
                             color: $darkGrey;
-                            font-family: $font-workSans-medium;
+                            font-family: $font-workSans-regular;
                             font-size: 15px;
                             .dependencyTag{
                                 display: inline-block;
@@ -232,22 +312,23 @@
                         }
                     }
 
-                }
+                }*/
                 .taskFormContainer{
+                    font-family: $font-workSans-regular;
                     float: left;
                     width: 100%;
                     .taskForm{
                         float: left;
-                        width: 63.37%;
+                        width: 100%;
                         margin-right: 16px;
                         .header{
                             font-size: 14px;
                             color: $grey4;
                         }
                         .body{
+                            background: $grey1;
                             float: left;
-                            height: 210px;
-                            border: 1px solid #eef4fa;
+                            height: 260px;
                             width: 100%;
                             border-radius: 4px;
                             padding: 18px 15px;
@@ -255,34 +336,43 @@
                                 font-size: 16px;
                                 color: $blue;
                                 margin-bottom: 15px;
+                                float: left;
+                            }
+                            .editIcon{
+                                float: left;
+                                font-size: 13px;
+                                color: $blue;
+                                margin-left: 3px;
                             }
                             form{
+                                .form-row{
+                                    display: block;
+                                }
                                 .form-group{
                                     padding: 0;
+                                    width: 100%;
+                                    input{
+                                        height: 35px;
+                                        width: 97%;
+                                        margin-bottom: 18px;
+                                        margin-right: 5px;
+                                        padding: 6px;
+                                        font-size: 13px;
+                                        color: $darkGrey;
+                                        float: left;
+                                    }
+                                    span{
+                                        float: left;
+                                        line-height: 40px;
+                                        svg{
+                                            height: 14px;
+                                            width: 14px;
+                                            fill: $blue;
+                                        }
+                                    }
                                 }
-                                input{
-                                    height: 35px;
-                                    margin-bottom: 18px;
-                                    padding: 6px;
-                                    font-size: 13px;
-                                    color: $darkGrey;
-                                }
-                                ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                                    font-size: 13px;
-                                    color: $darkGrey;
-                                  }
-                                  ::-moz-placeholder { /* Firefox 19+ */
-                                    font-size: 13px;
-                                    color: $darkGrey;
-                                  }
-                                  :-ms-input-placeholder { /* IE 10+ */
-                                    font-size: 13px;
-                                    color: $darkGrey;
-                                  }
-                                  :-moz-placeholder { /* Firefox 18- */
-                                    font-size: 13px;
-                                    color: $darkGrey;
-                                  }
+                                
+                                
                                   .calendarIcon{
                                       position: absolute;
                                       right: 0;
@@ -303,38 +393,320 @@
                                   }
                             }
                         }
+                        .footer{
+                            margin-top: 11px;
+                            float: left;
+                            ul{
+                                li{
+                                    margin-right: 18px;
+                                    float: left;
+                                    button{
+                                        @include appButton($blue2,$blue);
+                                        font-size: 12px;
+                                        padding: 0 10px;
+                                    }
+                                }
+                                li:last-child{
+                                    float: right;
+                                    margin-right: 0;
+                                }
+                            }
+                        }
                     }
-                    .taskDeliverables{
+                    .taskDependencyContainer,.taskMeetingContainer{
                         float: left;
-                        width: 34.5%;
+                        width: 100%;
+                        margin-top: 42px;
                         .header{
                             font-size: 14px;
                             color: $grey4;
+                            span{
+                                float: left;
+                            }
                         }
                         .body{
                             position: relative;
-                            textarea{
-                                width: 100%;
-                                height: 75px;
-                                resize: none;
-                                padding: 6px;
-                                font-size: 13px;
-                                color: $darkGrey;
+                            background: $grey1;
+                            float: left;
+                            height: 123px;
+                            width: 100%;
+                            border-radius: 4px;
+                            padding: 18px 15px;
+                            h6{
+                                font-size: 16px;
+                                color: $blue;
+                                margin-bottom: 15px;
+                                float: left;
                             }
-                            .uploadDeliverablesBtn{
-                                right: 6px;
-                                bottom: 6px;
-                                position: absolute;
-                                width:65px;
-                                @include appButton($blue2,$blue);
-                                font-size: 12px;
+                            form{
+                                .form-group{
+                                    padding: 0;
+                                    .col3layoutInput{
+                                        width: 97%;
+                                    }
+                                }
+                                .form-group.col-itm-2{
+                                    left:5px;
+                                }
+                                .form-group.col-itm-3{
+                                    left:10px;
+                                }
+                                label{
+                                    font-family: $font-workSans-regular;
+                                    font-size: 14px;
+                                    color: $grey4;
+                                }
+                                input,select{
+                                    padding: 6px;
+                                    font-size: 14px;
+                                    height: 35px;
+                                    color: $darkGrey;
+                                }
+                                textarea{
+                                    height: 75px;
+                                    padding: 6px;
+                                    resize: none;
+                                    font-size: 14px;
+                                    color: $darkGrey;
+                                }
+                                .form-row{
+                                    margin-bottom: 18px;
+                                    .input-group-addon{
+                                        background: none;
+                                        border: none;
+                                        position: absolute;
+                                        right: 12px;
+                                        top: 27px;
+                                        svg{
+                                            width: 30px;
+                                            height: 30px;
+                                            path{
+                                                fill: $grey3;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }                        
+                    }
+                    .taskMeetingContainer{
+                        .body{
+                            height: 180px;
+                        }
+                        .attendeesInput{
+                            width: 49.2%;
+                            padding-right: 20px !important;
+                        }
+                        .locationInput{
+                            width: 49.2%;
+                        }
                     }
                 }
             }
             .subTaskTabContainer{
-                padding: 20px;
+                padding: 20px 36px;
+                padding-right: 12px;
+                font-family: $font-workSans-regular;
+                .addSubtaskContainer{
+                    margin-top: 10px;
+                    background: $grey1;
+                    padding: 21px 13px;
+                    input{
+                        padding: 6px;
+                        font-size: 14px;
+                        height: 35px;
+                        color: $darkGrey;
+                        width: 58.8%;
+                        display: inline-block;
+                        font-family: $font-workSans-regular;
+                    }
+                    .quickComposeTaskBtn{
+                        @include appButton($blue,#fff);
+                        width: 30px;
+                        height: 30px;
+                        float: none;
+                        right: -6px;
+                        top: 6px;
+                        position: relative;
+                        display: inline-grid;
+                    }
+                    ul{
+                        float: right;
+                        line-height: 46px;
+                        right: 15px;
+                        position: relative;
+                        li{
+                            cursor: pointer;
+                            font-size: 14px;
+                            float: left;
+                            label{
+                                color: $grey4;
+                            }
+                            .composerToggleIcon{
+                                float: right;
+                                height: 14px;
+                                width: 14px;
+                                background: $grey4;
+                                color: #fff;
+                                line-height: 14px;
+                                left: 14px;
+                                top: 18px;
+                                text-align: center;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+                .subTasksTableContainer{
+                    float: left;
+                    .noTasksState{
+                        margin-top: 36px;
+                        text-align: center;
+                    }
+                    .tasksListContainer{
+                        // margin-top: 35px;
+                        margin-bottom: 55px;
+                        float: left;
+                        padding: 0 10px;
+                        .tasksListHeader{
+                            font-family: $font-workSans-regular;
+                            font-size: 14px;
+                            color: $darkGrey;                    
+                            float: left;
+                            ul{
+                                li{
+                                    float: left;
+                                    label{
+                                        font-size: 13px;
+                                        color: $grey4;
+                                    }
+                                }
+                                li:nth-child(1){
+                                    width: 23.17%;
+                                }
+                                li:nth-child(2){
+                                    width: 21.24%;
+                                }
+                                li:nth-child(3){
+                                    width: 20.28%;
+                                }
+                                li:nth-child(4){
+                                    width: 21.72%;
+                                }
+                                li:nth-child(5){
+                                    width: 11.59%;
+                                }
+                            }
+                        }
+                        .tasksListTableHeader{
+                            font-family: $font-workSans-regular;
+                            font-size: 13px;
+                            color: $grey3;
+                            // border-top: 1px solid $grey2;
+                            border-bottom: 1px solid $grey2;
+                            float: left;
+                            // margin-top: 25px;
+                            padding: 10px 0;
+                            ul{
+                                li{
+                                    float: left;
+                                }
+                                li:nth-child(1){
+                                    width: 23.63%;
+                                }
+                                li:nth-child(2){
+                                    width: 12.8%;
+                                }
+                                li:nth-child(3){
+                                    width: 11.82%;
+                                }
+                                li:nth-child(4){
+                                    width: 17.2%;
+                                }
+                                li:nth-child(5){
+                                    width: 27.07%;
+                                }
+                                li:nth-child(6){
+                                    width: 7.4%;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                        .tasksListTableBody{
+                            float: left;
+                            height: 150px;
+                            // max-height: 150px;
+                            // overflow-y: auto;
+                            .taskListRow{
+                                float: left;
+                                width: 100%;
+                                font-family: $font-futura-medium;
+                                font-size: 13px;
+                                color: $darkGrey;
+                                border-bottom: 1px solid $grey2;
+                                ul{
+                                    li{
+                                        float: left;
+                                        line-height: 45px;
+                                        vertical-align: middle;
+                                        text-align: left;
+                                        .highPriority{
+                                            font-size: 18px;
+                                            vertical-align: sub;
+                                            margin-right: 3px;
+                                            margin-left: 3px;
+                                            color: $red;
+                                        }
+                                        .normalPriority{
+                                            font-size: 18px;
+                                            vertical-align: sub;
+                                            margin-right: 3px;
+                                            margin-left: 3px;
+                                            color: $lightGreen;
+                                        }
+                                    }
+                                    li.taskNameColumn{
+                                        width: 23.63%;
+                                    }
+                                    li.assignedToColumn{
+                                        width: 12.8%;
+                                        button{
+                                            width:64px;
+                                            @include appButton($blue2,$blue);
+                                            font-size: 12px;
+                                        }
+                                    }
+                                    li.statusColumn{
+                                        width: 11.82%;
+                                    }
+                                    li.dueDateColumn{
+                                        width: 17.2%;
+                                        span{
+                                            float: left;
+                                            svg{
+                                                top: 6px;
+                                                position: relative;
+                                            }
+                                        }
+                                    }
+                                    li.associationsColumn{
+                                        width: 27.07%
+                                    }
+                                    li.actionsColumn{
+                                        width: 7.4%;
+                                        text-align: center;
+                                        i{
+                                            color: $blue;
+                                            vertical-align: middle;
+                                            left: 12px;
+                                            position: relative;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

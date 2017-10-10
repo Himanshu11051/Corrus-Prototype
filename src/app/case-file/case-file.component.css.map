@@ -1,9 +1,9 @@
 {
-  "version": 3,
-  "file": "case-file.component.css",
-  "sources": [
-    "case-file.component.scss"
-  ],
-  "mappings": "",
-  "names": []
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "case-file.component.scss"
+    ],
+    "names": [],
+    "file": "case-file.component.css"
 }

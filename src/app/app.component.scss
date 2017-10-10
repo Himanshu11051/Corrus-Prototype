@@ -56,12 +56,27 @@ header{
                     border: none;
                     outline: none;
                     font-size: 14px;
-                    color: $grey3;                        
+                    color: $grey3;          
+                    position: relative; 
+                    .appCustomDropdown{
+                        right: -18px;
+                        margin-top: -20px;
+                    }             
                 }
                 .createCaseBtn{
                     @extend .themeButton;
                     width: 115px;
 
+                }
+                .notificationCount{
+                    background: $red;
+                    color: #fff;
+                    @include circularElement(16px);
+                    display: inline-block;
+                    position: absolute;
+                    top: 20px;
+                    margin-left: 22px;
+                    font-size: 12px;
                 }
             }
             li:last-child{
