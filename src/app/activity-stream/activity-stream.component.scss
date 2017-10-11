@@ -47,10 +47,10 @@
                     position: absolute;
                     top: 0;
                     right: 0;
-                    i{
-                        font-size: 11px;
-                        color: #fff;                        
-                    }
+                    // i{
+                    //     font-size: 11px;
+                    //     color: #fff;                        
+                    // }
                 }
             }
             li.active{
@@ -118,6 +118,7 @@
             font-size: 12px;
             font-family: $font-workSans-regular;
             display: inline-block;
+            padding-left: 6px;
         }
         .postBtn{
             @include appButton($blue,#fff);
