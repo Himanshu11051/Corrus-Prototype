@@ -9,7 +9,7 @@
       </li>
       <li>
         <span class = "userDefaultAvatar" (click)="$event.stopPropagation();hideAllDropdowns(); showUserProfileDropdownFlag = !showUserProfileDropdownFlag">Hk
-            <div class = "userProfileDropdown" *ngIf = "showUserProfileDropdownFlag" (click)="$event.stopPropagation()">
+            <div class = "userProfileDropdown appCustomDropdown" *ngIf = "showUserProfileDropdownFlag" (click)="$event.stopPropagation()">
                 <ul>
                   <li>
                     <a href = "javascript:void(0);">My Profile</a>
@@ -77,4 +77,3 @@
 <div class = "container-fluid appContainer" (click)="hideAllDropdowns()">
     <router-outlet></router-outlet>
 </div>
-

@@ -88,16 +88,12 @@ header{
 }
 .userProfileDropdown{
     position: absolute;
-    height: auto;
-    width:auto;
-    border: 1px solid $blue;
+    height: auto !important;
+    width:auto !important;
+    min-width: auto !important;
     z-index: 4;
-    background: #fff;
-    text-align: left;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    border-radius: 4px;
-    margin-top: 10px;
+    margin-left: -47px;
+    margin-top: 5px;
     ul{
         li{
             display: block !important;
@@ -105,8 +101,6 @@ header{
             cursor: pointer;
             a{
                 color: $grey4;
-                padding-left: 10px;
-                padding-right: 20px;
                 cursor: pointer;
                 font-family: $font-workSans-regular;
             }

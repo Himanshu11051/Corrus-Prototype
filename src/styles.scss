@@ -339,6 +339,7 @@ ul{
     padding: 15px 0 !important;
     box-shadow: 3px 3px 8px $grey4;
     min-width: 176px;
+    z-index: 2;
     .carret{
         position: absolute;
         top: -18px;

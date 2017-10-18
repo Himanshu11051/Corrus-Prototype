@@ -13,24 +13,26 @@ constructor(private router: Router) { }
   }
   currentTab = 'OVERVIEW';
   switchTab(currentTab){
-  this.currentTab = currentTab;
+    this.currentTab = currentTab;
   };
   showComposer = true;
   showTaskList = false;
+  showCaseActionsDropdown = false;
+  showTaskListMoreActionsDropdown = false;
   composerToggleText = 'Hide Composer';
   composerToggleBtnIcon = 'remove';
   toggelTaskComposer(){
-  this.showComposer = ! this.showComposer;
-  if(this.showComposer){
-  this.composerToggleText = 'Hide Composer';
-  this.composerToggleBtnIcon = 'remove';
-  }
-  else{
-  this.composerToggleText = 'Show Composer';
-  this.composerToggleBtnIcon = 'add';
-  }
+    this.showComposer = ! this.showComposer;
+    if(this.showComposer){
+      this.composerToggleText = 'Hide Composer';
+      this.composerToggleBtnIcon = 'remove';
+    }
+    else{
+      this.composerToggleText = 'Show Composer';
+      this.composerToggleBtnIcon = 'add';
+    }
   };
   openTask(){
-  this.router.navigateByUrl('/casefile/task');
+    this.router.navigateByUrl('/casefile/task');
   }
 }

@@ -169,6 +169,21 @@ ul {
   color: #ff7155;
 }
 
+.hoverHelpBox:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 94.6%;
+  right: 56%;
+  width: 10px;
+  height: 10px;
+  background: #ffe3dd;
+  border-right: 1px solid #ff7156;
+  border-bottom: 1px solid #ff7156;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .tagChip {
   position: absolute;
   top: 26px;
@@ -331,6 +346,7 @@ ul {
   padding: 15px 0 !important;
   box-shadow: 3px 3px 8px #9fb1bd;
   min-width: 176px;
+  z-index: 2;
 }
 
 .appCustomDropdown .carret {
@@ -352,7 +368,16 @@ ul {
   text-align: left !important;
   line-height: 24px !important;
   padding: 0 10px;
+  margin-right: 0 !important;
   cursor: pointer;
+}
+
+.appCustomDropdown ul li .horizontalPartition {
+  display: block;
+  height: 1px;
+  background: #9fb1bd;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .appCustomDropdown ul li:hover {
@@ -455,6 +480,14 @@ ul {
   font-size: 14px;
   font-family: "workSans-regular";
   color: #bac8d6;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url(/assets/img/double_carrot_icon.png) no-repeat 98%;
+  background-size: 14px;
 }
 
 header {
@@ -560,16 +593,12 @@ header .headerItemsContainer ul li:last-child {
 
 .userProfileDropdown {
   position: absolute;
-  height: auto;
-  width: auto;
-  border: 1px solid #558bff;
+  height: auto !important;
+  width: auto !important;
+  min-width: auto !important;
   z-index: 4;
-  background: #fff;
-  text-align: left;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  border-radius: 4px;
-  margin-top: 10px;
+  margin-left: -47px;
+  margin-top: 5px;
 }
 
 .userProfileDropdown ul li {
@@ -580,8 +609,6 @@ header .headerItemsContainer ul li:last-child {
 
 .userProfileDropdown ul li a {
   color: #9fb1bd;
-  padding-left: 10px;
-  padding-right: 20px;
   cursor: pointer;
   font-family: "workSans-regular";
 }

@@ -16,12 +16,17 @@
             button{
                 @include appButton($blue,#fff);
                 width: 132px;
+                position: relative;
                 float: right;
                 svg{
                     height: 12px;
                     width: 12px;
                     vertical-align: middle;
                     fill: #fff;
+                }
+                .appCustomDropdown{
+                    margin-top: 15px;
+                    right: -8px;
                 }
             }
         }
@@ -424,6 +429,7 @@
                     height: 150px;
                     max-height: 150px;
                     overflow-y: auto;
+                    overflow-x: hidden;
                     .taskListRow{
                         float: left;
                         width: 100%;
@@ -488,6 +494,12 @@
                                     vertical-align: middle;
                                     left: 12px;
                                     position: relative;
+                                    .appCustomDropdown{
+                                        right: -15px;
+                                        margin-top: 10px;
+                                        min-width: auto !important;
+                                        width: auto !important;
+                                    }
                                 }
                             }
                         }
