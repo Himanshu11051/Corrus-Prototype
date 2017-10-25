@@ -1,79 +1,83 @@
-<header (click) = "hideAllDropdowns()">
-  <img src = "assets/img/logo.png" draggable="false" (click)="gotoDashboard()">
-  <div class = "headerItemsContainer">
-    <ul>
-      <li>
-        <!-- <i class="material-icons notificationBell">notifications_none</i> -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>notifications_icon@1x</title><g id="art"><path d="M24.89453,22.55273C24.16211,21.08789,23,18.28516,23,17V13a6.69872,6.69872,0,0,0-5.53613-6.75781,2.84438,2.84438,0,0,0,.41113-1.458,2.875,2.875,0,0,0-5.75,0,2.84438,2.84438,0,0,0,.41113,1.458A6.69872,6.69872,0,0,0,7,13v4c0,1.44434-1.36768,4.498-1.89453,5.55273A1.0001,1.0001,0,0,0,6,24h6v1a3,3,0,0,0,6,0V24h6a1.0001,1.0001,0,0,0,.89453-1.44727ZM15,3.49191a1.25842,1.25842,0,0,1,1.29227,1.29227A1.29227,1.29227,0,1,1,15,3.49191ZM16,25.34a1,1,0,1,1-2,0V24h2ZM15,22H7.56543A15.24745,15.24745,0,0,0,9,17V13c0-1.50342.585-5,6-5s6,3.49658,6,5v4a15.24745,15.24745,0,0,0,1.43457,5Zm3-2a1,1,0,0,1-1-1V13a1,1,0,0,1,2,0v6A1,1,0,0,1,18,20Z"/></g></svg>
-        <span class = "notificationCount">3</span>
-      </li>
-      <li>
-        <span class = "userDefaultAvatar" (click)="$event.stopPropagation();hideAllDropdowns(); showUserProfileDropdownFlag = !showUserProfileDropdownFlag">Hk
-            <div class = "userProfileDropdown appCustomDropdown" *ngIf = "showUserProfileDropdownFlag" (click)="$event.stopPropagation()">
-                <ul>
-                  <li>
-                    <a href = "javascript:void(0);">My Profile</a>
-                  </li>
-                  <li>
-                    <a href = "javascript:void(0);">Give Feedback</a>
-                  </li>
-                  <li>
-                    <a href = "javascript:void(0);">User Guide</a>
-                  </li>
-                   <li>
-                     <a href = "javascript:void(0);">Sign Out</a>
-                   </li>
-                </ul>
-              </div>
-        </span>
-        <i class="material-icons md-18 workspaceSelector" (click)="$event.stopPropagation();hideAllDropdowns();showUserProfileDropdownFlag = !showUserProfileDropdownFlag">expand_more
-        </i>
-      </li>
-      <li>
-        <span class = "verticlePipe"></span>
-      </li>
-      <li>
-        <button class = "workSpaceName" (click) = "$event.stopPropagation();hideAllDropdowns();showWorkspaceDropdown = !showWorkspaceDropdown">My Workspace <i class="material-icons md-18 workspaceSelector">expand_more</i>
-        <div class = "appCustomDropdown" *ngIf = "showWorkspaceDropdown" (click)="$event.stopPropagation()">
-          <ul>
-            <li>Worspace Settings</li>
-            <li>Add Member</li>
-            <li>Create New Workspace</li>
-            <li><span class = "horizontalPartition"></span></li>
-            <li>Workspace A</li>
-            <li>Workspace B</li>
-            <li>Workspace C</li>
-            <li><span class = "horizontalPartition"></span></li>
-            <li>Join other Workspace</li>
-          </ul>
-
-        </div>
-
-        </button>
-      </li>
-      <li>
-        <button class = "createCaseBtn" (click) = " gotoCaseCreation()">Create Case</button>
-      </li>
-    </ul>
-  </div>
-</header>
-<nav class="navbar appNavbar justify-content-between">
-  
-  <a class="navbar-brand" >
-    <i class="material-icons" (click) = "backToCaseFileDashboard()" *ngIf = "currentURL == '/casefile/task'">arrow_back</i>
-    Welcome to your Dashboard - All your cases will be displayed here</a>
-  <form class="form-inline">
-    <!-- <input class="form-control mr-sm-2" type="text" aria-label="Search"> -->
-    <div class="input-group">
-      <span class="input-group-addon">
-        <i class = "searchIcon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>search_icon@1x</title><g id="art"><path d="M28.70615,24.3745l-5.41935-5.41935c-.02117-.02117-.0494-.02734-.07056-.04763a11.78433,11.78433,0,1,0-3.80872,3.80872c.02029.02117.02646.0494.04763.07056l5.41935,5.41935a2.70939,2.70939,0,0,0,3.83165-3.83165ZM5.1129,12.74194a8.129,8.129,0,1,1,8.129,8.129A8.13792,8.13792,0,0,1,5.1129,12.74194Z"/></g></svg>  
-      </i>
-    </span>
-      <input type="text" class="form-control">
+<div class="container rootContainer">
+  <header (click) = "hideAllDropdowns()">
+    <img src = "assets/img/logo.png" draggable="false" (click)="gotoDashboard()">
+    <div class = "headerItemsContainer">
+      <ul>
+        <li>
+          <!-- <i class="material-icons notificationBell">notifications_none</i> -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>notifications_icon@1x</title><g id="art"><path d="M24.89453,22.55273C24.16211,21.08789,23,18.28516,23,17V13a6.69872,6.69872,0,0,0-5.53613-6.75781,2.84438,2.84438,0,0,0,.41113-1.458,2.875,2.875,0,0,0-5.75,0,2.84438,2.84438,0,0,0,.41113,1.458A6.69872,6.69872,0,0,0,7,13v4c0,1.44434-1.36768,4.498-1.89453,5.55273A1.0001,1.0001,0,0,0,6,24h6v1a3,3,0,0,0,6,0V24h6a1.0001,1.0001,0,0,0,.89453-1.44727ZM15,3.49191a1.25842,1.25842,0,0,1,1.29227,1.29227A1.29227,1.29227,0,1,1,15,3.49191ZM16,25.34a1,1,0,1,1-2,0V24h2ZM15,22H7.56543A15.24745,15.24745,0,0,0,9,17V13c0-1.50342.585-5,6-5s6,3.49658,6,5v4a15.24745,15.24745,0,0,0,1.43457,5Zm3-2a1,1,0,0,1-1-1V13a1,1,0,0,1,2,0v6A1,1,0,0,1,18,20Z"/></g></svg>
+          <span class = "notificationCount">3</span>
+        </li>
+        <li>
+          <span class = "userDefaultAvatar" (click)="$event.stopPropagation();hideAllDropdowns(); showUserProfileDropdownFlag = !showUserProfileDropdownFlag">Hk
+              <div class = "userProfileDropdown appCustomDropdown" *ngIf = "showUserProfileDropdownFlag" (click)="$event.stopPropagation()">
+                  <ul>
+                    <li>
+                      <a href = "javascript:void(0);">My Profile</a>
+                    </li>
+                    <li>
+                      <a href = "javascript:void(0);">Give Feedback</a>
+                    </li>
+                    <li>
+                      <a href = "javascript:void(0);">User Guide</a>
+                    </li>
+                    <li>
+                      <a href = "javascript:void(0);">Sign Out</a>
+                    </li>
+                  </ul>
+                </div>
+          </span>
+          <i class="material-icons md-18 workspaceSelector" (click)="$event.stopPropagation();hideAllDropdowns();showUserProfileDropdownFlag = !showUserProfileDropdownFlag">expand_more
+          </i>
+        </li>
+        <li>
+          <span class = "verticlePipe"></span>
+        </li>
+        <li>
+          <button class = "workSpaceName" (click) = "$event.stopPropagation();hideAllDropdowns();showWorkspaceDropdown = !showWorkspaceDropdown">My Workspace <i class="material-icons md-18 workspaceSelector">expand_more</i>
+            <div class = "appCustomDropdown" *ngIf = "showWorkspaceDropdown" (click)="$event.stopPropagation()">
+              <ul>
+                <li>Worspace Settings</li>
+                <li>Add Member</li>
+                <li>Create New Workspace</li>
+                <li><span class = "horizontalPartition"></span></li>
+                <li>Workspace A</li>
+                <li>Workspace B</li>
+                <li>Workspace C</li>
+                <li><span class = "horizontalPartition"></span></li>
+                <li>Join other Workspace</li>
+              </ul>
+            </div>
+            <div class = "appCustomTooltip" *ngIf = "showWorkspaceTooltip" (click)="$event.stopPropagation()">
+              <p>A workspace is a collection of cases that are related in some fashion. You can add, edit or select a different workspace from this nav item.</p>
+              <button (click)="showWorkspaceTooltip = false;$event.stopPropagation()"> OK, Got it </button>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class = "createCaseBtn" (click) = " gotoCaseCreation()">Create Case</button>
+        </li>
+      </ul>
     </div>
-  </form>
-</nav>
-<div class = "container-fluid appContainer" (click)="hideAllDropdowns()">
-    <router-outlet></router-outlet>
+  </header>
+  <nav class="navbar appNavbar justify-content-between">
+    
+    <a class="navbar-brand" >
+      <i class="material-icons" (click) = "backToCaseFileDashboard()" *ngIf = "currentURL == '/casefile/task'">arrow_back</i>
+      Welcome to your Dashboard - All your cases will be displayed here</a>
+    <form class="form-inline">
+      <!-- <input class="form-control mr-sm-2" type="text" aria-label="Search"> -->
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i class = "searchIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><title>search_icon@1x</title><g id="art"><path d="M28.70615,24.3745l-5.41935-5.41935c-.02117-.02117-.0494-.02734-.07056-.04763a11.78433,11.78433,0,1,0-3.80872,3.80872c.02029.02117.02646.0494.04763.07056l5.41935,5.41935a2.70939,2.70939,0,0,0,3.83165-3.83165ZM5.1129,12.74194a8.129,8.129,0,1,1,8.129,8.129A8.13792,8.13792,0,0,1,5.1129,12.74194Z"/></g></svg>  
+        </i>
+      </span>
+        <input type="text" class="form-control">
+      </div>
+    </form>
+  </nav>
+  <div class = "container-fluid appContainer" (click)="hideAllDropdowns()">
+      <router-outlet></router-outlet>
+  </div>
 </div>

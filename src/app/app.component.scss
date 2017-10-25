@@ -1,5 +1,14 @@
 /* Author: Himanshu Kumar */
 @import '../styles.scss';
+.rootContainer{
+    max-width: 1400px;
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
 header{
     height: 80px;
     position: fixed;
@@ -21,7 +30,7 @@ header{
         ul{
             li{
                 display: table-cell;
-                margin-right: 25px;
+                margin-right: 28px;
                 float: left;                
                 i{
                     vertical-align: middle;
@@ -58,10 +67,18 @@ header{
                     font-size: 14px;
                     color: $grey3;          
                     position: relative; 
+                    .appCustomTooltip{
+                        width: 256px;
+                        right: -18px !important;
+                        margin-top: -20px !important;
+                    } 
+                    .appCustomTooltip:after{
+                        right: 19px;
+                    }
                     .appCustomDropdown{
                         right: -18px;
                         margin-top: -20px;
-                    }             
+                    }            
                 }
                 .createCaseBtn{
                     @extend .themeButton;

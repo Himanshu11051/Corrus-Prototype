@@ -98,8 +98,10 @@ $font-futura-book : 'futura-book';
  
 }
 body{
-    font-family: workSans-medium !important;
+    font-family: $font-workSans-regular !important;
     overflow-y: hidden;
+    background: $grey4;
+    background: -webkit-gradient(linear, left top, left bottom, from($grey4), to($darkGrey)) fixed;
 }
 ul{
     list-style: none;
@@ -207,6 +209,56 @@ ul{
     border-bottom: 1px solid #ff7156;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+.appCustomTooltip{
+    position: absolute;
+
+    height: auto;
+    background: #ffe3dd;
+    color: #ff7155;
+    font-size: 13px;
+    font-family: "workSans-regular";
+    letter-spacing: -0.09px;
+    padding: 10px !important;
+    font-style: normal;
+    border-radius: 4px;
+    border: 1px solid #ff7155;
+    box-shadow: 3px 3px 8px #b3b3b3;
+    text-align: left;
+    line-height: 19px;
+    .carret{
+        position: absolute;
+        bottom: -18px;
+        left: 91px;
+        font-size: 30px;
+        color: #ff7155;
+    }
+    button{
+        float: right;
+        background: transparent;
+        border: none;
+        color: inherit;
+        font-weight: 800;
+        margin-top: 6px;
+        cursor:pointer;
+    }
+    button:focus{
+        outline:none;
+    }
+}
+.appCustomTooltip:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: 19px;
+    width: 10px;
+    height: 10px;
+    background: #ffe3dd;
+    border-right: 1px solid #ff7156;
+    border-bottom: 1px solid #ff7156;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(-135deg);
 }
 .tagChip{
     position: absolute;

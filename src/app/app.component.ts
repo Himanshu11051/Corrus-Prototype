@@ -20,6 +20,7 @@ currentURL='';
 }
   showUserProfileDropdownFlag = false;
   showWorkspaceDropdown = false;
+  showWorkspaceTooltip = true;
   hideAllDropdowns(){
     this.showUserProfileDropdownFlag = false;
     this.showWorkspaceDropdown = false;
