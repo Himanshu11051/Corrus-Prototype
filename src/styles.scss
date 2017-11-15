@@ -14,6 +14,7 @@ $grey2: #dce7f2;
 $grey3: #bac8d6;
 $grey4: #9fb1bd;
 $darkGrey: #6b7a84;
+$lightGrey: #E0E0E0;
 $black: #000000;
 $themeColor: #8170ff;
 $tagChipBackgroundColor: #23a9db;
@@ -73,12 +74,17 @@ $activityStreamFooterBgColor : #d9e5ff;
     font-family: 'futura-book';
     src: url('/assets/fonts/Futura-Book-Regular.otf') format('opentype');
 }
+@font-face {
+    font-family: 'futura-standard';
+    src: url('/assets/fonts/Futura-Standard.otf') format('opentype');
+}
 $font-workSans-medium : 'workSans-medium';
 $font-workSans-bold : 'workSans-bold';
 $font-workSans-semiBold : 'workSans-semiBold';
 $font-workSans-regular : 'workSans-regular';
 $font-futura-medium : 'futura-medium';
 $font-futura-book : 'futura-book';
+$font-futura-standard : 'futura-standard';
 .themeButton{
     background: $purple;
     border: none;
@@ -388,8 +394,8 @@ ul{
     color: $grey4;
     background: #fff;
     position: absolute;
-    padding: 15px 0 !important;
-    box-shadow: 3px 3px 8px $grey4;
+    padding: 5px 0 !important;
+    box-shadow: 3px 3px 8px $lightGrey;
     min-width: 176px;
     z-index: 2;
     .carret{

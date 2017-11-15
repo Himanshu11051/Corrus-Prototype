@@ -1,0 +1,182 @@
+@import '../../styles.scss';
+.referalContainer{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top:0;
+    left:0;
+    background: #eef4fa url("/assets/img/appBackgroundImage.png") no-repeat center;
+    text-align: center;
+    .referalBox{
+        max-width: 1115px;
+        width: 1115px;
+        background: #fff;
+        height: 610px;
+        position: relative;
+        display: inline-block;
+        border-top: 10px solid $purple;
+        .leftContainer{
+            height: 600px;
+            background: url('/assets/img/referalBanner.png') no-repeat;
+        }
+        .rightContainer{
+            height: 600px;
+            .title {
+                position: relative;
+                width: 510px;
+                height: 95px;
+                margin-top: 28px;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 0px;
+                border-bottom: 2px solid $grey2;
+                .text-block-3 {
+                    font-family: $font-futura-standard;
+                    color: #558bff;
+                    font-size: 28px;
+                    line-height: 40px;
+                    font-weight: 300;
+                    letter-spacing: 0.1em;
+                }
+            }
+            .three_bullets {
+                position: relative;
+                width: 415px;
+                height: 90px;
+                margin-top: 9px;
+                margin-right: auto;
+                margin-left: auto;
+                .one_bullet{
+                    position: absolute;
+                    left: 0px;
+                    display: inline-block;
+                    width: 120px;
+                    height: 80px;                    
+                }
+                .two_bullet {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    right: 0px;
+                    width: 120px;
+                    height: 80px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                .three_bullet {
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    display: inline-block;
+                    width: 120px;
+                    height: 80px;
+                }
+                .dot {
+                    position: relative;
+                    width: 36px;
+                    height: 36px;
+                    margin-top: 10px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    border-radius: 18px;
+                    background-image: -webkit-linear-gradient(270deg, #eef4fa, #eef4fa);
+                    background-image: linear-gradient(180deg, #eef4fa, #eef4fa);
+                    .number {
+                        position: relative;
+                        top: 8px;
+                        width: 20px;
+                        height: 20px;
+                        margin: 0px auto;
+                        .text-block-4 {
+                            position: relative;
+                            margin-top: 0px;
+                            font-family: $font-workSans-regular;
+                            color: #558bff;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .div-block {
+                    position: relative;
+                    width: 120px;
+                    height: 40px;
+                    .text-block-5 {
+                        position: relative;
+                        top: 7px;
+                        font-family: $font-workSans-regular;
+                        color: #558bff;
+                        font-size: 13px;
+                        line-height: 16px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+            }
+            .formContainer{
+                position: relative;
+                top: 17px;
+                width: 510px;
+                height: 210px;
+                margin-right: auto;
+                margin-left: auto;
+                font-family: Worksans, sans-serif;
+                font-weight: 400;
+                text-align: left;
+                form{
+                    .form-group{
+                        margin-bottom: 11px;
+                    }
+                    label{
+                        color: #558bff;
+                        font-size: 14px;
+                        font-family: $font-workSans-regular;
+                    }
+                    input{
+                        padding: 6px;
+                        font-size: 14px;
+                        height: 35px;
+                    }
+                    textarea{
+                        height: 115px;
+                        padding: 6px;
+                        resize: none;
+                        font-size: 14px;
+                    }
+                    .submitBtnRow{
+                        text-align: center;
+                        display: inherit;
+                        margin-top: 36px;
+                        padding-bottom: 34px;
+                        border-bottom: 1px solid #eef4fa;
+                        button{
+                            @include appButton($purple,#fff);
+                            width: 112px;
+                        }
+                    }
+                }
+            }
+            .offerContainer{
+                position: relative;
+                position: relative;
+                top: 130px;
+                margin-right: 24px;
+                margin-left: 24px;
+                p{
+                    color: #9fb1bd;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-align: left;
+                    letter-spacing: 0.02em;
+                }
+                img{
+                    float: right;
+                    position: relative;
+                    bottom: 8px;
+                    margin-left: 36px;
+                }
+            }
+        }
+    }
+}

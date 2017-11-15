@@ -31,6 +31,11 @@
   src: url("/assets/fonts/Futura-Book-Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'futura-standard';
+  src: url("/assets/fonts/Futura-Standard.otf") format("opentype");
+}
+
 .themeButton, header .headerItemsContainer ul li .createCaseBtn {
   background: #8170ff;
   border: none;
@@ -53,6 +58,7 @@ body {
   font-family: "workSans-regular" !important;
   overflow-y: hidden;
   background: #9fb1bd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9fb1bd), to(#6b7a84)) fixed;
 }
 
 ul {
@@ -398,8 +404,8 @@ ul {
   color: #9fb1bd;
   background: #fff;
   position: absolute;
-  padding: 15px 0 !important;
-  box-shadow: 3px 3px 8px #9fb1bd;
+  padding: 5px 0 !important;
+  box-shadow: 3px 3px 8px #E0E0E0;
   min-width: 176px;
   z-index: 2;
 }
@@ -640,6 +646,7 @@ header .headerItemsContainer ul li .workSpaceName .appCustomTooltip:after {
 header .headerItemsContainer ul li .workSpaceName .appCustomDropdown {
   right: -18px;
   margin-top: -20px;
+  padding: 5px 0 !important;
 }
 
 header .headerItemsContainer ul li .createCaseBtn {
@@ -674,6 +681,7 @@ header .headerItemsContainer ul li:last-child {
   z-index: 4;
   margin-left: -47px;
   margin-top: 5px;
+  padding: 5px 0 !important;
 }
 
 .userProfileDropdown ul li {
@@ -718,6 +726,7 @@ header .headerItemsContainer ul li:last-child {
   background: #9491ff;
   color: #fff;
   padding-left: 3px;
+  padding-bottom: 2px;
 }
 
 .appNavbar input {
@@ -731,9 +740,10 @@ header .headerItemsContainer ul li:last-child {
 }
 
 .appNavbar i.searchIcon svg {
-  height: 12px !important;
-  width: 12px !important;
+  height: 16px;
+  vertical-align: middle;
   fill: #fff !important;
+  opacity: 0.5;
 }
 
 .appContainer {

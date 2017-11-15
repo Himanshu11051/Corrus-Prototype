@@ -403,8 +403,8 @@ ul {
   color: #9fb1bd;
   background: #fff;
   position: absolute;
-  padding: 5px 0 !important;
-  box-shadow: 3px 3px 8px #E0E0E0;
+  padding: 15px 0 !important;
+  box-shadow: 3px 3px 8px #9fb1bd;
   min-width: 176px;
   z-index: 2;
 }
@@ -549,6 +549,220 @@ select {
   background: #fff url(/assets/img/double_carrot_icon.png) no-repeat 98%;
   background-size: 14px;
 }
+
+.referalContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #eef4fa url("/assets/img/appBackgroundImage.png") no-repeat center;
+  text-align: center;
+}
+
+.referalContainer .referalBox {
+  max-width: 1115px;
+  width: 1115px;
+  background: #fff;
+  height: 610px;
+  position: relative;
+  display: inline-block;
+  border-top: 10px solid #8170ff;
+}
+
+.referalContainer .referalBox .leftContainer {
+  height: 600px;
+  background: url("/assets/img/referalBanner.png") no-repeat;
+}
+
+.referalContainer .referalBox .rightContainer {
+  height: 600px;
+}
+
+.referalContainer .referalBox .rightContainer .title {
+  position: relative;
+  width: 510px;
+  height: 95px;
+  margin-top: 28px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0px;
+  border-bottom: 2px solid #dce7f2;
+}
+
+.referalContainer .referalBox .rightContainer .title .text-block-3 {
+  font-family: "futura-standard";
+  color: #558bff;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.referalContainer .referalBox .rightContainer .three_bullets {
+  position: relative;
+  width: 415px;
+  height: 90px;
+  margin-top: 9px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.referalContainer .referalBox .rightContainer .three_bullets .one_bullet {
+  position: absolute;
+  left: 0px;
+  display: inline-block;
+  width: 120px;
+  height: 80px;
+}
+
+.referalContainer .referalBox .rightContainer .three_bullets .two_bullet {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  width: 120px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.referalContainer .referalBox .rightContainer .three_bullets .three_bullet {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: inline-block;
+  width: 120px;
+  height: 80px;
+}
+
+.referalContainer .referalBox .rightContainer .three_bullets .dot {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 18px;
+  background-image: -webkit-linear-gradient(270deg, #eef4fa, #eef4fa);
+  background-image: linear-gradient(180deg, #eef4fa, #eef4fa);
+}
+
+.referalContainer .referalBox .rightContainer .three_bullets .dot .number {
+  position: relative;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  margin: 0px auto;
+}
+
+.referalContainer .referalBox .rightContainer .three_bullets .dot .number .text-block-4 {
+  position: relative;
+  margin-top: 0px;
+  font-family: "workSans-regular";
+  color: #558bff;
+  font-weight: 400;
+}
+
+.referalContainer .referalBox .rightContainer .three_bullets .div-block {
+  position: relative;
+  width: 120px;
+  height: 40px;
+}
+
+.referalContainer .referalBox .rightContainer .three_bullets .div-block .text-block-5 {
+  position: relative;
+  top: 7px;
+  font-family: "workSans-regular";
+  color: #558bff;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.referalContainer .referalBox .rightContainer .formContainer {
+  position: relative;
+  top: 17px;
+  width: 510px;
+  height: 210px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Worksans, sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+.referalContainer .referalBox .rightContainer .formContainer form .form-group {
+  margin-bottom: 11px;
+}
+
+.referalContainer .referalBox .rightContainer .formContainer form label {
+  color: #558bff;
+  font-size: 14px;
+  font-family: "workSans-regular";
+}
+
+.referalContainer .referalBox .rightContainer .formContainer form input {
+  padding: 6px;
+  font-size: 14px;
+  height: 35px;
+}
+
+.referalContainer .referalBox .rightContainer .formContainer form textarea {
+  height: 115px;
+  padding: 6px;
+  resize: none;
+  font-size: 14px;
+}
+
+.referalContainer .referalBox .rightContainer .formContainer form .submitBtnRow {
+  text-align: center;
+  display: inherit;
+  margin-top: 36px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #eef4fa;
+}
+
+.referalContainer .referalBox .rightContainer .formContainer form .submitBtnRow button {
+  background: #8170ff;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "workSans-regular";
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  width: 112px;
+}
+
+.referalContainer .referalBox .rightContainer .offerContainer {
+  position: relative;
+  position: relative;
+  top: 130px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.referalContainer .referalBox .rightContainer .offerContainer p {
+  color: #9fb1bd;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.02em;
+}
+
+.referalContainer .referalBox .rightContainer .offerContainer img {
+  float: right;
+  position: relative;
+  bottom: 8px;
+  margin-left: 36px;
+}
  
 
- /*# sourceMappingURL= styles.css.map */
+ /*# sourceMappingURL= referal.component.css.map */

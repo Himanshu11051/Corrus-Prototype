@@ -30,6 +30,11 @@
   src: url("/assets/fonts/Futura-Book-Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'futura-standard';
+  src: url("/assets/fonts/Futura-Standard.otf") format("opentype");
+}
+
 .themeButton {
   background: #8170ff;
   border: none;
@@ -52,6 +57,7 @@ body {
   font-family: "workSans-regular" !important;
   overflow-y: hidden;
   background: #9fb1bd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9fb1bd), to(#6b7a84)) fixed;
 }
 
 ul {
@@ -397,8 +403,8 @@ ul {
   color: #9fb1bd;
   background: #fff;
   position: absolute;
-  padding: 15px 0 !important;
-  box-shadow: 3px 3px 8px #9fb1bd;
+  padding: 5px 0 !important;
+  box-shadow: 3px 3px 8px #E0E0E0;
   min-width: 176px;
   z-index: 2;
 }
@@ -977,15 +983,26 @@ select {
 }
 
 .caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody .caseMembersRow ul li {
-  width: 302px;
+  width: 295px;
   float: left;
-  color: #558bff;
+  color: #558bff svg;
+  color-height: 12px;
+}
+
+.caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody .caseMembersRow ul li:nth-child(3) {
+  width: 140px !important;
+  color: #9fb1bd !important;
 }
 
 .caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody .caseMembersRow ul li:last-child {
-  width: 140px !important;
-  color: #9fb1bd !important;
-  text-align: right;
+  width: 16px;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody .caseMembersRow ul li:last-child svg {
+  height: 16px;
+  fill: #A6C2FF;
 }
 
 .caseCreationBody .caseCreationStep3Container .caseMembersContainer .caseMembersBody .caseMembersRow.borderTop {

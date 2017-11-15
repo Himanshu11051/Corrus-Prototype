@@ -30,6 +30,11 @@
   src: url("/assets/fonts/Futura-Book-Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'futura-standard';
+  src: url("/assets/fonts/Futura-Standard.otf") format("opentype");
+}
+
 .themeButton {
   background: #8170ff;
   border: none;
@@ -547,7 +552,7 @@ select {
 
 .dashboardContainerHeading {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #8170ff;
   font-family: "futura-book";
 }
@@ -560,11 +565,11 @@ select {
   position: relative;
   height: 340px;
   width: 565px;
-  border: 1px solid #dce7f2;
+  border: 2px solid #dce7f2;
   display: inline-block;
   margin-top: 20px;
   color: #dce7f2;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .cardContainer .cardBox .placeholder {
@@ -581,7 +586,7 @@ select {
   left: 12px;
   border-top: none;
   border-left: none;
-  border-bottom-right-radius: 12px;
+  border-bottom-right-radius: 8px;
 }
 
 .dashboardContainerFooter {
@@ -624,8 +629,6 @@ select {
   height: 16px;
   width: 16px;
   line-height: 16px;
-  background: #558bff;
-  color: #fff;
   display: inline-block;
   top: -2px;
   position: relative;
@@ -634,6 +637,11 @@ select {
 
 .dashboardFlowButtonRow ul li span i {
   font-size: 16px;
+}
+
+.dashboardFlowButtonRow ul li span i svg {
+  height: 16px;
+  fill: #558bff;
 }
 
 .dashboardFlowButtonRow ul li:last-child {

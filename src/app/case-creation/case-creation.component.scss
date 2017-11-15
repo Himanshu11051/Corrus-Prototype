@@ -352,14 +352,25 @@
                     font-size: 14px;
                     ul{
                         li{
-                            width: 302px;
+                            width: 295px;
                             float: left;
                             color: $blue
+                            svg{
+                                height: 12px;
+                            }
                         }
-                        li:last-child{
+                        li:nth-child(3){
                             width: 140px !important;
                             color: $grey4 !important;
-                            text-align: right;
+                        }
+                        li:last-child{
+                            width:16px;
+                            padding-top: 4px;
+                            cursor: pointer;
+                            svg{
+                                height: 16px;
+                                fill: #A6C2FF;
+                            }
                         }
                     }
                 }

@@ -9,6 +9,7 @@ import { CaseFileComponent } from './case-file/case-file.component';
 import { ActivityStreamComponent } from './activity-stream/activity-stream.component';
 import { TaskComponent } from './task/task.component';
 import { CaseFileDashboardComponent } from './case-file-dashboard/case-file-dashboard.component';
+import { ReferalComponent } from './referal/referal.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CaseFileDashboardComponent } from './case-file-dashboard/case-file-dash
     CaseFileComponent,
     ActivityStreamComponent,
     TaskComponent,
-    CaseFileDashboardComponent
+    CaseFileDashboardComponent,
+    ReferalComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,10 @@ import { CaseFileDashboardComponent } from './case-file-dashboard/case-file-dash
       {
         path: '',
         component: UserDashboardComponent
+      },
+      {
+        path: 'refer',
+        component: ReferalComponent
       },
       {
         path: 'dashboard',

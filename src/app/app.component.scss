@@ -78,6 +78,7 @@ header{
                     .appCustomDropdown{
                         right: -18px;
                         margin-top: -20px;
+                        padding: 5px 0 !important;
                     }            
                 }
                 .createCaseBtn{
@@ -111,6 +112,7 @@ header{
     z-index: 4;
     margin-left: -47px;
     margin-top: 5px;
+    padding: 5px 0 !important;
     ul{
         li{
             display: block !important;
@@ -152,6 +154,7 @@ header{
             background: $headerSearchBackgroundColor;
             color: #fff;
             padding-left: 3px;
+            padding-bottom: 2px;
         }
     }
     input{
@@ -166,9 +169,10 @@ header{
     }
     i.searchIcon{
         svg{
-            height: 12px !important;
-            width:12px !important;
+            height: 16px;
+            vertical-align: middle;
             fill:#fff !important;
+            opacity: 0.5;
         }                
     }
 }

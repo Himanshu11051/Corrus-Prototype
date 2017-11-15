@@ -30,6 +30,11 @@
   src: url("/assets/fonts/Futura-Book-Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'futura-standard';
+  src: url("/assets/fonts/Futura-Standard.otf") format("opentype");
+}
+
 .themeButton {
   background: #8170ff;
   border: none;
@@ -49,8 +54,10 @@
 }
 
 body {
-  font-family: workSans-medium !important;
+  font-family: "workSans-regular" !important;
   overflow-y: hidden;
+  background: #9fb1bd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9fb1bd), to(#6b7a84)) fixed;
 }
 
 ul {

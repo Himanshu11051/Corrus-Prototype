@@ -1,7 +1,7 @@
 @import '../../styles.scss';
     .dashboardContainerHeading{
         text-align: center;
-        margin-top:100px;
+        margin-top: 50px;
         color: $themeColor;
         font-family: $font-futura-book;
     }
@@ -11,11 +11,11 @@
             position: relative;
             height: 340px;
             width: 565px;
-            border: 1px solid $grey2;
+            border: 2px solid $grey2;
             display: inline-block;
             margin-top: 20px;
             color: $grey2;
-            border-radius: 6px;
+            border-radius: 8px;
             // box-shadow: 3px 3px 5px 1px;
             .placeholder{
                 top:45%;
@@ -30,7 +30,7 @@
                 left: 12px;
                 border-top: none;
                 border-left: none;
-                border-bottom-right-radius: 12px;
+                border-bottom-right-radius: 8px;
             }
         }
     }
@@ -62,14 +62,16 @@
                     height: 16px;
                     width: 16px;
                     line-height: 16px;
-                    background: $blue;
-                    color: #fff;
                     display: inline-block;
                     top: -2px;
                     position: relative;
                     vertical-align: middle;
                     i{
                         font-size: 16px;
+                        svg{
+                            height: 16px;
+                            fill:$blue;
+                        }
                     }
                 }
             }
